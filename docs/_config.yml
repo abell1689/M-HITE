@@ -4,7 +4,7 @@
 title: Dokumentasi M-HITE
 author: Zulfa
 logo: logo.png
-favicon : "_static/favicon.png"
+favicon : favicon.png
 
 # Force re-execution of notebooks on each build.
 # See https://jupyterbook.org/content/execute.html
