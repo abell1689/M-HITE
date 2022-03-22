@@ -1,11 +1,10 @@
-# Welcome to your Jupyter Book
+# Intro
+## Apa itu HITE?
+HITE (Habitability Index for Transiting Exoplanets) adalah indeks yang menampilkan _ranking_ eksoplanet berdasarkan habitabilitas/kelayakhuniannya. Derajat kelayakhunian ini ditentukan oleh program HITE yang cara kerjanya akan dijelaskan pada dokumentasi ini.
 
-This is a small sample book to give you a feel for how book content is
-structured.
-It shows off a few of the major file types, as well as some sample content.
-It does not go in-depth into any particular topic - check out [the Jupyter Book documentation](https://jupyterbook.org) for more information.
+HITE disusun oleh [Rory Barnes](https://github.com/RoryBarnes/HITE) dengan lisensi GNU General Public License v3.0 yang memperbolehkan penggunaan dan perubahan terhadap kode HITE secara bebas. Info lebih tentang lisensinya [di sini](https://github.com/RoryBarnes/HITE/blob/master/LICENSE).
 
-Check out the content pages bundled with this sample book to see more.
 
+Daftar Isi
 ```{tableofcontents}
 ```
