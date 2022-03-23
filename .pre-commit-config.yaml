@@ -6,7 +6,6 @@ repos:
     name: JB config to Sphinx
     description: This hook convert JB config to Sphinx format
     language: python
-    language-version: python3
     entry: jupyter-book config sphinx
     args: ["docs"]
     types: [text]
