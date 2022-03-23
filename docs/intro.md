@@ -2,7 +2,7 @@
 ## Apa itu HITE?
 HITE (_Habitability Index for Transiting Exoplanets_) adalah indeks yang menampilkan _ranking_ eksoplanet berdasarkan habitabilitas/kelayakhuniannya. Derajat kelayakhunian ini ditentukan oleh program HITE yang mengambil 
 
-:::{note}
+:::{note} Catatan tentang lisensi
 HITE disusun oleh [Rory Barnes](https://github.com/RoryBarnes/HITE) dengan lisensi GNU General Public License v3.0 yang memperbolehkan penggunaan dan perubahan terhadap kode program HITE secara bebas. Info lebih lanjut tentang lisensinya bisa diperoleh [di sini](https://github.com/RoryBarnes/HITE/blob/master/LICENSE).
 :::
 
