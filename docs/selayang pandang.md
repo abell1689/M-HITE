@@ -1,55 +1,34 @@
-# Selayang Pandang
+# Pengenalan
+## Apa itu HITE?
+**HITE (_Habitability Index for Transiting Exoplanets_) adalah** indeks/daftar yang mengurutkan eksoplanet berdasarkan probabilitas kelayakhunian/habitabilitasnya. Indeks ini disusun oleh Probabilitas ini didefinisikan sebagai kemungkinan planet tersebut: **a) mempunyai permukaan padat**, dan **b) memiliki air berfase cair di permukaannya**. 
 
-Whether you write your book's content in Jupyter Notebooks (`.ipynb`) or
-in regular markdown files (`.md`), you'll write in the same flavor of markdown
-called **MyST Markdown**.
-This is a simple file to help you get started and show off some syntax.
+:::{admonition} **Catatan tentang lisensi**
+**HITE disusun oleh** [Rory Barnes](https://github.com/RoryBarnes/HITE) dari University of Washington. Program HITE dibagikan dengan lisensi GNU General Public License v3.0 yang memperbolehkan penggunaan dan perubahan terhadap program tersebut secara bebas. Info lebih lanjut tentang lisensinya bisa diperoleh [di sini](https://github.com/RoryBarnes/HITE/blob/master/LICENSE). Sesuai ketentuan lisensi tersebut, modifikasi dari program HITE ini juga dibagikan dengan lisensi yang sama.
+:::
 
-## What is MyST?
+## Modifikasi
+**Program yang cara kerjanya** akan dijelaskan di sini adalah HITE Termodifikasi/**_Modified HITE_** **(M-HITE)**. Berikut adalah modifikasi yang telah dilakukan terhadap program HITE sehingga menjadi M-HITE:
+1) **program telah ditulis ulang**, dari C ke Python;
+2) **besaran-besaran yang pada HITE orisinal dihitung** dari variabel observasi (seperti radius planet yang dihitung dari [transit]), pada M-HITE tidak dihitung, tetapi langsung diambil dari basis data [**exoplanets.org**](exoplanets.org). Hal ini memungkinkan M-HITE untuk mengevaluasi probabilitas kelayakhunian dari planet-planet yang ditemukan melalui metode lain selain metode transit;
+3) **rentang parameter eksentrisitas orbit (_e_) dan albedo planet (_A_)** yang digunakan untuk menghitung probabilitas layak huni _H (e, A)_ tidak disamakan untuk semua planet, tapi diganti dengan rentang ketidakpastian _e_ dan _A_ masing-masing planet yang diambil dari  [exoplanets.org](exoplanets.org);
+4) albedo
+5) **eksentrisitas orbit yang ekstrem** dianggap menurunkan probabilitas kelayakhunian, sehingga planet dengan _e_ di atas angka tertentu (ditentukan oleh luminositas bintang inang) probabilitas layak huninya diberi penalti dan urutannya cederung turun dalam indeks;
+6) zeng sasselov
 
-MyST stands for "Markedly Structured Text". It
-is a slight variation on a flavor of markdown called "CommonMark" markdown,
-with small syntax extensions to allow you to write **roles** and **directives**
-in the Sphinx ecosystem.
 
-For more about MyST, see [the MyST Markdown Overview](https://jupyterbook.org/content/myst.html).
-
-## Sample Roles and Directivs
-
-Roles and directives are two of the most powerful tools in Jupyter Book. They
-are kind of like functions, but written in a markup language. They both
-serve a similar purpose, but **roles are written in one line**, whereas
-**directives span many lines**. They both accept different kinds of inputs,
-and what they do with those inputs depends on the specific role or directive
-that is being called.
-
-Here is a "note" directive:
-
-```{note}
-Here is a note
+## Daftar Isi
+```{tableofcontents}
 ```
 
-It will be rendered in a special box when you build your book.
-
-Here is an inline directive to refer to a document: {doc}`markdown-notebooks`.
 
 
-## Citations
 
-You can also cite references that are stored in a `bibtex` file. For example,
-the following syntax: `` {cite}`holdgraf_evidence_2014` `` will render like
-this: {cite}`holdgraf_evidence_2014`.
 
-Moreover, you can insert a bibliography into your page with this syntax:
-The `{bibliography}` directive must be used for all the `{cite}` roles to
-render properly.
-For example, if the references for your book are stored in `references.bib`,
-then the bibliography is inserted with:
+![d4c17bfdecec68f5c2dfaa3d87c636ca.png](d4c17bfdecec68f5c2dfaa3d87c636ca.png)
 
-```{bibliography}
-```
 
-## Learn more
 
-This is just a simple starter to get you started.
-You can learn a lot more at [jupyterbook.org](https://jupyterbook.org).
+
+
+
+![62fed7446fefc69ad087c21e7cc92834.png](62fed7446fefc69ad087c21e7cc92834.png)
