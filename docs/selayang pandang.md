@@ -9,11 +9,18 @@
 ## Modifikasi
 **Program yang cara kerjanya** akan dijelaskan di sini adalah HITE Termodifikasi/**_Modified HITE_** **(M-HITE)**. Berikut adalah modifikasi yang telah dilakukan terhadap program HITE sehingga menjadi M-HITE:
 1) **program telah ditulis ulang**, dari C ke Python;
-2) **besaran-besaran yang pada HITE orisinal dihitung** dari variabel observasi (seperti radius planet yang dihitung dari [transit]), pada M-HITE tidak dihitung, tetapi langsung diambil dari basis data [**exoplanets.org**](exoplanets.org). Hal ini memungkinkan M-HITE untuk mengevaluasi probabilitas kelayakhunian dari planet-planet yang ditemukan melalui metode lain selain metode transit;
-3) **rentang parameter eksentrisitas orbit (_e_) dan albedo planet (_A_)** yang digunakan untuk menghitung probabilitas layak huni _H (e, A)_ tidak disamakan untuk semua planet, tapi diganti dengan rentang ketidakpastian _e_ dan _A_ masing-masing planet yang diambil dari  [exoplanets.org](exoplanets.org);
-4) albedo
-5) **eksentrisitas orbit yang ekstrem** dianggap menurunkan probabilitas kelayakhunian, sehingga planet dengan _e_ di atas angka tertentu (ditentukan oleh luminositas bintang inang) probabilitas layak huninya diberi penalti dan urutannya cederung turun dalam indeks;
-6) zeng sasselov
+2) **pengubahan data masukan (penggunaan basis data [exoplanets.org](exoplanets.org))**;
+		Ada besaran-besaran yang pada HITE orisinal dihitung dari variabel observasi (seperti radius planet yang dihitung dari [transit]). Pada M-HITE, besaran-besaran ini tidak dihitung, tetapi langsung diambil dari basis data [exoplanets.org](exoplanets.org). Hal ini memungkinkan M-HITE untuk mengevaluasi probabilitas kelayakhunian dari planet-planet yang ditemukan melalui metode lain selain metode transit
+Contoh:
+		Rentang parameter eksentrisitas orbit (_e_) dan albedo planet (_A_) yang digunakan untuk menghitung probabilitas layak huni _H (e, A)_ pada HITE orisinal disamakan untuk semua planet. Pada M-HITE, ini diganti dengan rentang ketidakpastian _e_ dan _A_ masing-masing planet yang juga diambil dari [exoplanets.org](exoplanets.org)
+Contoh: 
+3) **pengubahan metode kalkulasi keterestrialan planet**;  
+		HITE orisinal melakukan ini dengan suatu algoritma _ad-hoc_ yang hanya mempertimbangkan radius planet sebagai masukan. M-HITE mengganti metode ini dengan pemodelan komposisi planet berdasarkan radius dan massa yang dikembangkan oleh Zeng & Sasselov (2013);
+4) **penambahan filter/syarat kelayakhunian**
+	- asumsi tentang albedo planet terestrial;
+    - Diasumsikan bahwa ada rentang nilai albedo planet yang menandakan kecenderungan lebih tinggi untuk bersifat layak huni. Rentang ini tergantung pada temperatur/tipe bintang inang dan radius orbit eksoplanet. Planet dengan _A_ yang berada di luar rentang tersebut akan dianggap tidak layak huni oleh program HITE. Untuk saat ini, rentang albedo ini baru bisa dikalkulasi untuk planet yang mengorbit bintang tipe G atau M
+	- *asumsi tentang eksentrisitas orbit yang ekstrem**;
+    - eksentrisitas orbit yang ekstrem dianggap menurunkan probabilitas kelayakhunian, sehingga planet dengan _e_ di atas angka tertentu (ditentukan oleh luminositas bintang inang) probabilitas layak huninya diberi penalti dan urutannya cederung turun dalam indeks;
 
 
 ## Daftar Isi
