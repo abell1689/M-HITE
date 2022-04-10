@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Selayang_Pandang &#8212; Dokumentasi M-HITE</title>
+    <title>Penjelasan Kode &#8212; Dokumentasi M-HITE</title>
     
   <link href="_static/css/theme.css" rel="stylesheet">
   <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -51,7 +51,8 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="shortcut icon" href="_static/favicon.png"/>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Latar Belakang" href="latar_belakang.html" />
+    <link rel="next" title="Tutorial" href="tutorial.html" />
+    <link rel="prev" title="Algoritma" href="algoritma.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -89,13 +90,13 @@ const thebe_selector_output = ".output, .cell_output"
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
         <ul class="nav bd-sidenav">
- <li class="toctree-l1 current">
-  <a class="reference internal" href="#">
+ <li class="toctree-l1">
+  <a class="reference internal" href="selayang_pandang.html">
    Selayang_Pandang
   </a>
  </li>
 </ul>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="latar_belakang.html">
    Latar Belakang
@@ -106,8 +107,8 @@ const thebe_selector_output = ".output, .cell_output"
    Algoritma
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="penjelasan_kode.html">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    Penjelasan Kode
   </a>
  </li>
@@ -170,9 +171,12 @@ const thebe_selector_output = ".output, .cell_output"
 
     <div class="dropdown-buttons">
         <!-- ipynb file if we had a myst markdown file -->
-        
+        <a class="dropdown-buttons"
+            href="_sources/penjelasan_kode.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download notebook file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="_sources/selayang_pandang.md"><button type="button"
+        <a class="dropdown-buttons" href="_sources/penjelasan_kode.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -192,7 +196,7 @@ const thebe_selector_output = ".output, .cell_output"
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/abell1689/M-HITE//issues/new?title=Issue%20on%20page%20%2Fselayang_pandang.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/abell1689/M-HITE//issues/new?title=Issue%20on%20page%20%2Fpenjelasan_kode.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
         
@@ -208,6 +212,23 @@ const thebe_selector_output = ".output, .cell_output"
 
             <!-- Launch buttons -->
 
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/abell1689/M-HITE/master?urlpath=tree/docs/penjelasan_kode.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
         </div>
 
         <!-- Table of contents -->
@@ -219,18 +240,18 @@ const thebe_selector_output = ".output, .cell_output"
             <nav id="bd-toc-nav" aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#apa-itu-hite">
-   Apa itu HITE?
+  <a class="reference internal nav-link" href="#an-example-cell">
+   An example cell
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#modifikasi">
-   Modifikasi
+  <a class="reference internal nav-link" href="#create-a-notebook-with-myst-markdown">
+   Create a notebook with MyST Markdown
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#daftar-isi">
-   Daftar Isi
+  <a class="reference internal nav-link" href="#quickly-add-yaml-metadata-for-myst-notebooks">
+   Quickly add YAML metadata for MyST Notebooks
   </a>
  </li>
 </ul>
@@ -243,7 +264,7 @@ const thebe_selector_output = ".output, .cell_output"
         <div class="col-12 col-md-9 pl-md-3 pr-md-0">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Selayang_Pandang</h1>
+                <h1>Penjelasan Kode</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -254,18 +275,18 @@ const thebe_selector_output = ".output, .cell_output"
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#apa-itu-hite">
-   Apa itu HITE?
+  <a class="reference internal nav-link" href="#an-example-cell">
+   An example cell
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#modifikasi">
-   Modifikasi
+  <a class="reference internal nav-link" href="#create-a-notebook-with-myst-markdown">
+   Create a notebook with MyST Markdown
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#daftar-isi">
-   Daftar Isi
+  <a class="reference internal nav-link" href="#quickly-add-yaml-metadata-for-myst-notebooks">
+   Quickly add YAML metadata for MyST Notebooks
   </a>
  </li>
 </ul>
@@ -277,53 +298,50 @@ const thebe_selector_output = ".output, .cell_output"
             
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="selayang-pandang">
-<h1>Selayang_Pandang<a class="headerlink" href="#selayang-pandang" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="apa-itu-hite">
-<h2>Apa itu HITE?<a class="headerlink" href="#apa-itu-hite" title="Permalink to this headline">¶</a></h2>
-<p><strong>HITE (<em>Habitability Index for Transiting Exoplanets</em>) adalah</strong> indeks/daftar yang mengurutkan eksoplanet menurut probabilitas kelayakhuniannya. Probabilitas ini didefinisikan sebagai kemungkinan planet tersebut: <strong>a) mempunyai permukaan padat</strong>, dan <strong>b) memiliki air berfase cair di permukaannya</strong>. Indeks ini bertujuan untuk menentukan prioritas pengamatan eksoplanet, sehingga sumber daya riset keplanetan luar surya yang terbatas dapat diarahkan untuk mengamati lebih lanjut planet-planet yang ‘menarik secara ilmiah’.</p>
-<div class="admonition-catatan-tentang-lisensi admonition">
-<p class="admonition-title"><strong>Catatan tentang lisensi</strong></p>
-<p><strong>HITE disusun oleh <a class="reference external" href="https://github.com/RoryBarnes/HITE">Rory Barnes</a></strong> dari University of Washington. Program HITE dibagikan dengan lisensi GNU General Public License v3.0 yang memperbolehkan penggunaan dan perubahan terhadap program tersebut secara bebas. Info lebih lanjut tentang lisensinya bisa diperoleh <a class="reference external" href="https://github.com/RoryBarnes/HITE/blob/master/LICENSE">di sini</a>. Sesuai ketentuan lisensi tersebut, modifikasi dari program HITE ini juga dibagikan dengan lisensi yang sama.</p>
+  <div class="tex2jax_ignore mathjax_ignore section" id="penjelasan-kode">
+<h1>Penjelasan Kode<a class="headerlink" href="#penjelasan-kode" title="Permalink to this headline">¶</a></h1>
+<p>Jupyter Book also lets you write text-based notebooks using MyST Markdown.
+See <a class="reference external" href="https://jupyterbook.org/file-types/myst-notebooks.html">the Notebooks with MyST Markdown documentation</a> for more detailed instructions.
+This page shows off a notebook written in MyST Markdown.</p>
+<div class="section" id="an-example-cell">
+<h2>An example cell<a class="headerlink" href="#an-example-cell" title="Permalink to this headline">¶</a></h2>
+<p>With MyST Markdown, you can define code cells with a directive like so:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="mi">2</span> <span class="o">+</span> <span class="mi">2</span><span class="p">)</span>
+</pre></div>
 </div>
 </div>
-<div class="section" id="modifikasi">
-<h2>Modifikasi<a class="headerlink" href="#modifikasi" title="Permalink to this headline">¶</a></h2>
-<p><strong>Program yang cara kerjanya</strong> akan dijelaskan di sini adalah HITE Termodifikasi/<strong><em>Modified HITE</em></strong> <strong>(M-HITE)</strong>. Berikut adalah modifikasi yang telah dilakukan terhadap program HITE sehingga menjadi M-HITE:</p>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>4
+</pre></div>
+</div>
+</div>
+</div>
+<p>When your book is built, the contents of any <code class="docutils literal notranslate"><span class="pre">{code-cell}</span></code> blocks will be
+executed with your default Jupyter kernel, and their outputs will be displayed
+in-line with the rest of your content.</p>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p>Jupyter Book uses <a class="reference external" href="https://jupytext.readthedocs.io/en/latest/">Jupytext</a> to convert text-based files to notebooks, and can support <a class="reference external" href="https://jupyterbook.org/file-types/jupytext.html">many other text-based notebook files</a>.</p>
+</div>
+</div>
+<div class="section" id="create-a-notebook-with-myst-markdown">
+<h2>Create a notebook with MyST Markdown<a class="headerlink" href="#create-a-notebook-with-myst-markdown" title="Permalink to this headline">¶</a></h2>
+<p>MyST Markdown notebooks are defined by two things:</p>
 <ol class="simple">
-<li><p><strong>program telah ditulis ulang</strong>, dari C ke Python;</p></li>
-<li><p><strong>pengubahan data masukan (penggunaan basis data <a class="reference external" href="https://www.exoplanets.org">exoplanets.org</a>)</strong>;
-Ada besaran-besaran yang pada HITE orisinal dihitung dari variabel observasi (seperti radius planet yang dihitung dari [transit]). Pada M-HITE, besaran-besaran ini tidak dihitung, tetapi langsung diambil dari basis data <a class="reference external" href="https://www.exoplanets.org">exoplanets.org</a>. Hal ini memungkinkan M-HITE untuk mengevaluasi probabilitas kelayakhunian dari planet-planet yang ditemukan melalui metode lain selain metode transit
-Contoh: Eksentrisitas planet TRAPPIST-1 e
-| M-HITE           | M-HITE |
-|:—————-:|:——:|
-| 0,05 ≤ <em>A</em> ≤ 0,8 |        |</p></li>
+<li><p>YAML metadata that is needed to understand if / how it should convert text files to notebooks (including information about the kernel needed).
+See the YAML at the top of this page for example.</p></li>
+<li><p>The presence of <code class="docutils literal notranslate"><span class="pre">{code-cell}</span></code> directives, which will be executed with your book.</p></li>
 </ol>
-<p>Rentang parameter eksentrisitas orbit (<em>e</em>) dan albedo planet (<em>A</em>) yang digunakan untuk menghitung probabilitas layak huni <em>H (e, A)</em> pada HITE orisinal disamakan untuk semua planet. Pada M-HITE, ini diganti dengan rentang ketidakpastian <em>e</em> dan <em>A</em> masing-masing planet yang juga diambil dari <a class="reference external" href="http://www.exoplanets.org">exoplanets.org</a>
-Contoh:<br />
-3) <strong>pengubahan metode kalkulasi keterestrialan planet</strong>;<br />
-HITE orisinal melakukan ini dengan suatu algoritma <em>ad-hoc</em> yang hanya mempertimbangkan radius planet sebagai masukan. M-HITE mengganti metode ini dengan pemodelan komposisi planet berdasarkan radius dan massa yang dikembangkan oleh Zeng &amp; Sasselov (2013);
-4) <strong>penambahan filter/syarat kelayakhunian</strong>
-- asumsi tentang albedo planet terestrial;
-- Diasumsikan bahwa ada rentang nilai albedo planet yang menandakan kecenderungan lebih tinggi untuk bersifat layak huni. Rentang ini tergantung pada temperatur/tipe bintang inang dan radius orbit eksoplanet. Planet dengan <em>A</em> yang berada di luar rentang tersebut akan dianggap tidak layak huni oleh program HITE. Untuk saat ini, rentang albedo ini baru bisa dikalkulasi untuk planet yang mengorbit bintang tipe G atau M
-- <em>asumsi tentang eksentrisitas orbit yang ekstrem</em>*;
-- eksentrisitas orbit yang ekstrem dianggap menurunkan probabilitas kelayakhunian, sehingga planet dengan <em>e</em> di atas angka tertentu (ditentukan oleh luminositas bintang inang) probabilitas layak huninya diberi penalti dan urutannya cederung turun dalam indeks;</p>
+<p>That’s all that is needed to get started!</p>
 </div>
-<div class="section" id="daftar-isi">
-<h2>Daftar Isi<a class="headerlink" href="#daftar-isi" title="Permalink to this headline">¶</a></h2>
-<div class="toctree-wrapper compound">
-<ul>
-<li class="toctree-l1"><a class="reference internal" href="latar_belakang.html">Latar Belakang</a></li>
-<li class="toctree-l1"><a class="reference internal" href="algoritma.html">Algoritma</a></li>
-<li class="toctree-l1"><a class="reference internal" href="penjelasan_kode.html">Penjelasan Kode</a></li>
-<li class="toctree-l1"><a class="reference internal" href="tutorial.html">Tutorial</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lampiran.html">Lampiran: Skripsi Sunting Baru</a></li>
-<li class="toctree-l1"><a class="reference internal" href="contoh_jupyterbook_markdown.html">Contoh Jupyter Book Markdown</a></li>
-<li class="toctree-l1"><a class="reference internal" href="contoh_jupyterbook_ipynb.html">Content with notebooks</a></li>
-</ul>
+<div class="section" id="quickly-add-yaml-metadata-for-myst-notebooks">
+<h2>Quickly add YAML metadata for MyST Notebooks<a class="headerlink" href="#quickly-add-yaml-metadata-for-myst-notebooks" title="Permalink to this headline">¶</a></h2>
+<p>If you have a markdown file and you’d like to quickly add YAML metadata to it, so that Jupyter Book will treat it as a MyST Markdown Notebook, run the following command:</p>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="n">jupyter</span><span class="o">-</span><span class="n">book</span> <span class="n">myst</span> <span class="n">init</span> <span class="n">path</span><span class="o">/</span><span class="n">to</span><span class="o">/</span><span class="n">markdownfile</span><span class="o">.</span><span class="n">md</span>
+</pre></div>
 </div>
-<p><img alt="d4c17bfdecec68f5c2dfaa3d87c636ca.png" src="_images/d4c17bfdecec68f5c2dfaa3d87c636ca.png" /></p>
-<p><img alt="62fed7446fefc69ad087c21e7cc92834.png" src="_images/62fed7446fefc69ad087c21e7cc92834.png" /></p>
 </div>
 </div>
 
@@ -351,11 +369,18 @@ HITE orisinal melakukan ini dengan suatu algoritma <em>ad-hoc</em> yang hanya me
               
             
                 <!-- Previous / next buttons -->
-<div class='prev-next-area'>
-    <a class='right-next' id="next-link" href="latar_belakang.html" title="next page">
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="algoritma.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Algoritma</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="tutorial.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Latar Belakang</p>
+        <p class="prev-next-title">Tutorial</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
