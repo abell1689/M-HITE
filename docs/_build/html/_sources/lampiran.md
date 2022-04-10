@@ -1,1 +1,1 @@
-# lampiran: skripsi sunting baru
+# Lampiran: Skripsi Sunting Baru

@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>&lt;no title&gt; &#8212; Dokumentasi M-HITE</title>
+    <title>Algoritma &#8212; Dokumentasi M-HITE</title>
     
   <link href="_static/css/theme.css" rel="stylesheet">
   <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -52,7 +52,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Penjelasan Kode" href="penjelasan_kode.html" />
-    <link rel="prev" title="Selayang Pandang" href="latar_belakang.html" />
+    <link rel="prev" title="Latar Belakang" href="latar_belakang.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -96,10 +96,15 @@ const thebe_selector_output = ".output, .cell_output"
   </a>
  </li>
 </ul>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="latar_belakang.html">
-   Selayang Pandang
+   Latar Belakang
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Algoritma
   </a>
  </li>
  <li class="toctree-l1">
@@ -114,17 +119,12 @@ const thebe_selector_output = ".output, .cell_output"
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="lampiran.html">
-   lampiran: skripsi sunting baru
+   Lampiran: Skripsi Sunting Baru
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="contoh%20jp%20books%20markdown.html">
-   Here’s my sample title
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="contoh%20jp%20books%20ipynb.html">
-   Content with notebooks
+  <a class="reference internal" href="contoh_jupyterbook_markdown.html">
+   Contoh JP Books Markdown
   </a>
  </li>
 </ul>
@@ -209,14 +209,6 @@ const thebe_selector_output = ".output, .cell_output"
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show noprint">
             
-            <div class="tocsection onthispage pt-5 pb-3">
-                <i class="fas fa-list"></i> Contents
-            </div>
-            <nav id="bd-toc-nav" aria-label="Page">
-                <ul class="simple visible nav section-nav flex-column">
-</ul>
-
-            </nav>
         </div>
     </div>
 </div>
@@ -224,27 +216,22 @@ const thebe_selector_output = ".output, .cell_output"
         <div class="col-12 col-md-9 pl-md-3 pr-md-0">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1><no title></h1>
+                <h1>Algoritma</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
                         
-                        <div>
-                            <h2> Contents </h2>
-                        </div>
-                        <nav aria-label="Page">
-                            <ul class="simple visible nav section-nav flex-column">
-</ul>
-
-                        </nav>
                     </div>
                 </div>
             </div>
             
               <div>
                 
-  <p>program HITE orisinal, sesuai namanya, berfokus pada eksoplanet yang ditemukan melalui metode transit. Karena itu, HITE menggunakan beberapa variabel observasi yang hanya bisa didapat melalui metode tersebut untuk menghitung parameter-parameter seperti radius planet. Modifikasi pada M-HITE membuat sehingga nilai dari parameter-parameter ini tidak dihitung, tapi langsung diambil dari basis data <span class="xref myst">exoplanets.org</span>. Hal ini memungkinkan M-HITE untuk mengevaluasi probabilitas kelayakhunian dari planet-planet yang ditemukan melalui metode lain;
+  <div class="tex2jax_ignore mathjax_ignore section" id="algoritma">
+<h1>Algoritma<a class="headerlink" href="#algoritma" title="Permalink to this headline">¶</a></h1>
+<p>program HITE orisinal, sesuai namanya, berfokus pada eksoplanet yang ditemukan melalui metode transit. Karena itu, HITE menggunakan beberapa variabel observasi yang hanya bisa didapat melalui metode tersebut untuk menghitung parameter-parameter seperti radius planet. Modifikasi pada M-HITE membuat sehingga nilai dari parameter-parameter ini tidak dihitung, tapi langsung diambil dari basis data <span class="xref myst">exoplanets.org</span>. Hal ini memungkinkan M-HITE untuk mengevaluasi probabilitas kelayakhunian dari planet-planet yang ditemukan melalui metode lain;
 3) program HITE memerlukan data eksentrisitas (<em>e</em>) dan albedo planet (<em>A</em>) untuk menghitung probabilitas kelayakhunian <em>H (e, A)</em>. Pada HITE orisinal, kedua parameter ini dianggap tidak diketahui. Nilai <em>H (e, A)</em> dievaluasi menggunakan pasangan <em>e</em> dan <em>A</em> dalam rentang tertentu yang seragam.</p>
+</div>
 
     <script type="text/x-thebe-config">
     {
@@ -275,7 +262,7 @@ const thebe_selector_output = ".output, .cell_output"
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Selayang Pandang</p>
+            <p class="prev-next-title">Latar Belakang</p>
         </div>
     </a>
     <a class='right-next' id="next-link" href="penjelasan_kode.html" title="next page">
