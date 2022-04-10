@@ -2,12 +2,12 @@
 # Learn more at https://jupyterbook.org/customize/toc.html
 
 format: jb-book
-root: selayang pandang
+root: selayang_pandang
 chapters:
-- file: latar belakang
+- file: latar_belakang
 - file: algoritma
-- file: penjelasan program (per baris)
+- file: penjelasan_kode
 - file: tutorial
-- file: lampiran - skripsi sunting baru
+- file: lampiran
 - file: contoh jp books markdown
 - file: contoh jp books ipynb
