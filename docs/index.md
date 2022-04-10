@@ -9,14 +9,14 @@
 ## Modifikasi
 **Program yang cara kerjanya** akan dijelaskan di sini adalah HITE Termodifikasi/**_Modified HITE_** **(M-HITE)**. Berikut adalah modifikasi yang telah dilakukan terhadap program HITE sehingga menjadi M-HITE:
 1) **program telah ditulis ulang**, dari C ke Python;
-2) **pengubahan data masukan (penggunaan basis data [exoplanets.org](exoplanets.org))**;
-		Ada besaran-besaran yang pada HITE orisinal dihitung dari variabel observasi (seperti radius planet yang dihitung dari [transit]). Pada M-HITE, besaran-besaran ini tidak dihitung, tetapi langsung diambil dari basis data [exoplanets.org](exoplanets.org). Hal ini memungkinkan M-HITE untuk mengevaluasi probabilitas kelayakhunian dari planet-planet yang ditemukan melalui metode lain selain metode transit
+2) **pengubahan data masukan (penggunaan basis data [exoplanets.org](https://www.exoplanets.org))**;
+		Ada besaran-besaran yang pada HITE orisinal dihitung dari variabel observasi (seperti radius planet yang dihitung dari [transit]). Pada M-HITE, besaran-besaran ini tidak dihitung, tetapi langsung diambil dari basis data [exoplanets.org](https://www.exoplanets.org). Hal ini memungkinkan M-HITE untuk mengevaluasi probabilitas kelayakhunian dari planet-planet yang ditemukan melalui metode lain selain metode transit
 Contoh: Eksentrisitas planet TRAPPIST-1 e
 | M-HITE           | M-HITE |
 |:----------------:|:------:|
 | 0,05 ≤ _A_ ≤ 0,8 |        |
 
-Rentang parameter eksentrisitas orbit (_e_) dan albedo planet (_A_) yang digunakan untuk menghitung probabilitas layak huni _H (e, A)_ pada HITE orisinal disamakan untuk semua planet. Pada M-HITE, ini diganti dengan rentang ketidakpastian _e_ dan _A_ masing-masing planet yang juga diambil dari [exoplanets.org](exoplanets.org)
+Rentang parameter eksentrisitas orbit (_e_) dan albedo planet (_A_) yang digunakan untuk menghitung probabilitas layak huni _H (e, A)_ pada HITE orisinal disamakan untuk semua planet. Pada M-HITE, ini diganti dengan rentang ketidakpastian _e_ dan _A_ masing-masing planet yang juga diambil dari [exoplanets.org](http://www.exoplanets.org)
 Contoh:  
 3) **pengubahan metode kalkulasi keterestrialan planet**;  
 		HITE orisinal melakukan ini dengan suatu algoritma _ad-hoc_ yang hanya mempertimbangkan radius planet sebagai masukan. M-HITE mengganti metode ini dengan pemodelan komposisi planet berdasarkan radius dan massa yang dikembangkan oleh Zeng & Sasselov (2013);
