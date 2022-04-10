@@ -16,7 +16,7 @@ Contoh: Eksentrisitas planet TRAPPIST-1 e
 |:----------------:|:------:|
 | 0,05 ≤ _A_ ≤ 0,8 |        |
 
-Rentang parameter eksentrisitas orbit (_e_) dan albedo planet (_A_) yang digunakan untuk menghitung probabilitas layak huni _H (e, A)_ pada HITE orisinal disamakan untuk semua planet. Pada M-HITE, ini diganti dengan rentang ketidakpastian _e_ dan _A_ masing-masing planet yang juga diambil dari [exoplanets.org](exoplanets.org)
+Rentang parameter eksentrisitas orbit (_e_) dan albedo planet (_A_) yang digunakan untuk menghitung probabilitas layak huni _H (e, A)_ pada HITE orisinal disamakan untuk semua planet. Pada M-HITE, ini diganti dengan rentang ketidakpastian _e_ dan _A_ masing-masing planet yang juga diambil dari [exoplanets.org](http://www.exoplanets.org)
 Contoh:  
 3) **pengubahan metode kalkulasi keterestrialan planet**;  
 		HITE orisinal melakukan ini dengan suatu algoritma _ad-hoc_ yang hanya mempertimbangkan radius planet sebagai masukan. M-HITE mengganti metode ini dengan pemodelan komposisi planet berdasarkan radius dan massa yang dikembangkan oleh Zeng & Sasselov (2013);
