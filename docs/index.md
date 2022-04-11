@@ -1,5 +1,6 @@
-# Selayang Pandang 
-## Apa itu HITE?
+# Dokumentasi M-HITE 
+## Selayang Pandang
+### Apa itu HITE?
 **HITE (_Habitability Index for Transiting Exoplanets_) adalah** indeks/daftar yang mengurutkan eksoplanet menurut probabilitas kelayakhuniannya. Probabilitas ini didefinisikan sebagai kemungkinan planet tersebut: **a) mempunyai permukaan padat**, dan **b) memiliki air berfase cair di permukaannya**. Indeks ini bertujuan untuk menentukan prioritas pengamatan eksoplanet, sehingga sumber daya riset keplanetan luar surya yang terbatas dapat diarahkan untuk mengamati lebih lanjut planet-planet yang ‘menarik secara ilmiah’.
 
 :::{admonition} **Catatan tentang lisensi**
@@ -27,7 +28,7 @@ Contoh:
     - eksentrisitas orbit yang ekstrem dianggap menurunkan probabilitas kelayakhunian, sehingga planet dengan _e_ di atas angka tertentu (ditentukan oleh luminositas bintang inang) probabilitas layak huninya diberi penalti dan urutannya cederung turun dalam indeks;
 
 
-## Daftar Isi
+### Daftar Isi
 ```{tableofcontents}
 ```
 
