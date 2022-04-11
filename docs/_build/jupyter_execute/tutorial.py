@@ -53,7 +53,7 @@ MJUP       = 1.8982e27
 AU         = 1.496e11
 
 
-# In[18]:
+# In[3]:
 
 
 #### Define functions
@@ -135,7 +135,7 @@ def fpRocky (mPlanet,rPlanet,exoName):
     return pRocky
 
 
-# In[10]:
+# In[4]:
 
 
 ### Import exoplanet data from CSV into a pandas dataframe
@@ -149,7 +149,7 @@ exoList = pd.DataFrame(exo, columns=['NAME'])
 exoList = exoList['NAME'].values.tolist()
 
 
-# In[11]:
+# In[5]:
 
 
 ### Import CSV of Zeng & Sasselov boundaries
@@ -163,7 +163,7 @@ zsList = pd.DataFrame(zs, columns=['SORT'])
 zsList = zsList['SORT'].values.tolist()
 
 
-# In[12]:
+# In[6]:
 
 
 habIndexList = []
@@ -303,13 +303,13 @@ for exoName in exoList:
     
 
 
-# In[60]:
+# In[7]:
 
 
 print(habIndexList)
 
 
-# In[61]:
+# In[8]:
 
 
 with open('out.txt','w') as f:
