@@ -1,0 +1,108 @@
+{
+  "main": {
+    "id": "d81d402da9c7ea41",
+    "type": "split",
+    "children": [
+      {
+        "id": "b5801235e18a8f3f",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "docs/algoritma.md",
+            "mode": "source",
+            "source": false
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "3caa5de9becb2ebb",
+    "type": "split",
+    "children": [
+      {
+        "id": "960b97a3218a9094",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "98f75e68aa00136f",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "b25f5fd1dced2fd6",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "right": {
+    "id": "9126c98d1c850e88",
+    "type": "split",
+    "children": [
+      {
+        "id": "3d0581fe5c480cab",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e8ada8a5a6bae3c5",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "docs/algoritma.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "a157eae48c5da890",
+            "type": "leaf",
+            "state": {
+              "type": "stats-tracker",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "b5801235e18a8f3f",
+  "lastOpenFiles": [
+    "docs/algoritma.md",
+    "docs/index.md",
+    "docs/penjelasan_program.md",
+    "docs/modifikasi.md",
+    "docs/latar_belakang.md",
+    "docs/lampiran.md"
+  ]
+}

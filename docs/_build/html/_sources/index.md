@@ -36,11 +36,11 @@ Contoh:
 
 
 
-![d4c17bfdecec68f5c2dfaa3d87c636ca.png](d4c17bfdecec68f5c2dfaa3d87c636ca.png)
+![d4c17bfdecec68f5c2dfaa3d87c636ca.png](misc/d4c17bfdecec68f5c2dfaa3d87c636ca.png)
 
 
 
 
 
 
-![62fed7446fefc69ad087c21e7cc92834.png](62fed7446fefc69ad087c21e7cc92834.png)
+![62fed7446fefc69ad087c21e7cc92834.png](misc/62fed7446fefc69ad087c21e7cc92834.png)

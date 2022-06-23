@@ -1,1 +1,3 @@
-# Lampiran: Skripsi Sunting Baru
+# Lampiran
+
+## Daftar Pustaka
