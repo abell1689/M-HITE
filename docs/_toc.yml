@@ -4,7 +4,6 @@
 format: jb-book
 root: index
 chapters:
-- file: latar_belakang
 - file: HITE_orisinal
 - file: modifikasi
 - file: tutorial
