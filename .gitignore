@@ -1,3 +1,6 @@
 
 .ztr-directory
 *.lnk
+.obsidian/plugins/obsidian-daily-stats/data.json
+.obsidian/core-plugins.json
+.obsidian/workspace

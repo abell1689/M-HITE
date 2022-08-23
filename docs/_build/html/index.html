@@ -102,13 +102,13 @@ const thebe_selector_output = ".output, .cell_output"
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="algoritma.html">
-   Algoritma
+  <a class="reference internal" href="HITE_orisinal.html">
+   HITE Orisinal
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="penjelasan_kode.html">
-   Penjelasan Kode
+  <a class="reference internal" href="modifikasi.html">
+   Modifikasi
   </a>
  </li>
  <li class="toctree-l1">
@@ -117,8 +117,13 @@ const thebe_selector_output = ".output, .cell_output"
   </a>
  </li>
  <li class="toctree-l1">
+  <a class="reference internal" href="live_sandbox.html">
+   Tutorial
+  </a>
+ </li>
+ <li class="toctree-l1">
   <a class="reference internal" href="lampiran.html">
-   Lampiran: Skripsi Sunting Baru
+   Lampiran
   </a>
  </li>
 </ul>
@@ -221,8 +226,13 @@ const thebe_selector_output = ".output, .cell_output"
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#modifikasi">
-   Modifikasi
+  <a class="reference internal nav-link" href="#hite-termodifikasi">
+   HITE Termodifikasi
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#catatan-tentang-dokumentasi-ini">
+   Catatan tentang dokumentasi ini
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
@@ -265,8 +275,13 @@ const thebe_selector_output = ".output, .cell_output"
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#modifikasi">
-   Modifikasi
+  <a class="reference internal nav-link" href="#hite-termodifikasi">
+   HITE Termodifikasi
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#catatan-tentang-dokumentasi-ini">
+   Catatan tentang dokumentasi ini
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
@@ -291,47 +306,41 @@ const thebe_selector_output = ".output, .cell_output"
 <h2>Selayang Pandang<a class="headerlink" href="#selayang-pandang" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="apa-itu-hite">
 <h3>Apa itu HITE?<a class="headerlink" href="#apa-itu-hite" title="Permalink to this headline">¶</a></h3>
-<p><strong>HITE (<em>Habitability Index for Transiting Exoplanets</em>) adalah</strong> indeks/daftar yang mengurutkan eksoplanet menurut probabilitas kelayakhuniannya. Probabilitas ini didefinisikan sebagai kemungkinan planet tersebut: <strong>a) mempunyai permukaan padat</strong>, dan <strong>b) memiliki air berfase cair di permukaannya</strong>. Indeks ini bertujuan untuk menentukan prioritas pengamatan eksoplanet, sehingga sumber daya riset keplanetan luar surya yang terbatas dapat diarahkan untuk mengamati lebih lanjut planet-planet yang ‘menarik secara ilmiah’.</p>
+<p><strong>HITE (<em>Habitability Index for Transiting Exoplanets</em>) adalah</strong> indeks yang melambangkan probabilitas kelayakhunian eksoplanet.</p>
+<p>Probabilitas ini didefinisikan sebagai kemungkinan planet tersebut:
+<strong>a) mempunyai permukaan padat</strong>; dan
+<strong>b) memiliki air berfase cair di permukaannya</strong>.</p>
+<p>Nilainya memiliki rentang antara 1 (sangat berpotensi layak hidup) sampai 0 (sangat tidak berpotensi).
+Indeks ini bertujuan untuk menentukan prioritas pengamatan eksoplanet, sehingga sumber daya riset keplanetan luar surya yang terbatas dapat diarahkan untuk mengamati lebih lanjut planet-planet yang ‘menarik secara ilmiah’.</p>
+</div>
+</div>
+<div class="section" id="hite-termodifikasi">
+<h2>HITE Termodifikasi<a class="headerlink" href="#hite-termodifikasi" title="Permalink to this headline">¶</a></h2>
+<p><strong>Program yang cara kerjanya</strong> akan dijelaskan di sini adalah HITE Termodifikasi/<strong><em>Modified HITE</em></strong> <strong>(M-HITE)</strong>. Untuk penjelasan tentang modifikasi yang dilakukan, lihat subbab Modifikasi pada bagian <span class="xref std std-doc">algoritma</span>.</p>
+</div>
+<div class="section" id="catatan-tentang-dokumentasi-ini">
+<h2>Catatan tentang dokumentasi ini<a class="headerlink" href="#catatan-tentang-dokumentasi-ini" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Dokumentasi ini menggunakan tanda koma sebagai penanda desimal, kecuali dalam kode/program.</p></li>
+<li><p>Dokumentasi ini lebih [well-written] daripada skripsi penulis tentang M-HITE yang tersimpan di <em>repository</em> IPB. Jika ada perbedaan antara skripsi dengan yang ada di sini, apa yang ada di dokumentasi ini [overwrite] yang ada di skripsi.</p></li>
+<li><p>Dokumentasi ini lebih berfokus pada penjelasan modifikasi yang dilakukan pada HITE sehingga menjadi M-HITE, serta penjelasan program Python dari M-HITE. Untuk penjelasan lebih lanjut mengenai HITE orisinal, silakan membaca <em>paper</em> [Barnes <em>et al</em>. 2015].</p></li>
+</ul>
 <div class="admonition-catatan-tentang-lisensi admonition">
 <p class="admonition-title"><strong>Catatan tentang lisensi</strong></p>
-<p><strong>HITE disusun oleh <a class="reference external" href="https://github.com/RoryBarnes/HITE">Rory Barnes</a></strong> dari University of Washington. Program HITE dibagikan dengan lisensi GNU General Public License v3.0 yang memperbolehkan penggunaan dan perubahan terhadap program tersebut secara bebas. Info lebih lanjut tentang lisensinya bisa diperoleh <a class="reference external" href="https://github.com/RoryBarnes/HITE/blob/master/LICENSE">di sini</a>. Sesuai ketentuan lisensi tersebut, modifikasi dari program HITE ini juga dibagikan dengan lisensi yang sama.</p>
+<p><strong>HITE orisinal disusun oleh <a class="reference external" href="https://github.com/RoryBarnes/HITE">Rory Barnes</a></strong> dari University of Washington. Program HITE dibagikan dengan lisensi GNU General Public License v3.0 yang memperbolehkan penggunaan dan perubahan terhadap program tersebut secara bebas. Info lebih lanjut tentang lisensinya bisa diperoleh <a class="reference external" href="https://github.com/RoryBarnes/HITE/blob/master/LICENSE">di sini</a>. Sesuai ketentuan lisensi tersebut, modifikasi dari program HITE ini juga dibagikan dengan lisensi yang sama.</p>
 </div>
-</div>
-</div>
-<div class="section" id="modifikasi">
-<h2>Modifikasi<a class="headerlink" href="#modifikasi" title="Permalink to this headline">¶</a></h2>
-<p><strong>Program yang cara kerjanya</strong> akan dijelaskan di sini adalah HITE Termodifikasi/<strong><em>Modified HITE</em></strong> <strong>(M-HITE)</strong>. Berikut adalah modifikasi yang telah dilakukan terhadap program HITE sehingga menjadi M-HITE:</p>
-<ol class="simple">
-<li><p><strong>program telah ditulis ulang</strong>, dari C ke Python;</p></li>
-<li><p><strong>pengubahan data masukan (penggunaan basis data <a class="reference external" href="https://www.exoplanets.org">exoplanets.org</a>)</strong>;
-Ada besaran-besaran yang pada HITE orisinal dihitung dari variabel observasi (seperti radius planet yang dihitung dari [transit]). Pada M-HITE, besaran-besaran ini tidak dihitung, tetapi langsung diambil dari basis data <a class="reference external" href="https://www.exoplanets.org">exoplanets.org</a>. Hal ini memungkinkan M-HITE untuk mengevaluasi probabilitas kelayakhunian dari planet-planet yang ditemukan melalui metode lain selain metode transit
-Contoh: Eksentrisitas planet TRAPPIST-1 e
-| M-HITE           | M-HITE |
-|:—————-:|:——:|
-| 0,05 ≤ <em>A</em> ≤ 0,8 |        |</p></li>
-</ol>
-<p>Rentang parameter eksentrisitas orbit (<em>e</em>) dan albedo planet (<em>A</em>) yang digunakan untuk menghitung probabilitas layak huni <em>H (e, A)</em> pada HITE orisinal disamakan untuk semua planet. Pada M-HITE, ini diganti dengan rentang ketidakpastian <em>e</em> dan <em>A</em> masing-masing planet yang juga diambil dari <a class="reference external" href="http://www.exoplanets.org">exoplanets.org</a>
-Contoh:<br />
-3) <strong>pengubahan metode kalkulasi keterestrialan planet</strong>;<br />
-HITE orisinal melakukan ini dengan suatu algoritma <em>ad-hoc</em> yang hanya mempertimbangkan radius planet sebagai masukan. M-HITE mengganti metode ini dengan pemodelan komposisi planet berdasarkan radius dan massa yang dikembangkan oleh Zeng &amp; Sasselov (2013);
-4) <strong>penambahan filter/syarat kelayakhunian</strong>
-- asumsi tentang albedo planet terestrial;
-- Diasumsikan bahwa ada rentang nilai albedo planet yang menandakan kecenderungan lebih tinggi untuk bersifat layak huni. Rentang ini tergantung pada temperatur/tipe bintang inang dan radius orbit eksoplanet. Planet dengan <em>A</em> yang berada di luar rentang tersebut akan dianggap tidak layak huni oleh program HITE. Untuk saat ini, rentang albedo ini baru bisa dikalkulasi untuk planet yang mengorbit bintang tipe G atau M
-- <em>asumsi tentang eksentrisitas orbit yang ekstrem</em>*;
-- eksentrisitas orbit yang ekstrem dianggap menurunkan probabilitas kelayakhunian, sehingga planet dengan <em>e</em> di atas angka tertentu (ditentukan oleh luminositas bintang inang) probabilitas layak huninya diberi penalti dan urutannya cederung turun dalam indeks;</p>
 <div class="section" id="daftar-isi">
 <h3>Daftar Isi<a class="headerlink" href="#daftar-isi" title="Permalink to this headline">¶</a></h3>
 <div class="toctree-wrapper compound">
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="latar_belakang.html">Latar Belakang</a></li>
-<li class="toctree-l1"><a class="reference internal" href="algoritma.html">Algoritma</a></li>
-<li class="toctree-l1"><a class="reference internal" href="penjelasan_kode.html">Penjelasan Kode</a></li>
+<li class="toctree-l1"><a class="reference internal" href="HITE_orisinal.html">HITE Orisinal</a></li>
+<li class="toctree-l1"><a class="reference internal" href="modifikasi.html">Modifikasi</a></li>
 <li class="toctree-l1"><a class="reference internal" href="tutorial.html">Tutorial</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lampiran.html">Lampiran: Skripsi Sunting Baru</a></li>
+<li class="toctree-l1"><a class="reference internal" href="live_sandbox.html">Tutorial</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lampiran.html">Lampiran</a></li>
 </ul>
 </div>
-<p><img alt="d4c17bfdecec68f5c2dfaa3d87c636ca.png" src="_images/d4c17bfdecec68f5c2dfaa3d87c636ca.png" /></p>
-<p><img alt="62fed7446fefc69ad087c21e7cc92834.png" src="_images/62fed7446fefc69ad087c21e7cc92834.png" /></p>
 </div>
 </div>
 </div>
