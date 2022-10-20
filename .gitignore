@@ -4,3 +4,7 @@
 .obsidian/plugins/obsidian-daily-stats/data.json
 .obsidian/core-plugins.json
 .obsidian/workspace
+.obsidian/app.json
+.obsidian/appearance.json
+.obsidian/workspace.json
+.obsidian/hotkeys.json

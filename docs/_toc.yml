@@ -4,8 +4,9 @@
 format: jb-book
 root: index
 chapters:
-- file: HITE_orisinal
-- file: modifikasi
-- file: tutorial
-- file: live_sandbox
-- file: lampiran
+- file: 1_latar_belakang
+- file: 2_perincian_algoritma
+- file: 3_perincian_kode
+- file: 4_live_sandbox
+- file: 5_lampiran_a_daftar_pustaka
+- file: 6_lampiran_b_kode_HITE_orisinal

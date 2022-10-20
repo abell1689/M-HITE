@@ -1,0 +1,4 @@
+0.48	0.03	0.03	0.03	Hellier 2013	http://adsabs.harvard.edu/abs/2014MNRAS.440.1982H
+
+
+1.2	0.06	0.06	0.06	Hellier 2013	http://adsabs.harvard.edu/abs/2014MNRAS.440.1982H
