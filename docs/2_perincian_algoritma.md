@@ -1,8 +1,8 @@
 \begin{align}
 P_{ter}(R)=
 \begin{cases}
-0, & R <= 1 \\
-(2.5-R), & 1.5 < R < 2.5 \\
+0, & R <= 1 \\\
+(2.5-R), & 1.5 < R < 2.5 \\\
 1, & R >= 2.5.
 \end{cases}
 \end{align}
