@@ -26,6 +26,7 @@
 /* set body to use Gentium Plus */
 body {
   font-family: GentiumPlusW, sans-serif;
+  font-size: xx-large;
     /* fall back to sans serif so that it's really obvious if the fonts don't load */
 }
 
@@ -58,9 +59,4 @@ h5 {
 h6 {
 	font-family: "GentiumPlusW", Times, serif;
   font-weight: bold;	
-}
-
-p {
-  font-family: "GentiumPlusW", Times, serif;
-  font-size: xx-large;
 }
