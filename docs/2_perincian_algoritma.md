@@ -10,6 +10,7 @@ a_{21}& =b_{21}&
   a_{22}& =b_{22}+c_{22}
 \end{align}
 
+\begin{document}
 \begin{equation}
 P_{ter}(R)=
 \begin{cases}
@@ -18,6 +19,7 @@ P_{ter}(R)=
 1, & R >= 2.5.
 \end{cases}
 \end{equation}
+\end{document}
 
 # Perincian Algoritma
 Laman ini memuat perincian algoritma yang dipakai dalam menentukan nilai indeks HITE bagi suatu eksoplanet, serta modifikasi yang dilakukan terhadap algoritma tersebut sehingga menjadi HITE termodifikasi (M-HITE)
