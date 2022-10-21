@@ -33,24 +33,6 @@ launch_buttons:
   # colab_url: "https://colab.research.google.com"
   thebe                  : true
 
-# MyST
-myst_enable_extensions = [
-    "amsmath",
-    "colon_fence",
-    "deflist",
-    "dollarmath",
-    "fieldlist",
-    "html_admonition",
-    "html_image",
-    "linkify",
-    "replacements",
-    "smartquotes",
-    "strikethrough",
-    "substitution",
-    "tasklist",
-]
-
-
   #######################################################################################
 # HTML-specific settings
 html:
