@@ -23,7 +23,7 @@
 }
 
 :root {
-	--pst-font-size-base: 24px;
+	/*--pst-font-size-base: 24px;*/
 	--pst-font-family-base: "et-book", Times, serif;
   --pst-font-family-heading: "et-book", Times, serif;
 
@@ -35,5 +35,6 @@
 
 
 body {
-	text-align: justify;	
+	text-align: justify;
+	text-size: 24px;	
 }
