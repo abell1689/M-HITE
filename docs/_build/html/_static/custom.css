@@ -27,9 +27,14 @@
     --pst-font-family-base: "et-book", Times, serif;
     --pst-font-family-heading: "et-book", Times, serif;
     --sbt-header-article-font-size: 4rem;
+
+	  --pst-sidebar-font-size: 0.9em;
+  	--pst-sidebar-font-size-mobile: 1.2em;
+  	--pst-sidebar-header-font-size: 1.2em;
+  	--pst-sidebar-header-font-weight: 600;    
 }
 
 
-.toc-h2 {
-  font-size: 2.5rem;
+body {
+	text-align: justify;	
 }
