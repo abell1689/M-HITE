@@ -26,12 +26,34 @@
 	--pst-font-family-base: "et-book", Times, serif;
   --pst-font-family-heading: "et-book", Times, serif;
 
-	--pst-sidebar-font-size: 0.9em;
+	--pst-sidebar-font-size: 1.2em;
 	--pst-sidebar-font-size-mobile: 1.2em;
 	--pst-sidebar-header-font-size: 1.2em;
-	--pst-sidebar-header-font-weight: 600;    
+	--pst-sidebar-header-font-weight: 600;
+
+	--pst-font-size-h1:1.25rem ;
+	--pst-font-size-h2:1.5rem ;
+	--pst-font-size-h3:1.75rem ;
+	--pst-font-size-h4:2rem ;
+	--pst-font-size-h5:2.25rem ;
+	--pst-font-size-h6:2.6rem ;
+
+
+	--sbt-header-article-font-size: 1.2em;    
 }
 
+#site-navigation h1.site-logo {
+ margin:.5em 0 0;
+ font-size:1.3em;
+ color:#000;
+ text-align:center
+}
+#site-navigation div.navbar_extra_footer {
+ text-align:center;
+ font-size:1.1em;
+ color:#5a5a5a;
+ margin-bottom:3em
+}
 
 body {
 	text-align: justify;
@@ -39,4 +61,8 @@ body {
 
 p {
 	font-size: 24px;
+}
+
+div.toctree-wrapper>ul>li>a {
+ font-size:1.1em
 }
