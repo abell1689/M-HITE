@@ -26,7 +26,7 @@
 /* set body to use Gentium Plus */
 body {
   font-family: GentiumPlusW, sans-serif;
-  font-size: xx-large;
+  font-size: 24px;
     /* fall back to sans serif so that it's really obvious if the fonts don't load */
 }
 
