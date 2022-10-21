@@ -31,13 +31,14 @@ Syarat ini didasarkan pada argumen bahwa air berfase cair merupakan komponen pen
 #### Orisinal
 Probabilitas suatu planet bersifat terestrial diestimasi melalui model berikut ini, yang hanya menggunakan radius relatif sebagai masukan:
 
-/begin
-
-
-$$P_ter (R)={("1" ,R≤"1,5" @("2,5" -R),"1,5" <R<"2,5" @"0" ,R≥"2,5" .)}$$
-
-
-
+\begin{equation}
+  P_{ter}(R)=
+  \begin{cases}
+    0, & R <= 1 \\
+    (2.5-R), & 1.5 < R < 2.5 \\
+    1, & R >= 2.5.
+  \end{cases}
+\end{equation}
 
 $R$ adalah radius relatif, perbandingan antara radius planet $(R_p)$ dengan radius Bumi ($R_⊕$):
 

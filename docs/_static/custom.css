@@ -35,5 +35,8 @@
 
 body {
 	text-align: justify;
-	text-size: 24px;
+}
+
+p {
+	text-size: 1.5em;
 }
