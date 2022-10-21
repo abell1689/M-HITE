@@ -414,19 +414,13 @@ const thebe_selector_output = ".output, .cell_output"
             
               <div>
                 
-  <p>\begin{gather*}
-a_1=b_1+c_1\
-a_2=b_2+c_2-d_2+e_2
-\end{gather*}</p>
-<p>\begin{align}
-a_{11}&amp; =b_{11}&amp;
-a_{12}&amp; =b_{12}\
-a_{21}&amp; =b_{21}&amp;
-a_{22}&amp; =b_{22}+c_{22}
-\end{align}</p>
-<div class="tex2jax_ignore mathjax_ignore section" id="perincian-algoritma">
+  <div class="tex2jax_ignore mathjax_ignore section" id="perincian-algoritma">
 <h1>Perincian Algoritma<a class="headerlink" href="#perincian-algoritma" title="Permalink to this headline">¶</a></h1>
-<p>Laman ini memuat perincian algoritma yang dipakai dalam menentukan nilai indeks HITE bagi suatu eksoplanet, serta modifikasi yang dilakukan terhadap algoritma tersebut sehingga menjadi HITE termodifikasi (M-HITE)</p>
+<p>Laman ini memuat:</p>
+<ol class="simple">
+<li><p>perincian algoritma yang dipakai dalam menentukan nilai indeks HITE bagi suatu eksoplanet;</p></li>
+<li><p>perincian terhadap modifikasi yang dilakukan terhadap algoritma tersebut sehingga menjadi HITE termodifikasi (M‑HITE).</p></li>
+</ol>
 <div class="section" id="asumsi">
 <h2>Asumsi<a class="headerlink" href="#asumsi" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="layak-huni">
@@ -471,8 +465,14 @@ Upaya untuk membayangkan bentuk kehidupan alternatif seperti itu merupakan bidan
 <div class="section" id="id1">
 <h4>Orisinal<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h4>
 <p>Probabilitas suatu planet bersifat terestrial diestimasi melalui model berikut ini, yang hanya menggunakan radius relatif sebagai masukan:</p>
-<div class="math notranslate nohighlight">
-\[P_ter (R)={(&quot;1&quot; ,R≤&quot;1,5&quot; &#64;(&quot;2,5&quot; -R),&quot;1,5&quot; &lt;R&lt;&quot;2,5&quot; &#64;&quot;0&quot; ,R≥&quot;2,5&quot; .)}\]</div>
+<p>\begin{equation}
+P_{ter}(R)=
+\begin{cases}
+0, &amp; R &lt;= 1 \
+(2.5-R), &amp; 1.5 &lt; R &lt; 2.5 \
+1, &amp; R &gt;= 2.5.
+\end{cases}
+\end{equation}</p>
 <p><span class="math notranslate nohighlight">\(R\)</span> adalah radius relatif, perbandingan antara radius planet <span class="math notranslate nohighlight">\((R_p)\)</span> dengan radius Bumi (<span class="math notranslate nohighlight">\(R_⊕\)</span>):</p>
 </div>
 </div>
