@@ -1,0 +1,58 @@
+Traceback (most recent call last):
+  File "C:\Users\Zulfa\miniconda3\lib\site-packages\jupyter_cache\executors\utils.py", line 51, in single_nb_execution
+    executenb(
+  File "C:\Users\Zulfa\miniconda3\lib\site-packages\nbclient\client.py", line 1204, in execute
+    return NotebookClient(nb=nb, resources=resources, km=km, **kwargs).execute()
+  File "C:\Users\Zulfa\miniconda3\lib\site-packages\nbclient\util.py", line 84, in wrapped
+    return just_run(coro(*args, **kwargs))
+  File "C:\Users\Zulfa\miniconda3\lib\site-packages\nbclient\util.py", line 62, in just_run
+    return loop.run_until_complete(coro)
+  File "C:\Users\Zulfa\miniconda3\lib\asyncio\base_events.py", line 642, in run_until_complete
+    return future.result()
+  File "C:\Users\Zulfa\miniconda3\lib\site-packages\nbclient\client.py", line 663, in async_execute
+    await self.async_execute_cell(
+  File "C:\Users\Zulfa\miniconda3\lib\site-packages\nbclient\client.py", line 965, in async_execute_cell
+    await self._check_raise_for_error(cell, cell_index, exec_reply)
+  File "C:\Users\Zulfa\miniconda3\lib\site-packages\nbclient\client.py", line 862, in _check_raise_for_error
+    raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
+nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
+------------------
+### Import CSV of Zeng & Sasselov boundaries
+zs = pd.read_csv (r'zeng-sasselov_boundaries.csv')
+
+### Set index using the SORT column
+zs = zs.set_index("SORT", drop = False)
+
+### Extract the column "SORT" as a list (to be used as a calling list)
+zsList = pd.DataFrame(zs, columns=['SORT'])
+zsList = zsList['SORT'].values.tolist()
+------------------
+
+[1;31m---------------------------------------------------------------------------[0m
+[1;31mKeyError[0m                                  Traceback (most recent call last)
+Input [1;32mIn [5][0m, in [0;36m<cell line: 5>[1;34m()[0m
+[0;32m      2[0m zs [38;5;241m=[39m pd[38;5;241m.[39mread_csv ([38;5;124mr[39m[38;5;124m'[39m[38;5;124mzeng-sasselov_boundaries.csv[39m[38;5;124m'[39m)
+[0;32m      4[0m [38;5;66;03m### Set index using the SORT column[39;00m
+[1;32m----> 5[0m zs [38;5;241m=[39m [43mzs[49m[38;5;241;43m.[39;49m[43mset_index[49m[43m([49m[38;5;124;43m"[39;49m[38;5;124;43mSORT[39;49m[38;5;124;43m"[39;49m[43m,[49m[43m [49m[43mdrop[49m[43m [49m[38;5;241;43m=[39;49m[43m [49m[38;5;28;43;01mFalse[39;49;00m[43m)[49m
+[0;32m      7[0m [38;5;66;03m### Extract the column "SORT" as a list (to be used as a calling list)[39;00m
+[0;32m      8[0m zsList [38;5;241m=[39m pd[38;5;241m.[39mDataFrame(zs, columns[38;5;241m=[39m[[38;5;124m'[39m[38;5;124mSORT[39m[38;5;124m'[39m])
+
+File [1;32m~\miniconda3\lib\site-packages\pandas\util\_decorators.py:311[0m, in [0;36mdeprecate_nonkeyword_arguments.<locals>.decorate.<locals>.wrapper[1;34m(*args, **kwargs)[0m
+[0;32m    305[0m [38;5;28;01mif[39;00m [38;5;28mlen[39m(args) [38;5;241m>[39m num_allow_args:
+[0;32m    306[0m     warnings[38;5;241m.[39mwarn(
+[0;32m    307[0m         msg[38;5;241m.[39mformat(arguments[38;5;241m=[39marguments),
+[0;32m    308[0m         [38;5;167;01mFutureWarning[39;00m,
+[0;32m    309[0m         stacklevel[38;5;241m=[39mstacklevel,
+[0;32m    310[0m     )
+[1;32m--> 311[0m [38;5;28;01mreturn[39;00m func([38;5;241m*[39margs, [38;5;241m*[39m[38;5;241m*[39mkwargs)
+
+File [1;32m~\miniconda3\lib\site-packages\pandas\core\frame.py:5488[0m, in [0;36mDataFrame.set_index[1;34m(self, keys, drop, append, inplace, verify_integrity)[0m
+[0;32m   5485[0m                 missing[38;5;241m.[39mappend(col)
+[0;32m   5487[0m [38;5;28;01mif[39;00m missing:
+[1;32m-> 5488[0m     [38;5;28;01mraise[39;00m [38;5;167;01mKeyError[39;00m([38;5;124mf[39m[38;5;124m"[39m[38;5;124mNone of [39m[38;5;132;01m{[39;00mmissing[38;5;132;01m}[39;00m[38;5;124m are in the columns[39m[38;5;124m"[39m)
+[0;32m   5490[0m [38;5;28;01mif[39;00m inplace:
+[0;32m   5491[0m     frame [38;5;241m=[39m [38;5;28mself[39m
+
+[1;31mKeyError[0m: "None of ['SORT'] are in the columns"
+KeyError: "None of ['SORT'] are in the columns"
+

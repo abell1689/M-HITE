@@ -1,7 +1,6 @@
-# Dokumentasi M-HITE 
-## Selayang Pandang
-### Apa itu HITE?
-**HITE (_Habitability Index for Transiting Exoplanets_) adalah** indeks yang melambangkan probabilitas kelayakhunian eksoplanet.
+# Selayang Pandang 
+## Apa itu HITE?
+**HITE (_Habitability Index for Transiting Exoplanets_) adalah** indeks yang merepresentasikan probabilitas kelayakhunian eksoplanet.
 
 Probabilitas ini didefinisikan sebagai kemungkinan planet tersebut:
 **a) mempunyai permukaan padat**; dan 
@@ -10,14 +9,12 @@ Probabilitas ini didefinisikan sebagai kemungkinan planet tersebut:
 Nilainya memiliki rentang antara 1 (sangat berpotensi layak hidup) sampai 0 (sangat tidak berpotensi). 
 Indeks ini bertujuan untuk menentukan prioritas pengamatan eksoplanet, sehingga sumber daya riset keplanetan luar surya yang terbatas dapat diarahkan untuk mengamati lebih lanjut planet-planet yang ‘menarik secara ilmiah’.
 
-
-
-## HITE Termodifikasi
-**Program yang cara kerjanya** akan dijelaskan di sini adalah HITE Termodifikasi/**_Modified HITE_** **(M-HITE)**. Untuk penjelasan tentang modifikasi yang dilakukan, lihat subbab Modifikasi pada bagian {doc}`algoritma`.
+## HITE Termodifikasi (M-HITE)
+**Program yang cara kerjanya** akan dijelaskan di sini adalah HITE Termodifikasi/**_Modified HITE_** **(M-HITE)**. Untuk penjelasan tentang modifikasi yang dilakukan, lihat pada laman {doc}`2_perincian_algoritma`.
 
 ## Catatan tentang dokumentasi ini
-- Dokumentasi ini menggunakan tanda koma sebagai penanda desimal, kecuali dalam kode/program.
-- Dokumentasi ini lebih [well-written] daripada skripsi penulis tentang M-HITE yang tersimpan di *repository* IPB. Jika ada perbedaan antara skripsi dengan yang ada di sini, apa yang ada di dokumentasi ini [overwrite] yang ada di skripsi. 
+- Dokumentasi ini menggunakan tanda titik sebagai pemisah desimal.
+- Dokumentasi ini lebih [well-written] daripada skripsi penulis tentang M-HITE yang tersimpan di repositori IPB. Jika ada perbedaan antara yang ada di skripsi dengan yang ada di sini, dokumentasi ini []
 - Dokumentasi ini lebih berfokus pada penjelasan modifikasi yang dilakukan pada HITE sehingga menjadi M-HITE, serta penjelasan program Python dari M-HITE. Untuk penjelasan lebih lanjut mengenai HITE orisinal, silakan membaca *paper* [Barnes *et al*. 2015].
 
 :::{admonition} **Catatan tentang lisensi**

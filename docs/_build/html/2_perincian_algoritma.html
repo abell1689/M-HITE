@@ -1,0 +1,571 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Perincian Algoritma &#8212; Dokumentasi M-HITE</title>
+    
+  <link href="_static/css/theme.css" rel="stylesheet">
+  <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="shortcut icon" href="_static/favicon.png"/>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Perincian Kode" href="3_perincian_kode.html" />
+    <link rel="prev" title="Latar Belakang" href="1_latar_belakang.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="_static/logo-2.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Dokumentasi M-HITE</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="index.html">
+   Selayang Pandang
+  </a>
+ </li>
+</ul>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="1_latar_belakang.html">
+   Latar Belakang
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Perincian Algoritma
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="3_perincian_kode.html">
+   Perincian Kode
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="4_live_sandbox.html">
+   Live Sandbox
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="5_lampiran_a_daftar_pustaka.html">
+   Lampiran A: Daftar Pustaka
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/2_perincian_algoritma.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/abell1689/M-HITE/"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/abell1689/M-HITE//issues/new?title=Issue%20on%20page%20%2F2_perincian_algoritma.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#asumsi">
+   Asumsi
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#layak-huni">
+     ‘Layak Huni’
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#data-masukan">
+   Data masukan
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#orisinal">
+     Orisinal
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#termodifikasi">
+     Termodifikasi
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#syarat-kelayakhunian">
+   Syarat kelayakhunian
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#memiliki-permukaan-padat-bersifat-terestrial">
+     1. memiliki permukaan padat (bersifat terestrial)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#memiliki-air-berfase-cair-di-permukaannya">
+     2. memiliki air berfase cair di permukaannya
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#algoritma">
+   Algoritma
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#penghitungan-probabilitas-planet-memiliki-permukaan-padat">
+     Penghitungan probabilitas planet memiliki permukaan padat
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id1">
+       Orisinal
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#penghitungan-probabilitas-planet-bisa-memiliki-air-berfase-cair-di-permukaan">
+     Penghitungan probabilitas planet bisa memiliki air berfase cair di permukaan
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#penghitungan-probabilitas-kelayakhunian-h">
+     Penghitungan probabilitas kelayakhunian (
+     <em>
+      H
+     </em>
+     )
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#modifikasi">
+   Modifikasi
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Perincian Algoritma</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#asumsi">
+   Asumsi
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#layak-huni">
+     ‘Layak Huni’
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#data-masukan">
+   Data masukan
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#orisinal">
+     Orisinal
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#termodifikasi">
+     Termodifikasi
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#syarat-kelayakhunian">
+   Syarat kelayakhunian
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#memiliki-permukaan-padat-bersifat-terestrial">
+     1. memiliki permukaan padat (bersifat terestrial)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#memiliki-air-berfase-cair-di-permukaannya">
+     2. memiliki air berfase cair di permukaannya
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#algoritma">
+   Algoritma
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#penghitungan-probabilitas-planet-memiliki-permukaan-padat">
+     Penghitungan probabilitas planet memiliki permukaan padat
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id1">
+       Orisinal
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#penghitungan-probabilitas-planet-bisa-memiliki-air-berfase-cair-di-permukaan">
+     Penghitungan probabilitas planet bisa memiliki air berfase cair di permukaan
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#penghitungan-probabilitas-kelayakhunian-h">
+     Penghitungan probabilitas kelayakhunian (
+     <em>
+      H
+     </em>
+     )
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#modifikasi">
+   Modifikasi
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <p>\begin{gather*}
+a_1=b_1+c_1\
+a_2=b_2+c_2-d_2+e_2
+\end{gather*}</p>
+<p>\begin{align}
+a_{11}&amp; =b_{11}&amp;
+a_{12}&amp; =b_{12}\
+a_{21}&amp; =b_{21}&amp;
+a_{22}&amp; =b_{22}+c_{22}
+\end{align}</p>
+<div class="tex2jax_ignore mathjax_ignore section" id="perincian-algoritma">
+<h1>Perincian Algoritma<a class="headerlink" href="#perincian-algoritma" title="Permalink to this headline">¶</a></h1>
+<p>Laman ini memuat perincian algoritma yang dipakai dalam menentukan nilai indeks HITE bagi suatu eksoplanet, serta modifikasi yang dilakukan terhadap algoritma tersebut sehingga menjadi HITE termodifikasi (M-HITE)</p>
+<div class="section" id="asumsi">
+<h2>Asumsi<a class="headerlink" href="#asumsi" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="layak-huni">
+<h3>‘Layak Huni’<a class="headerlink" href="#layak-huni" title="Permalink to this headline">¶</a></h3>
+<p>Dalam teks ini, kelayakhunian didefinisikan sebagai ‘layak huni bagi makhluk hidup’. Terdengar cukup sederhana, tapi perlu diingat bahwa kehidupan di planet lain, jika ada, tentu saja bisa memiliki proses-proses biokimia yang berbeda jauh dengan kehidupan yang kita ketahui—sesuatu yang sulit dibayangkan karena contoh bentuk kehidupan yang kita ketahui saat ini baru satu, yaitu kehidupan di Bumi.
+Upaya untuk membayangkan bentuk kehidupan alternatif seperti itu merupakan bidang penelitiannya sendiri. Karena itu, teks ini akan menggunakan definisi kehidupan yang cenderung sederhana, yaitu organisme dengan karakteristik yang kurang lebih mirip dengan yang ada di Bumi: berbasis senyawa karbon dan membutuhkan air. Fokusnya terutama diberikan pada organisme sederhana yang relatif tahan banting seperti <strong>bakteri bersel satu</strong>.</p>
+</div>
+</div>
+<div class="section" id="data-masukan">
+<h2>Data masukan<a class="headerlink" href="#data-masukan" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="orisinal">
+<h3>Orisinal<a class="headerlink" href="#orisinal" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>HITE orisinal ditujukan untuk mengevaluasi planet yang ditemukan menggunakan metode transit, sehingga data masukan yang dibutuhkan adalah observabel-observabel transit.</p></li>
+</ul>
+</div>
+<div class="section" id="termodifikasi">
+<h3>Termodifikasi<a class="headerlink" href="#termodifikasi" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>M-HITE mengubah algoritma penghitungan indeks sehingga bisa digunakan untuk mengevaluasi planet mana pun, tidak terbatas pada yang ditemukan melalui metode transit.</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="syarat-kelayakhunian">
+<h2>Syarat kelayakhunian<a class="headerlink" href="#syarat-kelayakhunian" title="Permalink to this headline">¶</a></h2>
+<p>HITE orisinal mengevaluasi kelayakhunian dengan mengukur probabilitas suatu planet memenuhi dua syarat tertentu. M-HITE tidak melakukan perubahan dalam hal ini. Kedua syarat tersebut adalah:</p>
+<div class="section" id="memiliki-permukaan-padat-bersifat-terestrial">
+<h3>1. memiliki permukaan padat (bersifat terestrial)<a class="headerlink" href="#memiliki-permukaan-padat-bersifat-terestrial" title="Permalink to this headline">¶</a></h3>
+<p>Dalam algoritma HITE, planet yang dianggap layak huni adalah planet yang permukaannya lebih mirip dengan permukaan planet Bumi atau Mars (tersusun dari silikat dan logam) daripada dengan yang ada di planet seperti Jupiter atau Neptunus (tersusun dari gas dan likuida dalam tekanan dan temperatur yang tinggi).</p>
+<p>Syarat ini didasarkan pada argumen bahwa untuk mendukung perkembangan makhluk hidup, diperlukan lingkungan yang bisa ajeg dalam satuan waktu yang cukup lama, yang tentunya tidak sesuai dengan permukaan gas dan likuida yang cenderung dinamis. Bahkan kehidupan bawah air seperti yang ada di Bumi pun secara krusial bergantung pada keberadaan kerak samudera yang padat dan relatif stabil.</p>
+</div>
+<div class="section" id="memiliki-air-berfase-cair-di-permukaannya">
+<h3>2. memiliki air berfase cair di permukaannya<a class="headerlink" href="#memiliki-air-berfase-cair-di-permukaannya" title="Permalink to this headline">¶</a></h3>
+<p>Selain keberadaan permukaan padat, kelayakhunian suatu planet menurut HITE juga didasarkan pada kemungkinan adanya air berfase cair di permukaan tersebut.</p>
+<p>Syarat ini didasarkan pada argumen bahwa air berfase cair merupakan komponen penting bagi makhluk hidup–setidaknya makhluk hidup yang dispesifikasikan teks ini pada bagian [Asumsi].</p>
+</div>
+</div>
+<div class="section" id="algoritma">
+<h2>Algoritma<a class="headerlink" href="#algoritma" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="penghitungan-probabilitas-planet-memiliki-permukaan-padat">
+<h3>Penghitungan probabilitas planet memiliki permukaan padat<a class="headerlink" href="#penghitungan-probabilitas-planet-memiliki-permukaan-padat" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id1">
+<h4>Orisinal<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h4>
+<p>Probabilitas suatu planet bersifat terestrial diestimasi melalui model berikut ini, yang hanya menggunakan radius relatif sebagai masukan:</p>
+<div class="math notranslate nohighlight">
+\[P_ter (R)={(&quot;1&quot; ,R≤&quot;1,5&quot; &#64;(&quot;2,5&quot; -R),&quot;1,5&quot; &lt;R&lt;&quot;2,5&quot; &#64;&quot;0&quot; ,R≥&quot;2,5&quot; .)}\]</div>
+<p><span class="math notranslate nohighlight">\(R\)</span> adalah radius relatif, perbandingan antara radius planet <span class="math notranslate nohighlight">\((R_p)\)</span> dengan radius Bumi (<span class="math notranslate nohighlight">\(R_⊕\)</span>):</p>
+</div>
+</div>
+<div class="section" id="penghitungan-probabilitas-planet-bisa-memiliki-air-berfase-cair-di-permukaan">
+<h3>Penghitungan probabilitas planet bisa memiliki air berfase cair di permukaan<a class="headerlink" href="#penghitungan-probabilitas-planet-bisa-memiliki-air-berfase-cair-di-permukaan" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="penghitungan-probabilitas-kelayakhunian-h">
+<h3>Penghitungan probabilitas kelayakhunian (<em>H</em>)<a class="headerlink" href="#penghitungan-probabilitas-kelayakhunian-h" title="Permalink to this headline">¶</a></h3>
+</div>
+</div>
+<div class="section" id="modifikasi">
+<h2>Modifikasi<a class="headerlink" href="#modifikasi" title="Permalink to this headline">¶</a></h2>
+<ol class="simple">
+<li><p>program HITE memerlukan data eksentrisitas (<em>e</em>) dan albedo planet (<em>A</em>) untuk menghitung probabilitas kelayakhunian <em>H (e, A)</em>. Pada HITE orisinal, kedua parameter ini dianggap tidak diketahui. Nilai <em>H (e, A)</em> dievaluasi menggunakan pasangan <em>e</em> dan <em>A</em> dalam rentang tertentu yang seragam.</p></li>
+</ol>
+<p>Berikut adalah modifikasi yang telah dilakukan terhadap program HITE sehingga menjadi M-HITE:</p>
+<ol class="simple">
+<li><p><strong>program telah ditulis ulang</strong>, dari C ke Python;</p></li>
+<li><p><strong>pengubahan data masukan (penggunaan basis data <a class="reference external" href="https://www.exoplanets.org">exoplanets.org</a>)</strong>; <strong>Program HITE orisinal</strong>, sesuai namanya, berfokus pada eksoplanet yang ditemukan melalui <strong>metode transit</strong>. Karena itu, HITE orisinal menggunakan beberapa variabel observasi yang hanya bisa didapat melalui metode tersebut (misal: penggunaan <em>transit depth</em> untuk mendapatkan radius planet). Modifikasi dilakukan sehingga nilai dari parameter-parameter ini tidak dihitung, tapi langsung diambil dari basis data <a class="reference external" href="https://www.exoplanets.org">exoplanets.org</a>. Hal ini memungkinkan M-HITE untuk mengevaluasi probabilitas kelayakhunian dari planet-planet yang ditemukan melalui metode lain;</p></li>
+<li><p>modifikasi di atas juga mengubah proses kalkulasi nilai indeks. Pada HITE orisinal, rentang parameter eksentrisitas orbit (<em>e</em>) dan albedo planet (<em>A</em>) yang digunakan untuk menghitung probabilitas layak huni <em>H (e, A)</em>  disamakan untuk semua planet. Pada M-HITE, nilai-nilai tersebut diganti dengan rentang ketidakpastian <em>e</em> dan <em>A</em> masing-masing planet dari <a class="reference external" href="http://www.exoplanets.org">exoplanets.org</a>
+Contoh: Perubahan data eksentrisitas
+| Planet | HITE orisinal | M-HITE |
+|:——:|:————-:|:——:|
+| Kepler-427 b | 0,05 ≤ <em>e</em> ≤ 0,8 | 0,00 ≤ <em>e</em> ≤ 0,57 |
+| WASP-14 b | 0,05 ≤ <em>e</em> ≤ 0,8 | 0,003 ≤ <em>e</em> ≤ 0,003 |
+| GJ 625 b | 0,05 ≤ <em>e</em> ≤ 0,8 | 0,09 ≤ <em>e</em> ≤ 0,012</p></li>
+<li><p><strong>pengubahan metode kalkulasi keterestrialan planet</strong>;<br />
+HITE orisinal melakukan ini dengan suatu algoritma <em>ad-hoc</em> yang hanya mempertimbangkan radius planet sebagai masukan. M-HITE mengganti metode ini dengan pemodelan komposisi planet berdasarkan radius dan massa yang dikembangkan oleh Zeng &amp; Sasselov (2013);</p></li>
+<li><p><strong>penambahan filter/syarat kelayakhunian</strong></p>
+<ul class="simple">
+<li><p>asumsi tentang albedo planet terestrial;</p></li>
+<li><p>Diasumsikan bahwa ada rentang nilai albedo planet yang menandakan kecenderungan lebih tinggi untuk bersifat layak huni. Rentang ini tergantung pada temperatur/tipe bintang inang dan radius orbit eksoplanet. Planet dengan <em>A</em> yang berada di luar rentang tersebut akan dianggap tidak layak huni oleh program HITE. Untuk saat ini, rentang albedo ini baru bisa dikalkulasi untuk planet yang mengorbit bintang tipe G atau M</p></li>
+<li><p><em>asumsi tentang eksentrisitas orbit yang ekstrem</em>*;</p></li>
+<li><p>eksentrisitas orbit yang ekstrem dianggap menurunkan probabilitas kelayakhunian, sehingga planet dengan <em>e</em> di atas angka tertentu (ditentukan oleh luminositas bintang inang) probabilitas layak huninya diberi penalti dan urutannya cederung turun dalam indeks;</p></li>
+</ul>
+</li>
+</ol>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "abell1689/M-HITE",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="1_latar_belakang.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Latar Belakang</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="3_perincian_kode.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Perincian Kode</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      By Zulfa Aulia Rahma (zulfarahma@proton.me)<br/>
+    
+        &copy; Copyright 2021.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>
