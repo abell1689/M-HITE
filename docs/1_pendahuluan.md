@@ -14,13 +14,13 @@ M-HITE diharapkan dapat menghasilkan sistem pengindeksan yang lebih akurat dalam
 
 Program M-HITE dikembangkan menggunakan IDE Jupyter Notebook. Jika perangkat yang akan digunakan belum memiliki instalasi Python, disarankan untuk menginstal Python bersamaan dengan Jupyter Notebook melalui distribusi Anaconda atau Miniconda.
 
-**Dependensi**. M-HITE juga membutuhkan package Python berikut ini:
+**Dependensi**. M-HITE juga membutuhkan *package* Python berikut ini:
 - pandas
 - numpy
 - scipy
 
 ### Berkas
-Berkas yang diperlukan untuk menjalankan M-HITE dapat diunduh di [sini]() Berkas-berkas tersebut adalah:
+Berkas-berkas yang diperlukan untuk menjalankan M-HITE dapat diunduh di [sini](https://github.com/abell1689/M-HITE/raw/main/docs/M-HITE.zip) Berkas-berkas tersebut adalah:
 - `main.ipynb`
 	- berkas utama yang berisi algoritma penghitungan indeks
 	- bisa dibuka dan diubah menggunakan Jupyter Notebook
@@ -43,4 +43,4 @@ Ekstrak unduhan dan simpan semua berkas dalam satu folder.
 Jalankan Jupyter Notebook (dari command prompt atau Anaconda launcher) dan buka `main.ipynb`.
 
 ### *Live sandbox*
-Pada dokumentasi ini disediakan juga *live sandbox* yang langsung bisa digunakan tanpa menginstal apapun.
+Pada dokumentasi ini disediakan juga *live sandbox* yang langsung bisa digunakan tanpa menginstal apapun. (Ikon roket –> Live Code)
