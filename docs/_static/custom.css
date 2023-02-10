@@ -38,7 +38,8 @@
 	--pst-font-size-h5:1.7rem ;
 	--pst-font-size-h6:1.4rem ;
 
-	--sbt-header-article-font-size: 1.2rem;    
+	--sbt-header-article-font-size: 1.2rem;   
+	--sbt-prevnext-font-size: 1.2rem; 
 }
 
 #site-navigation h1.site-logo {
@@ -70,26 +71,24 @@ h6 {
  font-weight:bold;
 }
 
+nav.bd-links p.caption:first-child {
+ margin-top:0
+}
 .toc-h1 {
   font-size: 1.4rem;
 }
-
 .toc-h2 {
   font-size: 1.2rem;
 }
-
 .toc-h3 {
   font-size: 1.0rem;
 }
-
 .toc-h4 {
   font-size: 0.8rem;
 }
-
 .toc-h5 {
   font-size: 0.6rem;
 }
-
 .toc-h6 {
   font-size: 0.5rem;
 }
