@@ -2,7 +2,7 @@
 # Learn more at https://jupyterbook.org/customize/config.html
 
 title: Dokumentasi M-HITE
-author: Zulfa Aulia Rahma (zulfarahma@proton.me)
+author: Zulfa Aulia Rahma (zulfarahma [at] proton [dot] me)
 logo: logo-2.png
 
 # Force re-execution of notebooks on each build.
