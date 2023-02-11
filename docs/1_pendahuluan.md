@@ -24,6 +24,7 @@ Berkas-berkas yang diperlukan untuk menjalankan M-HITE dapat diunduh di [sini](h
 - `main.ipynb`
 	- berkas utama yang berisi algoritma penghitungan indeks
 	- bisa dibuka dan diubah menggunakan Jupyter Notebook
+	- berkas yang isinya dijelaskan pada laman {doc}`3_perincian_kode`.
 - `exoplanet.csv`
 	- berkas yang berisi data planet luar surya
 	- didapat dari [exoplanets.org](exoplanets.org)
