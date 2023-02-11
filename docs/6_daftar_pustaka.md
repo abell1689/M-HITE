@@ -1,6 +1,4 @@
-# Lampiran A: Daftar Pustaka
-
-## Daftar Pustaka
+# Daftar Pustaka
 
 Barnes R, Meadows VS, Evans N. 2015. COMPARATIVE HABITABILITY OF TRANSITING EXOPLANETS. The Astrophysical Journal. 814(2):91. doi:https://doi.org/10.1088/0004-637X/814/2/91.
 
