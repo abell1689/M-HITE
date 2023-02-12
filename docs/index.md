@@ -2,15 +2,19 @@
 ## Apa itu HITE?
 **HITE (_Habitability Index for Transiting Exoplanets_) adalah** indeks yang merepresentasikan probabilitas kelayakhunian eksoplanet.
 
-Probabilitas ini didefinisikan sebagai kemungkinan planet tersebut:
+Probabilitas kelayakhunian didefinisikan sebagai kemungkinan planet tersebut:
 **a) mempunyai permukaan padat**; dan 
 **b) memiliki air berfase cair di permukaannya**.
 
 Nilainya memiliki rentang antara 1 (sangat berpotensi layak hidup) sampai 0 (sangat tidak berpotensi). 
-Indeks ini bertujuan untuk menentukan prioritas pengamatan eksoplanet, sehingga sumber daya riset keplanetan luar surya yang terbatas dapat diarahkan untuk mengamati lebih lanjut planet-planet yang ‘menarik secara ilmiah’.
+Indeks ini bertujuan untuk menentukan prioritas pengamatan eksoplanet, sehingga sumber daya riset keplanetan luar surya yang terbatas dapat diarahkan untuk mengamati lebih lanjut planet-planet dengan karakteristik tertentu.
+
+> [!INFO]
+> Melalui definisi kelayakhunian yang dipakai HITE, karakteristik yang dinilai lebih tinggi oleh HITE adalah karakteristik yang mirip Bumi.
+
 
 ## HITE Termodifikasi (M-HITE)
-**Program yang cara kerjanya** akan dijelaskan di sini adalah HITE Termodifikasi/**_Modified HITE_** **(M-HITE)**. Untuk penjelasan tentang modifikasi yang dilakukan, lihat pada laman {doc}`2_perincian_algoritma`.
+Program yang cara kerjanya akan dijelaskan di sini adalah HITE Termodifikasi/**_Modified HITE_** **(M-HITE)**. Untuk penjelasan tentang modifikasi yang dilakukan, lihat pada laman {doc}`2_perincian_algoritma`.
 
 ## Catatan
 - Dokumentasi ini menggunakan tanda titik sebagai pemisah desimal.
