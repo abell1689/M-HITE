@@ -1,30 +1,30 @@
 @font-face {
-  font-family: "et-book";
-  src: url("et-book/et-book-roman-line-figures/et-book-roman-line-figures.woff");
-  src: url("et-book/et-book-roman-line-figures/et-book-roman-line-figures.woff") format("woff"), url("et-book/et-book-roman-line-figures/et-book-roman-line-figures.eot?#iefix") format("embedded-opentype"), url("et-book/et-book-roman-line-figures/et-book-roman-line-figures.ttf") format("truetype"), url("et-book/et-book-roman-line-figures/et-book-roman-line-figures.svg#etbookromanosf") format("svg");
+  font-family: "source-sans-pro";
+  src: url("source-sans-pro/SourceSansPro-Regular.ttf");
+  src: url("source-sans-pro/SourceSansPro-Regular.ttf") format("truetype");
   font-weight: normal;
   font-style: normal
 }
 
 @font-face {
-  font-family: "et-book";
-  src: url("et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.woff");
-  src: url("et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.woff") format("woff"), url("et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.eot?#iefix") format("embedded-opentype"), url("et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.ttf") format("truetype"), url("et-book/et-book-display-italic-old-style-figures/et-book-display-italic-old-style-figures.svg#etbookromanosf") format("svg");
+  font-family: "source-sans-pro";
+  src: url("source-sans-pro/SourceSansPro-Italic.ttf");
+  src: url("source-sans-pro/SourceSansPro-Italic.ttf") format("truetype");
   font-weight: normal;
   font-style: italic
 }
 
 @font-face {
-  font-family: "et-book";
-  src: url("et-book/et-book-bold-line-figures/et-book-bold-line-figures.woff");
-  src: url("et-book/et-book-bold-line-figures/et-book-bold-line-figures.woff") format("woff"), url("et-book/et-book-bold-line-figures/et-book-bold-line-figures.eot?#iefix") format("embedded-opentype"), url("et-book/et-book-bold-line-figures/et-book-bold-line-figures.ttf") format("truetype"), url("et-book/et-book-bold-line-figures/et-book-bold-line-figures.svg#etbookromanosf") format("svg");
+  font-family: "source-sans-pro";
+  src: url("source-sans-pro/SourceSansPro-Bold.ttf");
+  src: url("source-sans-pro/SourceSansPro-Bold.ttf") format("truetype");
   font-weight: bold;
   font-style: normal
 }
 
 :root {
-	--pst-font-family-base: "et-book", Times, serif;
-  --pst-font-family-heading: "et-book", Times, serif;
+	--pst-font-family-base: "source-sans-pro", Times, serif;
+  --pst-font-family-heading: "source-sans-pro", Times, serif;
 
 	--pst-sidebar-font-size: 1.2rem;
 	--pst-sidebar-font-size-mobile: 1.2rem;
