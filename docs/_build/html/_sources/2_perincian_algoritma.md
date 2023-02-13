@@ -46,19 +46,12 @@ Syarat kelayakhunian ini didasarkan pada asumsi bahwa air berfase cair merupakan
 Keterestrialan planet diestimasi melalui model _ad hoc_ berikut ini.
 
 \\begin{align}
-
 p_{ter}(r)=
-
 \\begin{cases}
-
 0, & r <= 1 \\\\
-
 (2.5-r), & 1.5 < r < 2.5 \\\\
-
 1, & r >= 2.5.
-
 \\end{cases}
-
 \\end{align}
 
 $p_{ter}$ adalah probabilitas keterestrialan planet, dengan rentang nilai antara 0 (dianggap sama sekali tidak mungkin bersifat terestrial) hingga 1 (dianggap pasti bersifat terestrial), dan $r$ adalah rasio antara radius planet $r_p$ dengan radius Bumi $R_⊕$.

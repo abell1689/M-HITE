@@ -310,14 +310,14 @@ for exoName in exoList:
         habIndexNotZero.extend([exoName+ ": "+str(H)])
 
 
-# In[17]:
+# In[7]:
 
 
 for i in habIndexNotZero:
     print(i)
 
 
-# In[5]:
+# In[8]:
 
 
 # Append the result (planet's name and index value) to a .txt file in the same folder 

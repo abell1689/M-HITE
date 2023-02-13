@@ -5,16 +5,15 @@ title: Dokumentasi M-HITE
 author: Zulfa Aulia Rahma (zulfarahma [at] proton [dot] me)
 logo: logo-2.png
 
-# Force re-execution of notebooks on each build.
-# See https://jupyterbook.org/content/execute.html
 
-sphinx:
-  extra_extensions:
+extensions:
   - sphinx_jupyterbook_latex
   # config:
   #   jblatex_load_imgconverter: true
   #   jblatex_captions_to_parts: true
 
+# Force re-execution of notebooks on each build.
+# See https://jupyterbook.org/content/execute.html
 execute:
   execute_notebooks: cache
 only_build_toc_files: auto

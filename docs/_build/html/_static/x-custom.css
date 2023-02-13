@@ -1,0 +1,94 @@
+@font-face {
+  font-family: "source-sans-pro";
+  src: url("source-sans-pro/SourceSansPro-Regular.ttf");
+  src: url("source-sans-pro/SourceSansPro-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal
+}
+
+@font-face {
+  font-family: "source-sans-pro";
+  src: url("source-sans-pro/SourceSansPro-Italic.ttf");
+  src: url("source-sans-pro/SourceSansPro-Italic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic
+}
+
+@font-face {
+  font-family: "source-sans-pro";
+  src: url("source-sans-pro/SourceSansPro-Bold.ttf");
+  src: url("source-sans-pro/SourceSansPro-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal
+}
+
+:root {
+	--pst-font-family-base: sans-serif;
+  --pst-font-family-heading: sans-serif;
+
+	--pst-sidebar-font-size: 1.2rem;
+	--pst-sidebar-font-size-mobile: 1.2rem;
+	--pst-sidebar-header-font-size: 1.2rem;
+	--pst-sidebar-header-font-weight: 600;
+
+	--pst-font-size-h1:2.9rem ;
+	--pst-font-size-h2:2.6rem ;
+	--pst-font-size-h3:2.3rem ;
+	--pst-font-size-h4:2.0rem ;
+	--pst-font-size-h5:1.7rem ;
+	--pst-font-size-h6:1.4rem ;
+
+	--sbt-header-article-font-size: 1.2rem;   
+	--sbt-prevnext-font-size: 1.2rem; 
+}
+
+#site-navigation h1.site-logo {
+ font-size:1.5rem;
+}
+#site-navigation div.navbar_extra_footer {
+ font-size:1.2rem;
+}
+
+body {
+	text-align: justify;
+}
+
+p {
+	font-size: 1.6rem;
+}
+
+div.toctree-wrapper>ul>li>a {
+ font-size:1.6rem
+}
+
+.heading-style,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+ font-weight:bold;
+}
+
+nav.bd-links p.caption:first-child {
+ margin-top:0
+}
+.toc-h1 {
+  font-size: 1.4rem;
+}
+.toc-h2 {
+  font-size: 1.2rem;
+}
+.toc-h3 {
+  font-size: 1.0rem;
+}
+.toc-h4 {
+  font-size: 0.8rem;
+}
+.toc-h5 {
+  font-size: 0.6rem;
+}
+.toc-h6 {
+  font-size: 0.5rem;
+}
