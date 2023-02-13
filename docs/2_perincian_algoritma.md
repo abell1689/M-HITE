@@ -155,6 +155,7 @@ di mana $P_{ref}$ dan $T_{ref}$ merujuk pada titik tertentu pada kurva saturasi 
 
 Beberapa nilai dari variabel-variabel di atas didapat dari Pierrehumbert (2010) dan bisa dilihat pada laman {doc}`3_perincian_kode`.
 
+
 :::{admonition} TL;DR
 - Nilai $F_{OLR}$ adalah fungsi dari $A$ dan $e$. 
 - Nilai $F_{min}$ dianggap sama untuk setiap planet.
