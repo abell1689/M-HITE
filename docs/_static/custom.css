@@ -23,8 +23,8 @@
 }
 
 :root {
-	--pst-font-family-base: "source-sans-pro", Times, serif;
-  --pst-font-family-heading: "source-sans-pro", Times, serif;
+	--pst-font-family-base: sans-serif;
+  --pst-font-family-heading: sans-serif;
 
 	--pst-sidebar-font-size: 1.2rem;
 	--pst-sidebar-font-size-mobile: 1.2rem;
