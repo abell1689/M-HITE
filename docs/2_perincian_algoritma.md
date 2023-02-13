@@ -228,7 +228,6 @@ Studi yang dilakukan oleh [Bolmont _et al_. (2016)](https://doi.org/10.1051/0004
 
 M-HITE mempertimbangkan ini dan menambahkan langkah sebelum atau setelah kalkulasi nilai indeks sehingga planet dengan eksentrisitas yang melebihi batas maksimum seperti yang dijelaskan di atas akan diberi nilai indeks HITE $H = 0$.
 
----
 ## Rangkuman Modifikasi
 
 Berikut adalah modifikasi yang telah dilakukan terhadap program HITE sehingga menjadi M-HITE:
@@ -249,7 +248,6 @@ Contoh: Perubahan data eksentrisitas
 	- *asumsi tentang eksentrisitas orbit yang ekstrem**;
     - eksentrisitas orbit yang ekstrem dianggap menurunkan probabilitas kelayakhunian, sehingga planet dengan _e_ di atas angka tertentu (ditentukan oleh luminositas bintang inang) probabilitas layak huninya diberi penalti dan urutannya cederung turun dalam indeks;
 
----
 ## Limitasi Basis Data {#limitasi-basis-data}
 
 Observasi dan riset tentang planet luar surya masih dalam masa permulaannya. Bahkan basis data terlengkap masih memiliki banyak *gap*. Berikut adalah beberapa limitasi yang berpengaruh terhadap M-HITE:
