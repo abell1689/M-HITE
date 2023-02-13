@@ -27,7 +27,7 @@ Berkas-berkas yang diperlukan untuk menjalankan M-HITE dapat diunduh di [sini](h
 	- berkas yang isinya dijelaskan pada laman {doc}`3_perincian_kode`.
 - `exoplanet.csv`
 	- berkas yang berisi data planet luar surya
-	- didapat dari [exoplanets.org](https://exoplanets.org)
+	- didapat dari [exoplanets.org](exoplanets.org)
 	- digunakan sebagai sumber data masukan dalam `main.ipynb`
 	- kolom yang tidak digunakan oleh M-HITE bisa dihilangkan untuk membuatnya lebih rapi
 	- bisa di-filter dan dibuat sub-daftar sesuai karakteristik planet yang ingin dibuatkan daftar indeks

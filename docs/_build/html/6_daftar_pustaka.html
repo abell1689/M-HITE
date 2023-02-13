@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Search &#8212; Dokumentasi M-HITE</title>
+    <title>Daftar Pustaka &#8212; Dokumentasi M-HITE</title>
     
   <link href="_static/css/theme.css" rel="stylesheet">
   <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -34,7 +34,6 @@
     
   <link rel="preload" as="script" href="_static/js/index.be7d3bbb2ef33a8344ce.js">
 
-    
     <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
@@ -50,20 +49,16 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="_static/sphinx-thebe.js"></script>
-    <script src="_static/searchtools.js"></script>
-    <script src="_static/language_data.js"></script>
     <link rel="shortcut icon" href="_static/favicon.png"/>
     <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="#" />
-  <script src="searchindex.js" defer></script>
-  
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Saran Pengembangan" href="5_saran_pengembangan.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
 
     <!-- Google Analytics -->
     
-
   </head>
   <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
     
@@ -89,7 +84,7 @@ const thebe_selector_output = ".output, .cell_output"
       <h1 class="site-logo" id="site-title">Dokumentasi M-HITE</h1>
       
     </a>
-</div><form class="bd-search d-flex align-items-center" action="#" method="get">
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
   <i class="icon fas fa-search"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
@@ -101,7 +96,7 @@ const thebe_selector_output = ".output, .cell_output"
   </a>
  </li>
 </ul>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="1_pendahuluan.html">
    Pendahuluan
@@ -127,8 +122,8 @@ const thebe_selector_output = ".output, .cell_output"
    Saran Pengembangan
   </a>
  </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="6_daftar_pustaka.html">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    Daftar Pustaka
   </a>
  </li>
@@ -165,6 +160,23 @@ const thebe_selector_output = ".output, .cell_output"
             </button>
             
             
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/6_daftar_pustaka.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
             <!-- Source interaction buttons -->
 
 <div class="dropdown-buttons-trigger">
@@ -176,7 +188,7 @@ const thebe_selector_output = ".output, .cell_output"
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/abell1689/M-HITE//issues/new?title=Issue%20on%20page%20%2Fsearch.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/abell1689/M-HITE//issues/new?title=Issue%20on%20page%20%2F6_daftar_pustaka.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
         
@@ -204,7 +216,7 @@ const thebe_selector_output = ".output, .cell_output"
         <div class="col-12 col-md-9 pl-md-3 pr-md-0">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1></h1>
+                <h1>Daftar Pustaka</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -215,42 +227,54 @@ const thebe_selector_output = ".output, .cell_output"
             
               <div>
                 
-  <h1 id="search-documentation">Search</h1>
-  
-  <noscript>
-  <div class="admonition warning">
-  <p>
-    Please activate JavaScript to enable the search
-    functionality.
-  </p>
-  </div>
-  </noscript>
-  
-  
-  <p>
-    Searching for multiple words only shows matches that contain
-    all words.
-  </p>
-  
-  
-  <form action="" method="get">
-    <input type="text" name="q" aria-labelledby="search-documentation" value="" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
-    <input type="submit" value="search" />
-    <span id="search-progress" style="padding-left: 10px"></span>
-  </form>
-  
-  
-  
-  <div id="search-results">
-  
-  </div>
-  
+  <div class="tex2jax_ignore mathjax_ignore section" id="daftar-pustaka">
+<h1>Daftar Pustaka<a class="headerlink" href="#daftar-pustaka" title="Permalink to this headline">¶</a></h1>
+<p>Barnes R, Meadows VS, Evans N. 2015. COMPARATIVE HABITABILITY OF TRANSITING EXOPLANETS. The Astrophysical Journal. 814(2):91. doi:<a class="reference external" href="https://doi.org/10.1088/0004-637X/814/2/91">https://doi.org/10.1088/0004-637X/814/2/91</a>.</p>
+<p>Berger A, Loutre MF, Tricot C. 1993. Insolation and earth’s orbital periods. Journal of Geophysical Research. 98(D6):10341. doi:<a class="reference external" href="https://doi.org/10.1029/93JD00222">https://doi.org/10.1029/93JD00222</a>.</p>
+<p>Bolmont E, Libert AS, Leconte J, Selsis F. 2016. Habitability of planets on eccentric orbits: limits of the mean flux approximation. A&amp;A. 591: A106. doi:10.1051/0004-6361/201628073.</p>
+<p>del Genio A, Kiang NY, Way MJ, Amundsen DS, Sohl LE, Fujii Y, Chandler M, Aleinov I, Colose CM, Guzewich SD, et al. 2019. Albedos, equilibrium temperatures, and surface temperatures of habitable planets. The Astrophysical Journal. 884(1):75. doi:<a class="reference external" href="https://doi.org/10.3847/1538-4357/ab3be8">https://doi.org/10.3847/1538-4357/ab3be8</a>.</p>
+<p>Kane SR. 2017. Worlds without moons: Exomoon constraints for compact planetary systems. The Astrophysical Journal. 839(2):L19. doi:<a class="reference external" href="https://doi.org/10.3847/2041-8213/aa6bf2">https://doi.org/10.3847/2041-8213/aa6bf2</a>.</p>
+<p>Kipping DM, Sandford E. 2016. Observational biases for transiting planets. Monthly Notices of the Royal Astronomical Society. 463(2):1323–1331. doi:<a class="reference external" href="https://doi.org/10.1093/mnras/stw1926">https://doi.org/10.1093/mnras/stw1926</a>.</p>
+<p>Kopparapu RK, Ramirez R, Kasting JF, Eymet V, Robinson TD, Mahadevan S, Terrien RC, Domagal-Goldman S, Meadows V, Deshpande R. 2013. HABITABLE ZONES AROUND MAIN-SEQUENCE STARS: NEW ESTIMATES. The Astrophysical Journal. 765(2):131. doi:<a class="reference external" href="https://doi.org/10.1088/0004-637X/765/2/131">https://doi.org/10.1088/0004-637X/765/2/131</a>.</p>
+<p>Pierrehumbert RT. 2010. Principles of planetary climate. 1st ed. University Press, Cambridge.</p>
+<p>Rodríguez-Mozos JM, Moya A. 2017. Statistical-likelihood exo-planetary habitability index (SEPHI). Monthly Notices of the Royal Astronomical Society. 471(4):4628–4636. doi:<a class="reference external" href="https://doi.org/10.1093/mnras/stx1910">https://doi.org/10.1093/mnras/stx1910</a>.</p>
+<p>Waltham D. 2004. Anthropic selection for the moon’s mass. Astrobiology. 4(4):460–468. doi:<a class="reference external" href="https://doi.org/10.1089/ast.2004.4.460">https://doi.org/10.1089/ast.2004.4.460</a>.</p>
+<p>Zahnle KJ, Carlson R. 2005. Creation of a Habitable Planet. Dalam: Meadows VS, editor. Planetary Astrobiology. doi:<a class="reference external" href="https://doi.org/10.2458/azu_uapress_9780816540068-ch001">https://doi.org/10.2458/azu_uapress_9780816540068-ch001</a>.</p>
+<p>Zeng L, Sasselov D. 2013. A Detailed Model Grid for Solid Planets from 0.1 through 100 Earth Masses. Publications of the Astronomical Society of the Pacific. 125(925):227–239. doi:<a class="reference external" href="https://doi.org/10.1086/669163">https://doi.org/10.1086/669163</a>.</p>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "abell1689/M-HITE",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
 
               </div>
               
             
                 <!-- Previous / next buttons -->
-<div class='prev-next-area'>
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="5_saran_pengembangan.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Saran Pengembangan</p>
+        </div>
+    </a>
 </div>
             
         </div>

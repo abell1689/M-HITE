@@ -55,7 +55,7 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Perincian Kode" href="3_perincian_kode.html" />
-    <link rel="prev" title="Latar Belakang" href="1_latar_belakang.html" />
+    <link rel="prev" title="Pendahuluan" href="1_pendahuluan.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -101,8 +101,8 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 <ul class="current nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="1_latar_belakang.html">
-   Latar Belakang
+  <a class="reference internal" href="1_pendahuluan.html">
+   Pendahuluan
   </a>
  </li>
  <li class="toctree-l1 current active">
@@ -121,13 +121,13 @@ const thebe_selector_output = ".output, .cell_output"
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="5_lampiran_a_daftar_pustaka.html">
-   Lampiran A: Daftar Pustaka
+  <a class="reference internal" href="5_saran_pengembangan.html">
+   Saran Pengembangan
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="6_lampiran_b_kode_HITE_orisinal.html">
-   Lampiran B: Program HITE Orisinal
+  <a class="reference internal" href="6_daftar_pustaka.html">
+   Daftar Pustaka
   </a>
  </li>
 </ul>
@@ -223,8 +223,30 @@ const thebe_selector_output = ".output, .cell_output"
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#layak-huni">
-     ‘Layak Huni’
+    <a class="reference internal nav-link" href="#definisi-layak-huni">
+     Definisi ‘Layak Huni’
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#komposisi-atmosfer-planet-terestrial">
+     Komposisi atmosfer planet terestrial
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#bahasa-pemrograman">
+   Bahasa pemrograman
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#orisinal">
+     Orisinal
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#modifikasi">
+     Modifikasi
     </a>
    </li>
   </ul>
@@ -235,7 +257,7 @@ const thebe_selector_output = ".output, .cell_output"
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#orisinal">
+    <a class="reference internal nav-link" href="#id1">
      Orisinal
     </a>
    </li>
@@ -247,58 +269,124 @@ const thebe_selector_output = ".output, .cell_output"
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#syarat-kelayakhunian">
-   Syarat kelayakhunian
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#memiliki-permukaan-padat-bersifat-terestrial">
-     1. memiliki permukaan padat (bersifat terestrial)
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#memiliki-air-berfase-cair-di-permukaannya">
-     2. memiliki air berfase cair di permukaannya
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#algoritma">
    Algoritma
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#penghitungan-probabilitas-planet-memiliki-permukaan-padat">
-     Penghitungan probabilitas planet memiliki permukaan padat
+    <a class="reference internal nav-link" href="#syarat-kelayakhunian">
+     Syarat kelayakhunian
     </a>
     <ul class="nav section-nav flex-column">
      <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#id1">
-       Orisinal
+      <a class="reference internal nav-link" href="#memiliki-permukaan-padat-bersifat-terestrial">
+       1. memiliki permukaan padat (bersifat terestrial)
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#memiliki-air-berfase-cair-di-permukaannya">
+       2. memiliki air berfase cair di permukaannya
       </a>
      </li>
     </ul>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#penghitungan-probabilitas-planet-bisa-memiliki-air-berfase-cair-di-permukaan">
-     Penghitungan probabilitas planet bisa memiliki air berfase cair di permukaan
+    <a class="reference internal nav-link" href="#penghitungan-probabilitas-keterestrialan-planet-p-ter">
+     Penghitungan probabilitas keterestrialan planet (
+     <span class="math notranslate nohighlight">
+      \(p_{ter}\)
+     </span>
+     )
     </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id3">
+       Orisinal
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#setelah-modifikasi">
+       Setelah modifikasi
+      </a>
+     </li>
+    </ul>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#penghitungan-probabilitas-kelayakhunian-h">
-     Penghitungan probabilitas kelayakhunian (
+    <a class="reference internal nav-link" href="#penghitungan-probabilitas-planet-bisa-memiliki-air-berfase-cair-di-permukaan-p-water">
+     Penghitungan probabilitas planet bisa memiliki air berfase cair di permukaan (
+     <span class="math notranslate nohighlight">
+      \(p_{water}\)
+     </span>
+     )
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id4">
+       Orisinal
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id5">
+       Modifikasi
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#eksentrisitas">
+         Eksentrisitas
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#albedo">
+         Albedo
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#penghitungan-nilai-indeks-kelayakhunian-h">
+     Penghitungan nilai indeks kelayakhunian (
      <em>
       H
      </em>
      )
     </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id6">
+       Orisinal
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id7">
+       Modifikasi
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#efek-eksentrisitas-orbit-ekstrem">
+         Efek Eksentrisitas Orbit Ekstrem
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
    </li>
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#modifikasi">
-   Modifikasi
+  <a class="reference internal nav-link" href="#rangkuman-modifikasi">
+   Rangkuman Modifikasi
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#limitasi-basis-data-limitasi-basis-data">
+   Limitasi Basis Data {#limitasi-basis-data}
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#catatan-kaki">
+   Catatan Kaki
   </a>
  </li>
 </ul>
@@ -327,8 +415,30 @@ const thebe_selector_output = ".output, .cell_output"
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#layak-huni">
-     ‘Layak Huni’
+    <a class="reference internal nav-link" href="#definisi-layak-huni">
+     Definisi ‘Layak Huni’
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#komposisi-atmosfer-planet-terestrial">
+     Komposisi atmosfer planet terestrial
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#bahasa-pemrograman">
+   Bahasa pemrograman
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#orisinal">
+     Orisinal
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#modifikasi">
+     Modifikasi
     </a>
    </li>
   </ul>
@@ -339,7 +449,7 @@ const thebe_selector_output = ".output, .cell_output"
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#orisinal">
+    <a class="reference internal nav-link" href="#id1">
      Orisinal
     </a>
    </li>
@@ -351,58 +461,124 @@ const thebe_selector_output = ".output, .cell_output"
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#syarat-kelayakhunian">
-   Syarat kelayakhunian
-  </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#memiliki-permukaan-padat-bersifat-terestrial">
-     1. memiliki permukaan padat (bersifat terestrial)
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#memiliki-air-berfase-cair-di-permukaannya">
-     2. memiliki air berfase cair di permukaannya
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#algoritma">
    Algoritma
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#penghitungan-probabilitas-planet-memiliki-permukaan-padat">
-     Penghitungan probabilitas planet memiliki permukaan padat
+    <a class="reference internal nav-link" href="#syarat-kelayakhunian">
+     Syarat kelayakhunian
     </a>
     <ul class="nav section-nav flex-column">
      <li class="toc-h4 nav-item toc-entry">
-      <a class="reference internal nav-link" href="#id1">
-       Orisinal
+      <a class="reference internal nav-link" href="#memiliki-permukaan-padat-bersifat-terestrial">
+       1. memiliki permukaan padat (bersifat terestrial)
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#memiliki-air-berfase-cair-di-permukaannya">
+       2. memiliki air berfase cair di permukaannya
       </a>
      </li>
     </ul>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#penghitungan-probabilitas-planet-bisa-memiliki-air-berfase-cair-di-permukaan">
-     Penghitungan probabilitas planet bisa memiliki air berfase cair di permukaan
+    <a class="reference internal nav-link" href="#penghitungan-probabilitas-keterestrialan-planet-p-ter">
+     Penghitungan probabilitas keterestrialan planet (
+     <span class="math notranslate nohighlight">
+      \(p_{ter}\)
+     </span>
+     )
     </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id3">
+       Orisinal
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#setelah-modifikasi">
+       Setelah modifikasi
+      </a>
+     </li>
+    </ul>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#penghitungan-probabilitas-kelayakhunian-h">
-     Penghitungan probabilitas kelayakhunian (
+    <a class="reference internal nav-link" href="#penghitungan-probabilitas-planet-bisa-memiliki-air-berfase-cair-di-permukaan-p-water">
+     Penghitungan probabilitas planet bisa memiliki air berfase cair di permukaan (
+     <span class="math notranslate nohighlight">
+      \(p_{water}\)
+     </span>
+     )
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id4">
+       Orisinal
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id5">
+       Modifikasi
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#eksentrisitas">
+         Eksentrisitas
+        </a>
+       </li>
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#albedo">
+         Albedo
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#penghitungan-nilai-indeks-kelayakhunian-h">
+     Penghitungan nilai indeks kelayakhunian (
      <em>
       H
      </em>
      )
     </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id6">
+       Orisinal
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#id7">
+       Modifikasi
+      </a>
+      <ul class="nav section-nav flex-column">
+       <li class="toc-h5 nav-item toc-entry">
+        <a class="reference internal nav-link" href="#efek-eksentrisitas-orbit-ekstrem">
+         Efek Eksentrisitas Orbit Ekstrem
+        </a>
+       </li>
+      </ul>
+     </li>
+    </ul>
    </li>
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#modifikasi">
-   Modifikasi
+  <a class="reference internal nav-link" href="#rangkuman-modifikasi">
+   Rangkuman Modifikasi
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#limitasi-basis-data-limitasi-basis-data">
+   Limitasi Basis Data {#limitasi-basis-data}
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#catatan-kaki">
+   Catatan Kaki
   </a>
  </li>
 </ul>
@@ -414,41 +590,37 @@ const thebe_selector_output = ".output, .cell_output"
             
               <div>
                 
-  <p>\begin{gather*}
-a_1=b_1+c_1\
-a_2=b_2+c_2-d_2+e_2
-\end{gather*}</p>
-<p>\begin{align}
-a_{11}&amp; =b_{11}&amp;
-a_{12}&amp; =b_{12}\
-a_{21}&amp; =b_{21}&amp;
-a_{22}&amp; =b_{22}+c_{22}
-\end{align}</p>
-<p>\begin{document}
-\begin{equation}
-P_{ter}(R)=
-\begin{cases}
-0, &amp; R &lt;= 1 \
-(2.5-R), &amp; 1.5 &lt; R &lt; 2.5 \
-1, &amp; R &gt;= 2.5.
-\end{cases}
-\end{equation}
-\end{document}</p>
-<div class="tex2jax_ignore mathjax_ignore section" id="perincian-algoritma">
+  <div class="tex2jax_ignore mathjax_ignore section" id="perincian-algoritma">
 <h1>Perincian Algoritma<a class="headerlink" href="#perincian-algoritma" title="Permalink to this headline">¶</a></h1>
 <p>Laman ini memuat perincian algoritma yang dipakai dalam menentukan nilai indeks HITE bagi suatu eksoplanet, serta modifikasi yang dilakukan terhadap algoritma tersebut sehingga menjadi HITE termodifikasi (M-HITE)</p>
 <div class="section" id="asumsi">
 <h2>Asumsi<a class="headerlink" href="#asumsi" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="layak-huni">
-<h3>‘Layak Huni’<a class="headerlink" href="#layak-huni" title="Permalink to this headline">¶</a></h3>
-<p>Dalam teks ini, kelayakhunian didefinisikan sebagai ‘layak huni bagi makhluk hidup’. Terdengar cukup sederhana, tapi perlu diingat bahwa kehidupan di planet lain, jika ada, tentu saja bisa memiliki proses-proses biokimia yang berbeda jauh dengan kehidupan yang kita ketahui—sesuatu yang sulit dibayangkan karena contoh bentuk kehidupan yang kita ketahui saat ini baru satu, yaitu kehidupan di Bumi.
-Upaya untuk membayangkan bentuk kehidupan alternatif seperti itu merupakan bidang penelitiannya sendiri. Karena itu, teks ini akan menggunakan definisi kehidupan yang cenderung sederhana, yaitu organisme dengan karakteristik yang kurang lebih mirip dengan yang ada di Bumi: berbasis senyawa karbon dan membutuhkan air. Fokusnya terutama diberikan pada organisme sederhana yang relatif tahan banting seperti <strong>bakteri bersel satu</strong>.</p>
+<div class="section" id="definisi-layak-huni">
+<h3>Definisi ‘Layak Huni’<a class="headerlink" href="#definisi-layak-huni" title="Permalink to this headline">¶</a></h3>
+<p>Definisi ‘layak huni bagi makhluk hidup’ tentu bergantung pada definisi makhluk hidup itu sendiri. Perlu diingat bahwa kehidupan di planet lain, jika ada, tentu saja bisa memiliki proses-proses biokimia yang berbeda jauh dengan kehidupan yang kita ketahui—sesuatu yang sulit dibayangkan karena contoh bentuk kehidupan yang kita ketahui saat ini baru satu, yaitu kehidupan di Bumi.</p>
+<p>Upaya untuk membayangkan bentuk kehidupan alternatif seperti itu merupakan bidang penelitiannya sendiri. Karena itu, teks ini akan menggunakan definisi makhluk hidup yang cenderung sederhana, yaitu organisme dengan karakteristik yang kurang lebih mirip dengan yang ada di Bumi: <strong>berbasis senyawa karbon</strong> dan <strong>membutuhkan air</strong>. Fokusnya terutama diberikan pada organisme sederhana yang relatif tahan banting seperti <strong>bakteri bersel satu</strong>.</p>
+<p>Asumsi lain yang berkaitan adalah bahwa makhluk hidup ini membutuhkan lingkungan yang relatif stabil untuk hidup dan berkembang biak. Asumsi ini mengenyampingkan jenis-jenis organisme yang mungkin berada di lingkungan-lingkungan ekstrem (seperti awan-awan sulfur di planet-planet gas) demi berfokus pada organisme yang hidup di permukaan padat. Karena itu, dalam skema pengindeksan ini, keberadaan permukaan padat di suatu planet sangat memengaruhi kelayakhunian planet tersebut.</p>
+</div>
+<div class="section" id="komposisi-atmosfer-planet-terestrial">
+<h3>Komposisi atmosfer planet terestrial<a class="headerlink" href="#komposisi-atmosfer-planet-terestrial" title="Permalink to this headline">¶</a></h3>
+<p>Planet yang dipertimbangkan dalam teks ini adalah planet terestrial. Salah satu asumsi terpenting yang digunakan  dalam HITE (dan M-HITE) adalah bahwa planet jenis ini memiliki atmosfer N<sub>2</sub>/CO<sub>2</sub>/H<sub>2</sub>O.</p>
+</div>
+</div>
+<div class="section" id="bahasa-pemrograman">
+<h2>Bahasa pemrograman<a class="headerlink" href="#bahasa-pemrograman" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="orisinal">
+<h3>Orisinal<a class="headerlink" href="#orisinal" title="Permalink to this headline">¶</a></h3>
+<p>Menggunakan C</p>
+</div>
+<div class="section" id="modifikasi">
+<h3>Modifikasi<a class="headerlink" href="#modifikasi" title="Permalink to this headline">¶</a></h3>
+<p>Menggunakan Python dengan Jupyter Notebook sebagai IDE</p>
 </div>
 </div>
 <div class="section" id="data-masukan">
 <h2>Data masukan<a class="headerlink" href="#data-masukan" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="orisinal">
-<h3>Orisinal<a class="headerlink" href="#orisinal" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id1">
+<h3>Orisinal<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><p>HITE orisinal ditujukan untuk mengevaluasi planet yang ditemukan menggunakan metode transit, sehingga data masukan yang dibutuhkan adalah observabel-observabel transit.</p></li>
 </ul>
@@ -456,53 +628,182 @@ Upaya untuk membayangkan bentuk kehidupan alternatif seperti itu merupakan bidan
 <div class="section" id="termodifikasi">
 <h3>Termodifikasi<a class="headerlink" href="#termodifikasi" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
-<li><p>M-HITE mengubah algoritma penghitungan indeks sehingga bisa digunakan untuk mengevaluasi planet mana pun, tidak terbatas pada yang ditemukan melalui metode transit.</p></li>
+<li><p>Kode program M-HITE tidak bergantung pada observabel-observabel transit sehingga bisa digunakan untuk mengevaluasi planet yang ditemukan menggunakan metode apapun (selama karakteristik fisiknya cukup diketahui).</p></li>
 </ul>
-</div>
-</div>
-<div class="section" id="syarat-kelayakhunian">
-<h2>Syarat kelayakhunian<a class="headerlink" href="#syarat-kelayakhunian" title="Permalink to this headline">¶</a></h2>
-<p>HITE orisinal mengevaluasi kelayakhunian dengan mengukur probabilitas suatu planet memenuhi dua syarat tertentu. M-HITE tidak melakukan perubahan dalam hal ini. Kedua syarat tersebut adalah:</p>
-<div class="section" id="memiliki-permukaan-padat-bersifat-terestrial">
-<h3>1. memiliki permukaan padat (bersifat terestrial)<a class="headerlink" href="#memiliki-permukaan-padat-bersifat-terestrial" title="Permalink to this headline">¶</a></h3>
-<p>Dalam algoritma HITE, planet yang dianggap layak huni adalah planet yang permukaannya lebih mirip dengan permukaan planet Bumi atau Mars (tersusun dari silikat dan logam) daripada dengan yang ada di planet seperti Jupiter atau Neptunus (tersusun dari gas dan likuida dalam tekanan dan temperatur yang tinggi).</p>
-<p>Syarat ini didasarkan pada argumen bahwa untuk mendukung perkembangan makhluk hidup, diperlukan lingkungan yang bisa ajeg dalam satuan waktu yang cukup lama, yang tentunya tidak sesuai dengan permukaan gas dan likuida yang cenderung dinamis. Bahkan kehidupan bawah air seperti yang ada di Bumi pun secara krusial bergantung pada keberadaan kerak samudera yang padat dan relatif stabil.</p>
-</div>
-<div class="section" id="memiliki-air-berfase-cair-di-permukaannya">
-<h3>2. memiliki air berfase cair di permukaannya<a class="headerlink" href="#memiliki-air-berfase-cair-di-permukaannya" title="Permalink to this headline">¶</a></h3>
-<p>Selain keberadaan permukaan padat, kelayakhunian suatu planet menurut HITE juga didasarkan pada kemungkinan adanya air berfase cair di permukaan tersebut.</p>
-<p>Syarat ini didasarkan pada argumen bahwa air berfase cair merupakan komponen penting bagi makhluk hidup–setidaknya makhluk hidup yang dispesifikasikan teks ini pada bagian [Asumsi].</p>
 </div>
 </div>
 <div class="section" id="algoritma">
 <h2>Algoritma<a class="headerlink" href="#algoritma" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="penghitungan-probabilitas-planet-memiliki-permukaan-padat">
-<h3>Penghitungan probabilitas planet memiliki permukaan padat<a class="headerlink" href="#penghitungan-probabilitas-planet-memiliki-permukaan-padat" title="Permalink to this headline">¶</a></h3>
-<div class="section" id="id1">
-<h4>Orisinal<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h4>
-<p>Probabilitas suatu planet bersifat terestrial diestimasi melalui model berikut ini, yang hanya menggunakan radius relatif sebagai masukan:</p>
+<div class="section" id="syarat-kelayakhunian">
+<h3>Syarat kelayakhunian<a class="headerlink" href="#syarat-kelayakhunian" title="Permalink to this headline">¶</a></h3>
+<p>HITE orisinal mengevaluasi kelayakhunian dengan mengukur probabilitas suatu planet memenuhi dua syarat tertentu. M-HITE tidak melakukan perubahan dalam hal ini. Kedua syarat tersebut adalah:</p>
+<div class="section" id="memiliki-permukaan-padat-bersifat-terestrial">
+<h4>1. memiliki permukaan padat (bersifat terestrial)<a class="headerlink" href="#memiliki-permukaan-padat-bersifat-terestrial" title="Permalink to this headline">¶</a></h4>
+<p>Dalam algoritma HITE, planet yang dianggap layak huni adalah planet yang permukaannya lebih mirip dengan permukaan planet Bumi atau Mars (tersusun dari silikat dan logam) daripada dengan yang ada di planet seperti Jupiter atau Neptunus (tersusun dari gas dan likuida dalam tekanan dan temperatur yang tinggi).</p>
+<p>Syarat ini didasarkan pada asumsi bahwa untuk mendukung perkembangan makhluk hidup, diperlukan lingkungan yang bisa stabil dalam satuan waktu yang cukup lama, yang tentunya tidak sesuai dengan permukaan gas atau likuida yang cenderung dinamis. Bahkan kehidupan bawah air seperti yang ada di Bumi pun secara krusial bergantung pada keberadaan kerak samudera yang padat dan relatif stabil.</p>
+</div>
+<div class="section" id="memiliki-air-berfase-cair-di-permukaannya">
+<h4>2. memiliki air berfase cair di permukaannya<a class="headerlink" href="#memiliki-air-berfase-cair-di-permukaannya" title="Permalink to this headline">¶</a></h4>
+<p>Selain keberadaan permukaan padat, kelayakhunian suatu planet menurut HITE juga didasarkan pada kemungkinan adanya air berfase cair di permukaan tersebut. Konsep <em>habitability zone</em> (HZ) biasanya juga didefinisikan menggunakan kemungkinan ini, dengan HZ adalah zona orbit di sekitar suatu bintang, di mana planet yang mengorbit di dalam zona tersebut menerima fluks radiasi yang sesuai sehingga air di permukaannya dapat berada dalam keadaan cair. Kemungkinan ini tentunya membutuhkan informasi atau asumsi mengenai atmosfer planet (dijelaskan pada bagian <a class="reference external" href="##Asumsi">Asumsi</a>).</p>
+<p>Syarat kelayakhunian ini didasarkan pada asumsi bahwa air berfase cair merupakan komponen penting bagi keberlangsungan makhluk hidup.<a class="footnote-reference brackets" href="#id8" id="id2">1</a></p>
+</div>
+</div>
+<div class="section" id="penghitungan-probabilitas-keterestrialan-planet-p-ter">
+<h3>Penghitungan probabilitas keterestrialan planet (<span class="math notranslate nohighlight">\(p_{ter}\)</span>)<a class="headerlink" href="#penghitungan-probabilitas-keterestrialan-planet-p-ter" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id3">
+<h4>Orisinal<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h4>
+<p>Keterestrialan planet diestimasi melalui model <em>ad hoc</em> berikut ini.</p>
+<p>\begin{align}
+p_{ter}(r)=
+\begin{cases}
+0, &amp; r &lt;= 1 \
+(2.5-r), &amp; 1.5 &lt; r &lt; 2.5 \
+1, &amp; r &gt;= 2.5.
+\end{cases}
+\end{align}</p>
+<p><span class="math notranslate nohighlight">\(p_{ter}\)</span> adalah probabilitas keterestrialan planet, dengan rentang nilai antara 0 (dianggap sama sekali tidak mungkin bersifat terestrial) hingga 1 (dianggap pasti bersifat terestrial), dan <span class="math notranslate nohighlight">\(r\)</span> adalah rasio antara radius planet <span class="math notranslate nohighlight">\(r_p\)</span> dengan radius Bumi <span class="math notranslate nohighlight">\(R_⊕\)</span>.</p>
+<p>Model ini diperoleh dari statistik eksoplanet terestrial (yang jumlah sampelnya masih sangat kecil) di mana belum ditemukan planet yang lebih kecil dari <span class="math notranslate nohighlight">\(1.5R_⊕\)</span> yang memiliki atmosfer gas tebal seperti yang dimiliki Jupiter.</p>
+</div>
+<div class="section" id="setelah-modifikasi">
+<h4>Setelah modifikasi<a class="headerlink" href="#setelah-modifikasi" title="Permalink to this headline">¶</a></h4>
+<p>Nilai  <span class="math notranslate nohighlight">\(p_{ter}\)</span> diperoleh dengan menggunakan data hasil pemodelan komposisi planet ‘padat’ yang dikembangkan oleh <a class="reference external" href="https://doi.org/10.1086/669163">Zeng &amp; Sasselov (2013)</a>. Pemodelan ini mengumpamakan materi penyusun planet ‘padat’ sebagai kombinasi dari satu atau dua dari tiga unsur/senyawa berikut: Fe, MgSiO<sub>3</sub>, dan H<sub>2</sub>O. Menggunakan data <span class="math notranslate nohighlight">\(m_p\)</span> dan <span class="math notranslate nohighlight">\(r_p\)</span> suatu planet, model ini dapat menempatkan planet tersebut pada suatu spektrum seperti pada contoh di bawah ini.</p>
+<p><strong>Contoh</strong>. Misal, sebuah planet diketahui memiliki massa <span class="math notranslate nohighlight">\(m_{p} = 3 \space M_⊕\)</span>. Melalui pemodelan Zeng &amp; Sasselov, probabilitas keterestrialannya, <span class="math notranslate nohighlight">\(p_{ter}\)</span>, dapat diplotkan sebagai fungsi dari <span class="math notranslate nohighlight">\(r_p\)</span>, seperti pada grafik di bawah ini. Terdapat tiga rentang atau ‘daerah’ pada grafik tersebut: daerah (1), (2), dan (3).</p>
+<p><img alt="Terrestrial range of radius for a planet with a mass 3 times of Earth's mass" src="_images/zeng-sasselov_1.png" /></p>
+<p><span class="math notranslate nohighlight">\(\mu_{1}\)</span> adalah nilai di mana jika <span class="math notranslate nohighlight">\(r_{p} = \mu_{1}\)</span>, komposisi penyusun planet adalah 100 persen MgSiO<sub>3</sub>. Jika <span class="math notranslate nohighlight">\(r_{p}&lt;\mu_{1}\)</span>, berarti komposisinya lebih padat karena mengandung sejumlah Fe (daerah 1). Sementara itu, jika <span class="math notranslate nohighlight">\(r_p&gt;\mu_{1}\)</span>, berarti komposisinya lebih ringan karena mengandung H<sub>2</sub>O dalam kuantitas yang signifikan (daerah 2 sampai 3). <span class="math notranslate nohighlight">\(\mu_2\)</span> adalah nilai <span class="math notranslate nohighlight">\(r_p\)</span> di mana planet memiliki komposisi 50 persen MgSiO<sub>3</sub> dan 50 persen H<sub>2</sub>O.</p>
+<p>Tabel di bawah ini merangkum hubungan antara komposisi planet dengan probabilitas keterestrialan <span class="math notranslate nohighlight">\(p_{ter}\)</span>.</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:left head"><p>Daerah pada plot</p></th>
+<th class="text-align:center head"><p>Daerah (1)</p></th>
+<th class="text-align:center head"><p>Daerah (2)</p></th>
+<th class="text-align:center head"><p>Daerah (3)</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:left"><p><strong>Relasi <span class="math notranslate nohighlight">\(r_{p}\)</span> terhadap <span class="math notranslate nohighlight">\(\mu_1\)</span> dan <span class="math notranslate nohighlight">\(\mu_2\)</span></strong></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(r_{p}≤\mu_1\)</span></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(\mu_{1} &lt; r_{p} &lt; \mu_2\)</span></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(r_{p} \geq \mu_{2}\)</span></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:left"><p><strong>Perkiraan komposisi planet</strong></p></td>
+<td class="text-align:center"><p>100 persen MgSiO<sub>3</sub>, atau lebih padat dari itu (MgSiO<sub>3</sub> &amp; Fe)</p></td>
+<td class="text-align:center"><p>MgSiO<sub>3</sub> &amp; H<sub>2</sub>O, dengan persentase H<sub>2</sub>O kurang dari 50 persen</p></td>
+<td class="text-align:center"><p>50 persen MgSiO<sub>3</sub> &amp; 50 persen H<sub>2</sub>O, atau lebih ringan dari itu (persentase H<sub>2</sub>O lebih tinggi)</p></td>
+</tr>
+<tr class="row-even"><td class="text-align:left"><p><strong>Nilai <span class="math notranslate nohighlight">\(p_{ter}\)</span></strong></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(p_{ter} = 1\)</span></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(1 &lt; p_{ter} &lt; 0\)</span></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(p_{ter} = 0\)</span></p></td>
+</tr>
+</tbody>
+</table>
+<p>Nilai tepat <span class="math notranslate nohighlight">\(p_{ter}\)</span> di daerah (2) dihitung menggunakan suatu persamaan pseudo-Gaussian yang didapat dari <em>Statistical-likelihood Extrasolar Planet Habitability Index</em> (SEPHI) <a class="reference external" href="https://doi.org/10.1093/mnras/stx1910">Rodrı́guez-Mozos dan Moya 2016</a>:</p>
+<p>\begin{align}
+p_{ter}(r_p)=
+\begin{cases}
+1, &amp; r_p \leq \mu_{1, m_p} \
+\text{exp}(-\frac{1}{2}\frac{(r_p-\mu_{1, m_p})^2}{\sigma_{m_p}}, &amp; \mu_{1, m_p} &lt; r_p &lt; \mu_{2, m_p} \
+0, &amp; r_p \geq \mu_{2, m_p}.
+\end{cases}
+\end{align},</p>
+<p>dengan <span class="math notranslate nohighlight">\(\sigma_{m_{p}} = \frac{1}{3} (\mu_{2,m_{p}}-\mu_{1,m_{p}})\)</span>.</p>
+<p>Perlu diingat bahwa plot di atas, beserta nilai-nilai batas <span class="math notranslate nohighlight">\(\mu_1\)</span> dan <span class="math notranslate nohighlight">\(\mu_2\)</span>, adalah spesifik untuk planet dengan <span class="math notranslate nohighlight">\(m_{p} = 3 \space M_⊕\)</span>. Untuk sembarang planet, bentuk umum plotnya akan serupa, namun dengan nilai-nilai batas yang berbeda. Persamaan di atas menggunakan notasi <span class="math notranslate nohighlight">\(\mu_{1, m_p}\)</span> dan <span class="math notranslate nohighlight">\(\mu_{2, m_p}\)</span> untuk menggarisbawahi poin ini.</p>
+<p>Perhatikan pula bahwa penentuan komposisi ini tergantung pada pasangan radius dan massa planet, dan bukan pada densitas. Dua planet dengan densitas yang sama namun radius dan massa yang berbeda kemungkinan tidak memiliki komposisi yang sama. Ini dikarenakan pemodelan Zeng &amp; Sasselov mempertimbangkan bahwa komposisi suatu planet juga bergantung pada faktor-faktor lain yang lebih kompleks seperti struktur internalnya, yang ditentukan oleh sejarah pembentukan dan trayek evolusi keplanetan yang spesifik terhadap planet tersebut.</p>
+</div>
+</div>
+<div class="section" id="penghitungan-probabilitas-planet-bisa-memiliki-air-berfase-cair-di-permukaan-p-water">
+<h3>Penghitungan probabilitas planet bisa memiliki air berfase cair di permukaan (<span class="math notranslate nohighlight">\(p_{water}\)</span>)<a class="headerlink" href="#penghitungan-probabilitas-planet-bisa-memiliki-air-berfase-cair-di-permukaan-p-water" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id4">
+<h4>Orisinal<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h4>
+<p>HITE orisinal menentukan <span class="math notranslate nohighlight">\(p_{water}\)</span>, probabilitas suatu planet dapat menopang keberadaan air berfase cair di permukaannya, dengan menghitung suatu parameter atmosferik yang disebut <em>outgoing longwave radiation flux</em> (<span class="math notranslate nohighlight">\(F_{OLR}\)</span>).</p>
+<p><strong>Apa itu <span class="math notranslate nohighlight">\(F_{OLR}\)</span>?</strong> Dalam neraca ekuilibrium transfer energi keplanetan, terdapat sebagian fluks radiasi datang (<em>incoming flux</em>) dari bintang yang diserap oleh permukaan planet kemudian dipancarkan kembali dalam rentang panjang gelombang ‘inframerah termal’. Fluks keluaran dalam rentang panjang gelombang ini yang disebut <span class="math notranslate nohighlight">\(F_{OLR}\)</span>. Kesetimbangan antara fluks datang dan <span class="math notranslate nohighlight">\(F_{OLR}\)</span> ini sangat menentukan iklim planet, yang termasuk siklus hidrologinya.</p>
+<p><img alt="Ilustrasi FOLR|500" src="_images/FOLR.png" /></p>
+<p>Untuk setiap planet, terdapat suatu rentang nilai <span class="math notranslate nohighlight">\(F_{OLR}\)</span> yang memungkinkannya memiliki air berfase cair di permukaannya, atau <span class="math notranslate nohighlight">\(p_{water} \geq 0\)</span>. Dalam dokumentasi ini, batas-batas minimum dan maksimum dari rentang tersebut dinotasikan dengan <span class="math notranslate nohighlight">\(F_{min}\)</span> dan <span class="math notranslate nohighlight">\(F_{max}\)</span>.</p>
+<p>Penghitungan <span class="math notranslate nohighlight">\(F_{OLR}\)</span>, <span class="math notranslate nohighlight">\(F_{min}\)</span>, dan <span class="math notranslate nohighlight">\(F_{max}\)</span> membutuhkan pengetahuan mendalam tentang atmosfer planet, yang umumnya masih jarang tersedia dalam kasus eksoplanet. Karena itu, HITE melakukan beberapa penyederhanaan, seperti yang dijelaskan di bawah ini.</p>
+<p><strong>Persamaan-persamaan</strong>. <span class="math notranslate nohighlight">\(F_{OLR}\)</span> dihitung menggunakan persamaan ini:</p>
+<p>\begin{align}
+F_{OLR}=
+\frac{L_{*}(1-A)}{16 \pi a^2 \sqrt(1-e^2)},
+\end{align}</p>
+<p>dengan <span class="math notranslate nohighlight">\(A\)</span> adalah nilai albedo Bond planet, <span class="math notranslate nohighlight">\(a\)</span> adalah sumbu semi-mayor orbit planet, dan <span class="math notranslate nohighlight">\(e\)</span> adalah eksentrisitas orbit planet. Persamaan di atas mengasumsikan bahwa fluks yang terpancarkan kembali adalah seperempat dari fluks yang diserap <a class="reference external" href="https://doi.org/10.1029/93JD00222">Berger et al. 1993</a>.</p>
+<p>Batas minimum <span class="math notranslate nohighlight">\(F_{min}\)</span> didapat dari <a class="reference external" href="https://doi.org/10.1088/0004-637X/765/2/131">Kopparapu et al. (2014)</a> dengan nilai sekitar <span class="math notranslate nohighlight">\(67 \space Wm^{-2}\)</span> untuk planet dengan massa dan radius dalam rentang tertentu. HITE <strong>menyamakan</strong> nilai dari batas minimum ini untuk semua planet terestrial.</p>
+<p>Sementara itu, batas maksimum <span class="math notranslate nohighlight">\(F_{max}\)</span> <strong>berbeda</strong> untuk setiap planet. Persamaan berikut didapat dari Pierrehumbert (2010) dan merupakan fungsi implisit dari <span class="math notranslate nohighlight">\(m_p\)</span> dan <span class="math notranslate nohighlight">\(r_p\)</span> (melalui <span class="math notranslate nohighlight">\(g\)</span>, percepatan gravitasi di permukaan planet):</p>
+<p>\begin{align}
+F_{max}=
+B \sigma
+(\frac{l}{2R \space \text{ln} (P_{*} \sqrt{\kappa} P_{0} g)})
+\end{align},</p>
+<p>dengan <span class="math notranslate nohighlight">\(B\)</span> adalah koefisien berorde ~1 yang memastikan persamaan analitis ini sesuai dengan model transfer energi radiatif, <span class="math notranslate nohighlight">\(\sigma\)</span> adalah konstanta Stefan-Boltzmann, <span class="math notranslate nohighlight">\(l\)</span> adalah kapasitas panas laten dari air, <span class="math notranslate nohighlight">\(R\)</span> adalah konstanta gas universal, <span class="math notranslate nohighlight">\(P_{0}\)</span> adalah tekanan tertentu di mana intensitas garis spektrum uap air (<em>water vapor line strength</em>) dievaluasi, <span class="math notranslate nohighlight">\(g\)</span> adalah percepatan gravitasi di permukaan planet, dan <span class="math notranslate nohighlight">\(\kappa\)</span> adalah koefisien absorpsi <em>gray</em>.</p>
+<p><span class="math notranslate nohighlight">\(P_{*}\)</span> adalah tekanan terskala (<em>scaled</em>) yang dihitung dengan persamaan berikut:
+$<span class="math notranslate nohighlight">\(P_{*}=P_{ref} \space e^{\frac{l}{RT_{ref}}},\)</span><span class="math notranslate nohighlight">\( di mana \)</span>P_{ref}<span class="math notranslate nohighlight">\( dan \)</span>T_{ref}$ merujuk pada titik tertentu pada kurva saturasi uap air.</p>
+<p>Beberapa nilai dari variabel-variabel di atas didapat dari Pierrehumbert (2010) dan bisa dilihat pada laman <a class="reference internal" href="3_perincian_kode.html"><span class="doc">Perincian Kode</span></a>.</p>
+<p><strong>Albedo dan eksentrisitas</strong>. Untuk menghitung <span class="math notranslate nohighlight">\(F_{OLR}\)</span> suatu planet, dibutuhkan nilai albedo <span class="math notranslate nohighlight">\(A\)</span> dan eksentrisitas <span class="math notranslate nohighlight">\(e\)</span>. Untuk saat ini, hasil observasi eksoplanet belum dapat menentukan kedua parameter ini dengan akurasi yang tinggi, terutama untuk albedo. HITE mengatasi ini dengan menganggap kedua parameter tersebut sebagai rentang dan memperkirakan batas minimum dan maksimum dari rentang tersebut dengan berbagai cara. Untuk penjelasan yang lebih mendetail tentang penentuan rentang eksentrisitas, lihat subbab 2.2 dan 2.3 dalam <a class="reference external" href="https://doi.org/10.1088/0004-637X/814/2/91">Barnes <em>et al</em>. (2015)</a>. Jika  hal tersebut tidak memungkinkan, seperti terjadi dalam banyak kasus,  rentang eksentrisitas ditentukan sebagai <span class="math notranslate nohighlight">\(0.05 ≤ e ≤ 0.8\)</span>.   Sementara itu, rentang albedo disamakan <span class="math notranslate nohighlight">\(0.05 \leq A \leq 0.8\)</span> untuk semua planet sedari  awal.</p>
+<p><strong>Probabilitas distribusi eksentrisitas <span class="math notranslate nohighlight">\(p(e)\)</span></strong>. Lebih jauh lagi mengenai eksentrisitas, dalam kalkulasinya, HITE tidak menganggap semua nilai eksentrisitas mempunyai probabilitas yang sama.  Terdapat suatu distribusi frekuensi <span class="math notranslate nohighlight">\(p(e)\)</span> yang didapat dari data eksoplanet-eksoplanet yang telah ditemukan sejauh ini (subbab <em>2.4 The Eccentricity Distribution</em> dalam <a class="reference external" href="https://doi.org/10.1088/0004-637X/814/2/91">Barnes <em>et al</em>. (2015)</a>, dengan
+$<span class="math notranslate nohighlight">\(p(e)= 0.1619 - 0.5352e + 0.6358e^2 - 0.2557e^3.\)</span><span class="math notranslate nohighlight">\(Distribusi frekuensi ini nantinya akan digunakan untuk melakukan pembobotan terhadap nilai eksentrisitas di bagian kalkulasi nilai \)</span>p_{water}$.</p>
+<p><strong>Kalkulasi nilai <span class="math notranslate nohighlight">\(F_{OLR}\)</span></strong>. Karena nilai <span class="math notranslate nohighlight">\(A\)</span> dan <span class="math notranslate nohighlight">\(e\)</span> berupa rentang, penghitungan nilai <span class="math notranslate nohighlight">\(F_{OLR}\)</span> dari suatu planet akan menghasilkan sebuah himpunan yang berisi ‘semua’ nilai <span class="math notranslate nohighlight">\(F_{OLR} \space (e,\space A)\)</span> yang mungkin. Dalam prakteknya, tentu jumlah anggota himpunan ini ditentukan oleh inkremen yang digunakan dalam merunut rentang <span class="math notranslate nohighlight">\(A\)</span> dan <span class="math notranslate nohighlight">\(e\)</span>.</p>
+<p>Sebagai contoh, misal suatu planet X, dievaluasi menggunakan metode yang dijelaskan dalam <a class="reference external" href="https://doi.org/10.1088/0004-637X/814/2/91">Barnes <em>et al</em>. (2015)</a>, memiliki kemungkinan rentang eksentrisitas <span class="math notranslate nohighlight">\(0 \leq e \leq 0.2\)</span>. Rentang kemungkinan albedonya ditentukan  sama untuk setiap planet yaitu <span class="math notranslate nohighlight">\(0.05 \leq A \leq 0.8\)</span>. Jika inkremen yang digunakan adalah <span class="math notranslate nohighlight">\(0.1\)</span> untuk <span class="math notranslate nohighlight">\(e\)</span> dan <span class="math notranslate nohighlight">\(0.05\)</span> untuk <span class="math notranslate nohighlight">\(A\)</span>, akan didapat himpunan nilai <span class="math notranslate nohighlight">\(F_{OLR} \space (e,\space A)\)</span> sebagai berikut:</p>
+<p><img alt="Himpunan nilai FOLR" src="_images/FOLR2.png" /></p>
+<p><strong>Kalkulasi nilai <span class="math notranslate nohighlight">\(p_{water}\)</span></strong>. Untuk setiap nilai <span class="math notranslate nohighlight">\(F_{OLR} \space (e,\space A)\)</span>, dapat ditentukan apakah nilai tersebut berada di antara <span class="math notranslate nohighlight">\(F_{min}\)</span> dan <span class="math notranslate nohighlight">\(F_{max}\)</span>.</p>
+<p><img alt="Mengartikan nilai FOLR" src="_images/FOLR3.png" /></p>
+<p>Informasi ini dapat dienkapsulasikan ke dalam suatu parameter intermediet <span class="math notranslate nohighlight">\(h\)</span>, dengan</p>
+<p>\begin{align}
+h =
+\begin{cases}
+1, &amp; F_{min} \leq F_{OLR} \leq F_{max} \
+0, &amp; \text{otherwise}.
+\end{cases}
+\end{align}.</p>
+<p>Probabilitas suatu planet dapat menopang keberadaan air berfase cair di permukaannya, atau <span class="math notranslate nohighlight">\(p_{water}\)</span>, kemudian dapat diformulasikan sebagai fraksi kasus <span class="math notranslate nohighlight">\(F_{OLR}\)</span> di mana <span class="math notranslate nohighlight">\(h\)</span> bernilai 1:
+$<span class="math notranslate nohighlight">\(p_{water}=\frac{\sum\limits h_{j} p_{j} (e)}{\sum\limits p_{j}(e)},\)</span><span class="math notranslate nohighlight">\(
+dengan \)</span>j<span class="math notranslate nohighlight">\( mengindeks (\)</span>A<span class="math notranslate nohighlight">\(, \)</span>e<span class="math notranslate nohighlight">\() dan \)</span>p_{j}(e)$ adalah distribusi probabilitas eksentrisitas.</p>
+</div>
+<div class="section" id="id5">
+<h4>Modifikasi<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h4>
+<p>Secara garis besar, M-HITE tidak mengubah langkah kalkulasi <span class="math notranslate nohighlight">\(p_{water}\)</span>. Perubahan hanya dilakukan pada penentuan rentang <span class="math notranslate nohighlight">\(e\)</span> dan <span class="math notranslate nohighlight">\(A\)</span>.</p>
+<div class="section" id="eksentrisitas">
+<h5>Eksentrisitas<a class="headerlink" href="#eksentrisitas" title="Permalink to this headline">¶</a></h5>
+<p>Dalam menghitung <span class="math notranslate nohighlight">\(p_{rocky}\)</span>, M-HITE mengambil data <span class="math notranslate nohighlight">\(m_p\)</span> dan <span class="math notranslate nohighlight">\(r_p\)</span> dari <span class="xref myst">exoplanets.org</span>. Hal yang sama dilakukan untuk mendapat nilai <span class="math notranslate nohighlight">\(e\)</span>. Karena yang dibutuhkan adalah rentang, digunakan batas-batas ketidakpastian nilai <span class="math notranslate nohighlight">\(e\)</span> sebagai batas-batas rentang tersebut (didapat dari kolom <code class="docutils literal notranslate"><span class="pre">ECCUPPER</span></code> dan <code class="docutils literal notranslate"><span class="pre">ECCLOWER</span></code> pada berkas CSV yang dapat diperoleh dari situs web <span class="xref myst">exoplanets.org</span>).</p>
+</div>
+<div class="section" id="albedo">
+<h5>Albedo<a class="headerlink" href="#albedo" title="Permalink to this headline">¶</a></h5>
+<p>Albedo dari planet-planet luar surya pada umumnya belum dapat diukur secara langsung, sehingga potensi kelayakhunian biasanya diperhitungkan dengan mengasumsikan albedo <span class="math notranslate nohighlight">\(A ≅ 0.3\)</span> seperti Bumi, atau menggunakan rentang yang lebar seperti yang dilakukan dalam HITE orisinal (<span class="math notranslate nohighlight">\(0.05 ≤ A ≤ 0.8\)</span>). Kekurangan dari asumsi yang pertama ialah tidak dipertimbangkannya keberagaman karakteristik eksoplanet, sedangkan yang kedua terlalu lebar sehingga tidak terlalu berguna.</p>
+<p>Dugaan albedo eksoplanet sesungguhnya dapat dibuat lebih sempit dan spesifik. Mengingat albedo suatu planet adalah efek kumulatif dari gas atmosferik serta tutupan awan, es, dan samudra, simulasi dari sistem atmosfer dan samudra planet (biasanya menggunakan salah satu atau gabungan beberapa <em>3-dimensional general circulation model</em> [3D-GCM]) dapat memperkirakan besar albedo planet tersebut Pierrehumbert (2010). Perkiraan ini dapat diperoleh hanya dengan mengetahui informasi mengenai fluks radiasi yang diterima planet dari bintang inangnya serta temperatur efektif bintang tersebut—informasi yang umumnya diketahui untuk setiap eksoplanet. Namun, simulasi seperti ini menggunakan sumber daya komputasi yang intensif dan umumnya tidak tersedia secara luas,
+sehingga hanya segelintir planet yang albedonya dapat diperkirakan melalui cara tersebut.</p>
+<p>Pendekatan berbeda untuk menduga albedo eksoplanet telah dicoba oleh <a class="reference external" href="https://doi.org/10.3847/1538-4357/ab3be8">del Genio et al. (2019)</a>. Simulasi 3D-GCM dilakukan hanya untuk 48 planet, tapi daftar planet yang diikutkan dalam simulasi dipilih sebagaimana rupa sehingga hasil kumulatif dari simulasi dapat dipakai untuk menemukan relasi umum antara albedo dan tipe bintang inang. Hal ini mungkin untuk dilakukan karena trayek evolusi bintang (yang berbeda untuk setiap tipe bintang) berkaitan erat dengan formasi planet yang terbentuk di sekitarnya. Sintesis dari rangkaian simulasi yang dilakukan dalam studi tersebut menunjukkan bahwa albedo planet terestrial diperkirakan bernilai tidak kurang dari 0.25 untuk bintang inang tipe G (temperatur efektif <span class="math notranslate nohighlight">\(5370 &gt; T_{eff} &gt; 5980\)</span>), dan tidak lebih dari 0.35 untuk bintang tipe M (<span class="math notranslate nohighlight">\(2300&gt; T_{eff} &gt; 3800\)</span>). Relasi ini hanya berlaku untuk bintang dengan kedua tipe tersebut, yang menyusun sekitar 40 persen dari bintang inang eksoplanet yang telah ditemukan sejauh ini.</p>
+</div>
+</div>
+</div>
+<div class="section" id="penghitungan-nilai-indeks-kelayakhunian-h">
+<h3>Penghitungan nilai indeks kelayakhunian (<em>H</em>)<a class="headerlink" href="#penghitungan-nilai-indeks-kelayakhunian-h" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="id6">
+<h4>Orisinal<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h4>
+<p>Nilai indeks kelayakhunian <span class="math notranslate nohighlight">\(H\)</span> adalah perkalian dari probabilitas keterestrialan planet dan probabilitas bahwa planet sanggup menopang air berfase cair di permukaannya:</p>
 <div class="math notranslate nohighlight">
-\[P_ter (R)={(&quot;1&quot; ,R≤&quot;1,5&quot; &#64;(&quot;2,5&quot; -R),&quot;1,5&quot; &lt;R&lt;&quot;2,5&quot; &#64;&quot;0&quot; ,R≥&quot;2,5&quot; .)}\]</div>
-<p><span class="math notranslate nohighlight">\(R\)</span> adalah radius relatif, perbandingan antara radius planet <span class="math notranslate nohighlight">\((R_p)\)</span> dengan radius Bumi (<span class="math notranslate nohighlight">\(R_⊕\)</span>):</p>
+\[H = p_{water} p_{rocky}.\]</div>
+</div>
+<div class="section" id="id7">
+<h4>Modifikasi<a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h4>
+<div class="section" id="efek-eksentrisitas-orbit-ekstrem">
+<h5>Efek Eksentrisitas Orbit Ekstrem<a class="headerlink" href="#efek-eksentrisitas-orbit-ekstrem" title="Permalink to this headline">¶</a></h5>
+<p>HITE dan M-HITE mengutamakan planet luar surya yang mengorbit dalam <em>habitability zone</em> (HZ) bintang inangnya, dengan HZ adalah zona orbit di sekitar suatu bintang di mana planet yang mengorbit di dalam zona itu menerima fluks radiasi yang sesuai sehingga air di permukaannya dapat berada dalam keadaan cair.</p>
+<p>Sekitar 80 persen dari planet luar surya yang ditemukan mengorbit dalam HZ bintang inangnya memiliki orbit yang eksentrik (<span class="math notranslate nohighlight">\(e ≥ 0,1\)</span>) <a class="reference external" href="https://doi.org/10.1088/0004-637X/765/2/131">Kopparapu <em>et al</em>. 2013</a>. Hal ini dapat berarti bahwa planet-planet tersebut tidak selalu berada dalam HZ selama periode orbitnya. Semakin eksentrik orbit suatu planet, semakin besar fraksi waktu yang dihabiskan planet tersebut di luar HZ.</p>
+<p><img alt="Efek eksentrisitas orbit tinggi terhadap kelayakhunian planet" src="_images/extreme_ecc.png" /></p>
+<p>Di sistem bintang hipotetis pada ilustrasi di atas, Planet Ab menerima rata-rata fluks radiasi tahunan yang sama dengan menggunakan lintasan orbit 1 maupun 2. Perbedaannya terletak pada keseragamannya sepanjang tahun. Pada lintasan orbit 1 besar fluks radiasi yang diterima planet selalu sama, sedangkan pada lintasan orbit 2 besar fluks tersebut berfluktuasi. Tergantung besar fluktuasinya, hal tersebut dapat menyebabkan penguapan dan pembekuan berlebihan (masing-masing pada
+periastron dan apoastron—titik terdekat dan terjauh dari bintang).</p>
+<p>Studi yang dilakukan oleh <a class="reference external" href="https://doi.org/10.1051/0004-6361/201628073">Bolmont <em>et al</em>. (2016)</a> menggunakan  GCM menyimpulkan bahwa eksentrisitas orbit yang tinggi dapat membuat air di permukaan planet membeku sepanjang tahun kecuali saat planet sedang dekat dengan periastron, atau bahkan tanpa pengecualian sama sekali pada kasus yang lebih ekstrem. Batas maksimum eksentrisitas orbit yang tidak menimbulkan pembekuan sepanjang tahun adalah <span class="math notranslate nohighlight">\(e = 0.6\)</span> jika luminositas bintang inang sama dengan Matahari (<span class="math notranslate nohighlight">\(L = 1 L_⊙\)</span>), <span class="math notranslate nohighlight">\(0.8\)</span> jika <span class="math notranslate nohighlight">\(L = 10^{-2} L_⊙\)</span>, dan <span class="math notranslate nohighlight">\(0.9\)</span> jika <span class="math notranslate nohighlight">\(L = 10^{-4} L_⊙\)</span>. Eksentrisitas orbit yang melebihi batas-batas ini dapat menjadi faktor yang menurunkan nilai indeks kelayakhunian suatu planet.</p>
+<p>M-HITE mempertimbangkan ini dan menambahkan langkah sebelum atau setelah kalkulasi nilai indeks sehingga planet dengan eksentrisitas yang melebihi batas maksimum seperti yang dijelaskan di atas akan diberi nilai indeks HITE <span class="math notranslate nohighlight">\(H = 0\)</span>.</p>
 </div>
 </div>
-<div class="section" id="penghitungan-probabilitas-planet-bisa-memiliki-air-berfase-cair-di-permukaan">
-<h3>Penghitungan probabilitas planet bisa memiliki air berfase cair di permukaan<a class="headerlink" href="#penghitungan-probabilitas-planet-bisa-memiliki-air-berfase-cair-di-permukaan" title="Permalink to this headline">¶</a></h3>
-</div>
-<div class="section" id="penghitungan-probabilitas-kelayakhunian-h">
-<h3>Penghitungan probabilitas kelayakhunian (<em>H</em>)<a class="headerlink" href="#penghitungan-probabilitas-kelayakhunian-h" title="Permalink to this headline">¶</a></h3>
 </div>
 </div>
-<div class="section" id="modifikasi">
-<h2>Modifikasi<a class="headerlink" href="#modifikasi" title="Permalink to this headline">¶</a></h2>
-<ol class="simple">
-<li><p>program HITE memerlukan data eksentrisitas (<em>e</em>) dan albedo planet (<em>A</em>) untuk menghitung probabilitas kelayakhunian <em>H (e, A)</em>. Pada HITE orisinal, kedua parameter ini dianggap tidak diketahui. Nilai <em>H (e, A)</em> dievaluasi menggunakan pasangan <em>e</em> dan <em>A</em> dalam rentang tertentu yang seragam.</p></li>
-</ol>
+<hr class="docutils" />
+<div class="section" id="rangkuman-modifikasi">
+<h2>Rangkuman Modifikasi<a class="headerlink" href="#rangkuman-modifikasi" title="Permalink to this headline">¶</a></h2>
 <p>Berikut adalah modifikasi yang telah dilakukan terhadap program HITE sehingga menjadi M-HITE:</p>
 <ol class="simple">
 <li><p><strong>program telah ditulis ulang</strong>, dari C ke Python;</p></li>
 <li><p><strong>pengubahan data masukan (penggunaan basis data <a class="reference external" href="https://www.exoplanets.org">exoplanets.org</a>)</strong>; <strong>Program HITE orisinal</strong>, sesuai namanya, berfokus pada eksoplanet yang ditemukan melalui <strong>metode transit</strong>. Karena itu, HITE orisinal menggunakan beberapa variabel observasi yang hanya bisa didapat melalui metode tersebut (misal: penggunaan <em>transit depth</em> untuk mendapatkan radius planet). Modifikasi dilakukan sehingga nilai dari parameter-parameter ini tidak dihitung, tapi langsung diambil dari basis data <a class="reference external" href="https://www.exoplanets.org">exoplanets.org</a>. Hal ini memungkinkan M-HITE untuk mengevaluasi probabilitas kelayakhunian dari planet-planet yang ditemukan melalui metode lain;</p></li>
-<li><p>modifikasi di atas juga mengubah proses kalkulasi nilai indeks. Pada HITE orisinal, rentang parameter eksentrisitas orbit (<em>e</em>) dan albedo planet (<em>A</em>) yang digunakan untuk menghitung probabilitas layak huni <em>H (e, A)</em>  disamakan untuk semua planet. Pada M-HITE, nilai-nilai tersebut diganti dengan rentang ketidakpastian <em>e</em> dan <em>A</em> masing-masing planet dari <a class="reference external" href="http://www.exoplanets.org">exoplanets.org</a>
+<li><p>modifikasi di atas juga mengubah proses kalkulasi nilai indeks. Pada HITE orisinal, rentang parameter eksentrisitas orbit (<em>e</em>) dan albedo planet (<em>A</em>) yang digunakan untuk menghitung probabilitas layak huni <em>H (e, A)</em>  disamakan untuk semua planet (atau diperkirakan menggunakan metode yang bisa dibaca pada <a class="reference external" href="https://doi.org/10.1088/0004-637X/814/2/91">Barnes <em>et al</em> (2015)</a>, dalam kasus yang <em>applicable</em>). Pada M-HITE, nilai-nilai tersebut diganti dengan rentang ketidakpastian <em>e</em> dan <em>A</em> masing-masing planet dari <a class="reference external" href="http://www.exoplanets.org">exoplanets.org</a>
 Contoh: Perubahan data eksentrisitas
 | Planet | HITE orisinal | M-HITE |
 |:——:|:————-:|:——:|
@@ -510,8 +811,8 @@ Contoh: Perubahan data eksentrisitas
 | WASP-14 b | 0,05 ≤ <em>e</em> ≤ 0,8 | 0,003 ≤ <em>e</em> ≤ 0,003 |
 | GJ 625 b | 0,05 ≤ <em>e</em> ≤ 0,8 | 0,09 ≤ <em>e</em> ≤ 0,012</p></li>
 <li><p><strong>pengubahan metode kalkulasi keterestrialan planet</strong>;<br />
-HITE orisinal melakukan ini dengan suatu algoritma <em>ad-hoc</em> yang hanya mempertimbangkan radius planet sebagai masukan. M-HITE mengganti metode ini dengan pemodelan komposisi planet berdasarkan radius dan massa yang dikembangkan oleh Zeng &amp; Sasselov (2013);</p></li>
-<li><p><strong>penambahan filter/syarat kelayakhunian</strong></p>
+HITE orisinal melakukan ini dengan suatu algoritma <em>ad-hoc</em> yang hanya mempertimbangkan radius planet sebagai masukan. M-HITE mengganti metode ini dengan pemodelan komposisi planet berdasarkan radius dan massa yang dikembangkan oleh <a class="reference external" href="https://doi.org/10.1086/669163">Zeng &amp; Sasselov (2013)</a>;</p></li>
+<li><p><strong>penambahan <em>filter</em>/syarat kelayakhunian</strong></p>
 <ul class="simple">
 <li><p>asumsi tentang albedo planet terestrial;</p></li>
 <li><p>Diasumsikan bahwa ada rentang nilai albedo planet yang menandakan kecenderungan lebih tinggi untuk bersifat layak huni. Rentang ini tergantung pada temperatur/tipe bintang inang dan radius orbit eksoplanet. Planet dengan <em>A</em> yang berada di luar rentang tersebut akan dianggap tidak layak huni oleh program HITE. Untuk saat ini, rentang albedo ini baru bisa dikalkulasi untuk planet yang mengorbit bintang tipe G atau M</p></li>
@@ -520,6 +821,27 @@ HITE orisinal melakukan ini dengan suatu algoritma <em>ad-hoc</em> yang hanya me
 </ul>
 </li>
 </ol>
+</div>
+<hr class="docutils" />
+<div class="section" id="limitasi-basis-data-limitasi-basis-data">
+<h2>Limitasi Basis Data {#limitasi-basis-data}<a class="headerlink" href="#limitasi-basis-data-limitasi-basis-data" title="Permalink to this headline">¶</a></h2>
+<p>Observasi dan riset tentang planet luar surya masih dalam masa permulaannya. Bahkan basis data terlengkap masih memiliki banyak <em>gap</em>. Berikut adalah beberapa limitasi yang berpengaruh terhadap M-HITE:</p>
+<ul class="simple">
+<li><p>Masih banyak planet luar surya yang belum dipastikan keberadaannya (<em>Kepler object of interest</em>/KOI).</p></li>
+<li><p>Masih banyak planet luar surya yang belum diketahui karakteristik dasarnya (seperti massa, radius, eksentrisitas—data yang diperlukan oleh M-HITE).</p></li>
+<li><p>Seperti yang sudah dijelaskan di atas,  rentang albedo yang digunakan untuk menghitung <span class="math notranslate nohighlight">\(p_{water}\)</span> adalah rentang albedo yang diperkirakan dipunyai planet jika planet tersebut bersifat terestrial. Namun, pendekatan yang dipakai baru bisa menentukan rentang tersebut untuk planet yang mengorbit bintang bertipe G dan M.</p></li>
+</ul>
+<p><strong>Tip.</strong> Untuk menghasilkan urutan indeks dengan komparabilitas yang valid, data planet luar surya yang diikutkan dalam kalkulasi M-HITE sebaiknya memiliki tingkat ketepatan, kompleksitas, dan pemrosesan yang dibuat sesetara mungkin. Misal, jika modifikasi rentang albedo <a class="reference external" href="https://doi.org/10.3847/1538-4357/ab3be8">del Genio <em>et al</em>. (2019)</a> diterapkan dalam menyusun suatu daftar <em>ranking</em> indeks, sebaiknya planet yang mengorbit bintang inang bertipe selain G atau M tidak diikutkan karena rentang albedonya tidak dapat ditentukan oleh metode dari <a class="reference external" href="https://doi.org/10.3847/1538-4357/ab3be8">del Genio <em>et al.</em> (2019)</a> tersebut, sehingga nilai indeksnya tidak komparabel dengan planet-planet lain dalam daftar tersebut yang bintang inangnya bertipe G atau M.</p>
+<p>Seorang pengguna atau penggubah M-HITE dapat memilih modifikasi mana yang diterapkan sesuai kebutuhan atau ketersediaan data dan metode.</p>
+</div>
+<div class="section" id="catatan-kaki">
+<h2>Catatan Kaki<a class="headerlink" href="#catatan-kaki" title="Permalink to this headline">¶</a></h2>
+<hr class="footnotes docutils" />
+<dl class="footnote brackets">
+<dt class="label" id="id8"><span class="brackets"><a class="fn-backref" href="#id2">1</a></span></dt>
+<dd><p>Dari <a class="reference external" href="https://doi.org/10.2458/azu_uapress_9780816540068-ch001">Zahnle &amp; Carlson (2020)</a>: <em>Why water? The late Yutaka Abe argued that liquid is the best medium for life because it combines mobility with the potential for high concentrations; solids are less suitable because mobility is limited, while gases allow mobility but at low concentrations. Of liquids, water is best because it is abundant (H2O is probably the most abundant condensible molecule in the cosmos under ordinary conditions), and it is liquid at temperatures warm enough for complex organic chemistry to take place but not so hot that complex organic molecules denature or dissolve in a sea of entropy.</em></p>
+</dd>
+</dl>
 </div>
 </div>
 
@@ -548,11 +870,11 @@ HITE orisinal melakukan ini dengan suatu algoritma <em>ad-hoc</em> yang hanya me
             
                 <!-- Previous / next buttons -->
 <div class='prev-next-area'> 
-    <a class='left-prev' id="prev-link" href="1_latar_belakang.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="1_pendahuluan.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Latar Belakang</p>
+            <p class="prev-next-title">Pendahuluan</p>
         </div>
     </a>
     <a class='right-next' id="next-link" href="3_perincian_kode.html" title="next page">
@@ -569,7 +891,7 @@ HITE orisinal melakukan ini dengan suatu algoritma <em>ad-hoc</em> yang hanya me
     <footer class="footer">
   <p>
     
-      By Zulfa Aulia Rahma (zulfarahma@proton.me)<br/>
+      By Zulfa Aulia Rahma (zulfarahma [at] proton [dot] me)<br/>
     
         &copy; Copyright 2021.<br/>
   </p>

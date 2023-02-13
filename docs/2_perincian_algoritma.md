@@ -3,8 +3,10 @@ Laman ini memuat perincian algoritma yang dipakai dalam menentukan nilai indeks 
 
 ## Asumsi
 ### Definisi ‘Layak Huni’
-Definisi ‘layak huni bagi makhluk hidup’ tentu bergantung pada definisi makhluk hidup itu sendiri. Perlu diingat bahwa kehidupan di planet lain, jika ada, tentu saja bisa memiliki proses-proses biokimia yang berbeda jauh dengan kehidupan yang kita ketahui—sesuatu yang sulit dibayangkan karena contoh bentuk kehidupan yang kita ketahui saat ini baru satu, yaitu kehidupan di Bumi. 
+Definisi ‘layak huni bagi makhluk hidup’ tentu bergantung pada definisi makhluk hidup itu sendiri. Perlu diingat bahwa kehidupan di planet lain, jika ada, tentu saja bisa memiliki proses-proses biokimia yang berbeda jauh dengan kehidupan yang kita ketahui—sesuatu yang sulit dibayangkan karena contoh bentuk kehidupan yang kita ketahui saat ini baru satu, yaitu kehidupan di Bumi.
+
 Upaya untuk membayangkan bentuk kehidupan alternatif seperti itu merupakan bidang penelitiannya sendiri. Karena itu, teks ini akan menggunakan definisi makhluk hidup yang cenderung sederhana, yaitu organisme dengan karakteristik yang kurang lebih mirip dengan yang ada di Bumi: **berbasis senyawa karbon** dan **membutuhkan air**. Fokusnya terutama diberikan pada organisme sederhana yang relatif tahan banting seperti **bakteri bersel satu**.
+
 Asumsi lain yang berkaitan adalah bahwa makhluk hidup ini membutuhkan lingkungan yang relatif stabil untuk hidup dan berkembang biak. Asumsi ini mengenyampingkan jenis-jenis organisme yang mungkin berada di lingkungan-lingkungan ekstrem (seperti awan-awan sulfur di planet-planet gas) demi berfokus pada organisme yang hidup di permukaan padat. Karena itu, dalam skema pengindeksan ini, keberadaan permukaan padat di suatu planet sangat memengaruhi kelayakhunian planet tersebut.
 
 ### Komposisi atmosfer planet terestrial
@@ -54,14 +56,14 @@ p_{ter}(r)=
 
 $p_{ter}$ adalah probabilitas keterestrialan planet, dengan rentang nilai antara 0 (dianggap sama sekali tidak mungkin bersifat terestrial) hingga 1 (dianggap pasti bersifat terestrial), dan $r$ adalah rasio antara radius planet $r_p$ dengan radius Bumi $R_⊕$.
 
-:::{admonition}
+:::{admonition} TL;DR
 Dalam HITE orisinal, $p_{ter}$ hanya merupakan fungsi dari radius planet.
 :::
 
 Model ini diperoleh dari statistik eksoplanet terestrial (yang jumlah sampelnya masih sangat kecil) di mana belum ditemukan planet yang lebih kecil dari $1.5R_⊕$ yang memiliki atmosfer gas tebal seperti yang dimiliki Jupiter.
 
 #### Setelah modifikasi
-:::{admonition}
+:::{admonition} TL;DR
 Dalam M-HITE, $p_{ter}$ adalah fungsi dari radius dan massa planet ($r_p$ dan $m_p$).
 :::
 
@@ -109,7 +111,7 @@ HITE orisinal menentukan $p_{water}$, probabilitas suatu planet dapat menopang k
 
 Untuk setiap planet, terdapat suatu rentang nilai $F_{OLR}$ yang memungkinkannya memiliki air berfase cair di permukaannya, atau $p_{water} \geq 0$. Dalam dokumentasi ini, batas-batas minimum dan maksimum dari rentang tersebut dinotasikan dengan $F_{min}$ dan $F_{max}$.
 
-:::{admonition}
+:::{admonition} TL;DR
 Suatu planet bisa dikatakan bisa menopang keberadaan air berfase cair di permukaannya jika $F_{min}<F_{OLR}<F_{max}$ .
 :::
 
@@ -141,7 +143,7 @@ $$P_{*}=P_{ref} \space e^{\frac{l}{RT_{ref}}},$$ di mana $P_{ref}$ dan $T_{ref}$
 
 Beberapa nilai dari variabel-variabel di atas didapat dari Pierrehumbert (2010) dan bisa dilihat pada laman {doc}`3_perincian_kode`.
 
-:::{admonition}
+:::{admonition} TL;DR
 - Nilai $F_{OLR}$ adalah fungsi dari $A$ dan $e$. 
 - Nilai $F_{min}$ dianggap sama untuk setiap planet.
 - Nilai $F_{max}$ spesifik terhadap setiap planet dan merupakan fungsi dari $m_p$ dan $r_p$.
@@ -180,7 +182,7 @@ dengan $j$ mengindeks ($A$, $e$) dan $p_{j}(e)$ adalah distribusi probabilitas e
 Secara garis besar, M-HITE tidak mengubah langkah kalkulasi $p_{water}$. Perubahan hanya dilakukan pada penentuan rentang $e$ dan $A$.
 
 ##### Eksentrisitas
-Dalam menghitung $p_{rocky}$, M-HITE mengambil data $m_p$ dan $r_p$ dari [exoplanets.org](exoplanets.org). Hal yang sama dilakukan untuk mendapat nilai $e$. Karena yang dibutuhkan adalah rentang, digunakan batas-batas ketidakpastian nilai $e$ sebagai batas-batas rentang tersebut (didapat dari kolom `ECCUPPER` dan `ECCLOWER` pada berkas CSV yang dapat diperoleh dari situs web [exoplanets.org](exoplanets.org)).
+Dalam menghitung $p_{rocky}$, M-HITE mengambil data $m_p$ dan $r_p$ dari [exoplanets.org](https://www.exoplanets.org). Hal yang sama dilakukan untuk mendapat nilai $e$. Karena yang dibutuhkan adalah rentang, digunakan batas-batas ketidakpastian nilai $e$ sebagai batas-batas rentang tersebut (didapat dari kolom `ECCUPPER` dan `ECCLOWER` pada berkas CSV yang dapat diperoleh dari situs web [exoplanets.org](https://www.exoplanets.org)).
 
 ##### Albedo
 Albedo dari planet-planet luar surya pada umumnya belum dapat diukur secara langsung, sehingga potensi kelayakhunian biasanya diperhitungkan dengan mengasumsikan albedo $A ≅ 0.3$ seperti Bumi, atau menggunakan rentang yang lebar seperti yang dilakukan dalam HITE orisinal ($0.05 ≤ A ≤ 0.8$). Kekurangan dari asumsi yang pertama ialah tidak dipertimbangkannya keberagaman karakteristik eksoplanet, sedangkan yang kedua terlalu lebar sehingga tidak terlalu berguna.

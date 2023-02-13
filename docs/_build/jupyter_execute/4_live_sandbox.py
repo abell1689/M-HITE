@@ -6,36 +6,45 @@
 # In[1]:
 
 
-# Import libraries
 import pandas as pd
 import math
+from scipy import interpolate
 
 
 # In[2]:
 
 
-# Define constants & variables
-## Common physical constants, mainly used to calculate fMax (the upper bound of energy flux received by a planet ...
-## ... that allows it to be habitable)
-BIGG       = 6.67428e-11       # gravitational constant
+# Definition of constants and variables
+
+# Some common physical constants, mainly used to calculate `maxFlux`
+## (the upper bound of energy flux received by a planet that allows it
+## to be habitable according to Pierrehumbert (2015))
+
+BIGG       = 6.67428e-11       # Gravitational constant
 PI         = 3.1415926535
 A          = 0.7344            # Pierrehumbert's Constant
 SB         = 5.670373e-8       # Stefan-Boltzmann Constant
 LH2O       = 2.425e6           # Latent Heat Capacity of Water
 RGAS       = 461.5             # Universal Gas Constant
-PLINE      = 1e4               # 
+PLINE      = 1e4               
 PREF       = 610.616           # Reference Pressure
 TREF       = 273.13            # Reference Temperature
 K0         = 0.055             # A constant in Runaway Greenhouse calculation
 
-## 
-ALBMINELSE = 0.05
-ALBMAXELSE = 0.8
-ALBMING    = 0.25
-ALBMAXM    = 0.35
+
+# Boundaries for albedo values:
+ALBMINELSE = 0.05              # General lower bound
+ALBMAXELSE = 0.8               # General upper bound
+ALBMING    = 0.25              # Lower bound for planets orbiting G-type stars
+ALBMAXM    = 0.35              # Upper bound for planets orbiting M-type stars
+
+
+# The counterpart to maxFlux
+## (unlike maxFlux, MINFLUX is a constant that does not depend on a planet's properties)
 MINFLUX    = 67
 
-## Defintion of units of measurement, mainly used to convert exoplanet.org data into SI units
+# Definitions of units of measurement,
+## mainly used to convert [exoplanet.org](exoplanet.org) data into SI units:
 MEARTH     = 5.972186e24       # Earth mass in kilograms
 REARTH     = 6378100           # Earth's radius in meters
 S0         = 1362              # Solar constant in watts per square meter
@@ -50,98 +59,90 @@ AU         = 1.496e11          # The astronomical unit in meters
 # In[3]:
 
 
-#### Define functions
+# Definition of functions
 
-### Probability distribution of eccentricity (from the original code, not used in M-HITE)
-### pofe = probability of e
-### def pofe(ecc):
-    #### return 0.1619 - 0.5352*ecc + 0.6358*ecc*ecc - 0.2557*ecc**3
-
-### Probability distribution of eccentricity (uses data from the exoplanet data file)
-def mpofe(ecc,mu,sigma):
+# 1) A function to calculate the probability distribution of orbital eccentricity
+def pofe(ecc,mu,sigma):
     return ((sigma*math.sqrt(2*math.pi))**(-1))*math.exp(-(((ecc-mu)**2)/(2*sigma**2)))/1000
 
-### Zeng-Sasselov boundaries (digunakan oleh fpRocky)
-def mzsrank(mPlanet,mZSi,mZSimin1):
-    w = (mZSi - mZSimin1)/10
-    i = 1
-    while i < 10:
-        mTest = mZSimin1 + i*w
-        if mPlanet < mTest:
-            rank = i
-            # print("rank: ",rank,"; mPlanet: ",mPlanet,"; mTest: ",mTest, "; i:", i)
-            break
-        else:
-            rank = i
-            i = i + 1
-    return rank
-
-### Calculate probability of planet's rocky-ness/terrestriality
-def fpRocky (mPlanet,rPlanet,exoName):
-    mPlanet = mPlanet/MEARTH # Convert the unit to Earth's masses
-    rPlanet = rPlanet/REARTH # Convert the unit to Earth's radii
+# 2) A function to calculate the probability of a planet's terrestriality
+def fp_ter(mPlanet,rPlanet,exoName):
+    # Convert the unit to Earth's masses and radii
+    mPlanet = mPlanet/MEARTH 
+    rPlanet = rPlanet/REARTH
     
     # Calculate mu1
-    mu1 = 0.0
+    ## Initialize mu1 value to 0
+    mu1 = 0.0       
+    
+    # Initialize temporary variables to hold a mass/radius value
+    ## from the (i-1)th row of the ZS table
     mZSimin1 = 0
     rZSimin1 = 0
-    for i in zsList:
+
+    # This block iterates through the the 'M-Pure-MgSiO3' column
+    #to find the bracket that contains mPlanet value
+    for i in rowNum:
+        # Initialize temporary variables to hold a mass/radius value
+        #from the i-th row of the ZS table
         mZSi = zs.loc[i, "M-PureMgSiO3"]
         rZSi = zs.loc[i, "R-PureMgSiO3"]
+        
+        # Comparing mPlanet to the current value of mZSi
         if mPlanet == mZSi:
             mu1 = rZSi
+            break                          
+        elif mPlanet > mZSi:               
+            mZSimin1 = mZSi                
+            rZSimin1 = rZSi                  
+        else: # if mPlanet < mZSi --> we have found the correct bracket
+            f = interpolate.interp1d(zs.loc[(i-1):(i), "M-PureMgSiO3"], zs.loc[(i-1):(i), "R-PureMgSiO3"], kind='linear', assume_sorted=True)
+            mu1 = f(mPlanet)
             break
-        elif mZSi > mPlanet:
-            mu1 = rZSimin1 + mzsrank(mPlanet,mZSi,mZSimin1)*(rZSi-rZSimin1)/10
-            break
-        else:
-            mZSimin1 = mZSi
-            rZSimin1 = rZSi # the loop won't stop until either of the two conditions above are satisfied 
-    print("mu1: ", mu1)
 
-    ### Calculate mu2
+    # Calculate mu2
     mu2 = 0.0
     mZSimin1 = 0
     rZSimin1 = 0
-    for i in zsList:
+    for i in rowNum:
         mZSi = zs.loc[i, "M-MgSiO3-H2O-5050"]
         rZSi = zs.loc[i, "R-MgSiO3-H2O-5050"]
         if mPlanet == mZSi:
             mu2 = rZSi
             break
-        elif mPlanet < mZSi:
-            mu2 = rZSimin1 + mzsrank(mPlanet,mZSi,mZSimin1)*(rZSi-rZSimin1)/10
-            break
-        else:
+        elif mPlanet > mZSi:
             mZSimin1 = mZSi
             rZSimin1 = rZSi
-    print("mu2: ", mu2)
+        else: 
+            f = interpolate.interp1d(zs.loc[(i-1):(i), "M-MgSiO3-H2O-5050"], zs.loc[(i-1):(i), "R-MgSiO3-H2O-5050"], kind='linear', assume_sorted=True)
+            mu2 = f(mPlanet)
+            break
 
-    ### Calculate sigma1
+    # Calculate sigma1
     sigma1 = (mu2-mu1)/3
-    print("sigma: ",sigma1)
     
-    pRocky = 0
+    # Calculate the terrestrial probability
+    p_ter = 0
     if rPlanet <= mu1:
-        pRocky = 1
+        p_ter = 1
     elif rPlanet >= mu2:
-        pRocky = 0
-    else: # use the T_M_p function from SEPHI
-        pRocky = math.exp(-(0.5)*((rPlanet-mu1)/sigma1)**2)
-        
-    return pRocky
+        p_ter = 0
+    else: # uses a pseudo-gaussian function
+        p_ter = math.exp(-(0.5)*((rPlanet-mu1)/sigma1)**2)
+    return p_ter
 
 
 # In[4]:
 
 
-### Import exoplanet data from a CSV into a pandas dataframe
-exo = pd.read_csv (r'exoplanetsInUse_noKOI1.csv', low_memory=False)
+# Data input
+## Import exoplanet data from a CSV file into a pandas dataframe
+exo = pd.read_csv (r'exoplanets_noKOI.csv', low_memory=False)
 
-### Set the column with the header NAME to be used as an index to identify row 
+# Set the column with the header NAME to be used as an index to identify row 
 exo = exo.set_index("NAME", drop = False)
 
-### Extract names of planets as a list (to be used as a calling list)
+# Extract names of planets as a list (to be used as a calling list)
 exoList = pd.DataFrame(exo, columns=['NAME'])
 exoList = exoList['NAME'].values.tolist()
 
@@ -149,172 +150,184 @@ exoList = exoList['NAME'].values.tolist()
 # In[5]:
 
 
-### Import CSV of Zeng & Sasselov boundaries
-zs = pd.read_csv (r'zeng-sasselov_boundaries.csv')
+# Zeng-Sasselov boundaries input
 
-### Set index using the SORT column
-zs = zs.set_index("SORT", drop = False)
+## Import CSV of Zeng & Sasselov boundaries
+zs = pd.read_csv (r'zsboundaries.csv')
 
-### Extract the column "SORT" as a list (to be used as a calling list)
-zsList = pd.DataFrame(zs, columns=['SORT'])
-zsList = zsList['SORT'].values.tolist()
+## Set index using the RowNum column
+zs = zs.set_index("RowNum", drop = False)
+
+## Extract the column "RowNum" as a list (to be used as a calling list)
+rowNum = pd.DataFrame(zs, columns=['RowNum'])
+rowNum = rowNum['RowNum'].values.tolist()
 
 
 # In[6]:
 
 
-## Subroutine to determine Habitability Index value
+# Main subroutine to determine the habitability index value
 
-habIndexList = []
+habIndex = []
+habIndexWithName = []
+habIndexNotZero = []
 
 for exoName in exoList:
-    #Extract data of individual planets
+    # Extract data of individual planets
     
-    #### HOST STAR PROPERTIES
-    ### Stellar radius (in solar radii)
+    # HOST STAR PROPERTIES
+    # Stellar radius (in solar radii)
     rStar = exo.loc[exoName, "RSTAR"]
-    # Convert to SI
+    ## Convert to SI
     rStar = rStar*RSUN
-    ### Stellar temperature (in Kelvin)
+    
+    # Stellar temperature (in Kelvin)
     teffStar = exo.loc[exoName, "TEFF"]
-    ### Stellar luminosity
+    
+    # Stellar luminosity
     luminosity = 4*math.pi*rStar*rStar*SB*teffStar**4
     
-    ###### PLANET PROPERTIES   
-    ### Planetary radius (in Jovian radii)
+    # PLANET PROPERTIES   
+    # Planetary radius (in Jovian radii)
     rPlanet = exo.loc[exoName, "R"]
-    # If Rp is not available, calculate it from  transit depth
+    ## If R is not available, calculate it from  transit depth
     if math.isnan(rPlanet) == 1:
         depth = exo.loc[exoName, "DEPTH"]
         rPlanet = math.sqrt(depth)*rStar
-    # Convert to SI
+    ## Convert to SI
     rPlanet = rPlanet*RJUP
-    ### Planetary mass (in Jovian masses)
+    
+    # Planetary mass (in Jovian masses)
     mPlanet = exo.loc[exoName, "MASS"] 
-    # If Mp is not available, calculate it from a common scaling law, [...]
-    # using Rp
+    ## If MASS is not available, calculate it from a common scaling law
+    ### from the original HITE
     if math.isnan(mPlanet) == 1:
         if rPlanet/REARTH <= 1:
             mPlanet = ((rPlanet/REARTH)**3.268)*MEARTH
         elif rPlanet/REARTH > 1:
             mPlanet = ((rPlanet/REARTH)**3.65)*MEARTH
-    # Convert to SI
+    ## Convert to SI
     mPlanet = mPlanet*MJUP
-    ### Surface planet gravity (in SI)
+    
+    # Surface planet gravity (in SI)
     surfGrav = BIGG*mPlanet/(rPlanet**2)    
     
+    # ORBITAL PROPERTIES
     
-    
-    ###### Orbital properties
-    ### Orbital eccentricity
+    # Orbital eccentricity
     ecc = exo.loc[exoName, "ECC"]
-    ### Measurement uncertainty of orbital eccentricity    
-    # Upper bound (relative from E)
+
+    # Measurement uncertainty of orbital eccentricity    
+    ## Upper bound (relative from E)
     eccUpRel = exo.loc[exoName, "ECCUPPER"]
-    # If measurement uncertainty is not available, assign it as 0.01
+    ### If measurement uncertainty is not available, assign it as 0.01
     if math.isnan(eccUpRel) == 1:
         eccUpRel = 0.01
-    # Upper bound (relative from E)
+    ### Upper bound (absolute)
     eccUpper = ecc + eccUpRel
-    # Lower bound (relative from E)
+    
+    ## Lower bound (relative from E)
     eccLowRel = exo.loc[exoName, "ECCLOWER"]
-    # If measurement uncertainty is not available, assign it as 0.01
+    ### If measurement uncertainty is not available, assign it as 0.01
     if math.isnan(eccLowRel) == 1:
         eccLowRel = 0.01
-    # Lower bound (absolute)
+    ###Lower bound (absolute)
     eccLower = ecc - eccLowRel
-    ### Orbital semi-major axis (in AU)
+    
+    # Orbital semi-major axis (in AU)
     semiAxis = exo.loc[exoName, "A"]      
-    # Convert to SI
+    ## Convert to SI
     semiAxis = semiAxis*AU
     
     
-    ###### Calculate the upper and lower bounds of F_OLR [...]
-    ###### that would allow for surface liquid water to exist
-    ### lupa apa
+    # Calculate the upper and lower bounds of F_OLR [...]
+    ## that would allow for surface liquid water to exist
     pStar = PREF*math.exp(LH2O/(RGAS*TREF))
-    ### Maximum F_OLR
-    fMax = A*SB*(LH2O/(RGAS*math.log(pStar*math.sqrt(K0/(2*PLINE*surfGrav)))))**4
+    # Upper bound: maximum F_OLR
+    maxFlux = A*SB*(LH2O/(RGAS*math.log(pStar*math.sqrt(K0/(2*PLINE*surfGrav)))))**4
+    # Lower bound: minimum F_OLR is the constant MINFLUX
+    minFlux = MINFLUX
     
-    ### Maximum F_OLR (Fmin) is the constant MINFLUX
-
-    
-    ###### Probability of rocky-ness (new)
-    pRocky = fpRocky(mPlanet,rPlanet,exoName)
+    # Probability of the planet being terrestrial
+    p_ter = fp_ter(mPlanet,rPlanet,exoName)
         
     
-    ###### Albedo (new)
-    ### Boundaries
+    # Albedo (new)
+    ## Boundaries
     albMin = ALBMINELSE
     albMax = ALBMAXELSE
-    
-    # Special conditions
-    # For planets with M-type host star
+    ## Special conditions
+    ### For planets with M-type host star
     if teffStar >= 2300 and teffStar <=3800:
-        albMin = ALBMINELSE
         albMax = ALBMAXM
-    # For planets with G-type host star
+    ### For planets with G-type host star
     elif teffStar >= 5370 and teffStar <=5980:
-        albmin = ALBMING     
+        albMin = ALBMING
+        
         
     
-    ###### Calculate F_OLR
-    ### Albedo increments
+    # Calculate F_OLR
+    ## Albedo increments
     da = 0.01
-    ### Eccentricity increments
+    ## Eccentricity increments
     de = 0.01
-    ### Sum of pofe (probability of eccentricity);
-    ### is used to normalize the index value, later)
+    ## Sum of pofe (probability of eccentricity);
+    ### (is used to normalize the index value, later)
+    ### Initialized to 0
     pofeSum = 0
-    ### How many instances of F_OLR meets the requirements for [...]
-    ### the planet to have surface liquid water? Each instances would be [...]
-    ### multiplied by the probability of that value of F_OLR from occuring
+    ### Sum of how many instances of F_OLR meets the requirements for
+    #### the planet to have surface liquid water. Each instances will then be
+    #### multiplied by the probability of its eccentricity (pofe)
+    ### Initialized to 0
     habFact = 0
     ### Incoming stellar radiation (instellation)
     flux0 = luminosity/(16*math.pi*semiAxis*semiAxis)
 
-    ### Calculate H
+    # Calculate the habitability index
+    ## Iterate through the albedo & eccentricity 2D matrix
     a = albMin
     while a < albMax:
         e = eccLower
         while e < eccUpper:
             flux = flux0*(1-a)/math.sqrt(1-e*e)
-            pofeSum = pofeSum + mpofe(e, ecc, eccUpRel)
-            if flux < fMax and flux > MINFLUX:
-                habFact = habFact + mpofe(e, ecc, eccUpRel)
+            pofeSum = pofeSum + pofe(e, ecc, eccUpRel)
+            if flux < maxFlux and flux > MINFLUX:
+                habFact = habFact + pofe(e, ecc, eccUpRel)
             e = e + de
         a = a + da   
     
     if ecc > 0.8:
         H = 0.0
     elif pofeSum != 0:
-        H = (habFact/pofeSum)*pRocky
-    else: # for error case
+        H = (habFact/pofeSum)*p_ter
+    else: # in the case of error; might be better to replace this with a throw exception statement
         H = 0.0
-    habIndexList.extend([exoName, ",", H])
-        
-    print(exoName, H)
     
+    habIndex.append(H)
+    habIndexWithName.extend([exoName, ",", H])
     
+    if H > 0:
+        habIndexNotZero.extend([exoName+ ": "+str(H)])
 
 
-# In[7]:
+# In[17]:
 
 
-# print(sum(habIndexList)/len(habIndexList)) #0.002815606263929704
-print(habIndexList)
+for i in habIndexNotZero:
+    print(i)
 
 
-# In[11]:
+# In[5]:
 
 
-with open('out.txt','w') as f:
-    i = 1
-    for a in habIndexList:
-        if i == 3:
-            print(a, file=f)
-            i = 1
-        else:
-            print(a, file=f, end="")
-            i += 1
+# Append the result (planet's name and index value) to a .txt file in the same folder 
+#with open('out.txt','w') as f:
+#    i = 1
+#    for a in habIndexWithName:
+#        if i == 3:
+#            print(a, file=f)
+#            i = 1
+#        else:
+#            print(a, file=f, end="")
+#            i += 1
 

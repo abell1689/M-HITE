@@ -12,7 +12,7 @@ execution_allow_errors = False
 execution_excludepatterns = []
 execution_in_temp = False
 execution_timeout = 30
-extensions = ['sphinx_togglebutton', 'sphinx_copybutton', 'myst_nb', 'jupyter_book', 'sphinx_thebe', 'sphinx_comments', 'sphinx_external_toc', 'sphinx.ext.intersphinx', 'sphinx_panels', 'sphinx_book_theme', 'sphinxcontrib.bibtex', 'sphinx_jupyterbook_latex']
+extensions = ["myst_parser", 'sphinx_togglebutton', 'sphinx_copybutton', 'myst_nb', 'jupyter_book', 'sphinx_thebe', 'sphinx_comments', 'sphinx_external_toc', 'sphinx.ext.intersphinx', 'sphinx_panels', 'sphinx_book_theme', 'sphinxcontrib.bibtex', "sphinx_jupyterbook_latex"]
 external_toc_exclude_missing = False
 external_toc_path = '_toc.yml'
 html_baseurl = ''
@@ -26,7 +26,6 @@ jupyter_cache = ''
 jupyter_execute_notebooks = 'force'
 language = None
 latex_engine = 'pdflatex'
-extensions = ["myst_parser"]
 myst_enable_extensions = [
     "amsmath",
     "colon_fence",

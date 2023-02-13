@@ -1,0 +1,12 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: index
+chapters:
+- file: 1_pendahuluan
+- file: 2_perincian_algoritma
+- file: 3_perincian_kode
+- file: 4_live_sandbox
+- file: 5_saran_pengembangan
+- file: 6_daftar_pustaka

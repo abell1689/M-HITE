@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Selayang Pandang &#8212; Dokumentasi M-HITE</title>
+    <title>Pendahuluan &#8212; Dokumentasi M-HITE</title>
     
   <link href="_static/css/theme.css" rel="stylesheet">
   <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -52,7 +52,8 @@ const thebe_selector_output = ".output, .cell_output"
     <link rel="shortcut icon" href="_static/favicon.png"/>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Pendahuluan" href="1_pendahuluan.html" />
+    <link rel="next" title="Perincian Algoritma" href="2_perincian_algoritma.html" />
+    <link rel="prev" title="Selayang Pandang" href="index.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -72,7 +73,7 @@ const thebe_selector_output = ".output, .cell_output"
 <div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
     
         <div class="navbar-brand-box">
-    <a class="navbar-brand text-wrap" href="#">
+    <a class="navbar-brand text-wrap" href="index.html">
       
         <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
         
@@ -90,15 +91,15 @@ const thebe_selector_output = ".output, .cell_output"
 </form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
         <ul class="nav bd-sidenav">
- <li class="toctree-l1 current">
-  <a class="reference internal" href="#">
+ <li class="toctree-l1">
+  <a class="reference internal" href="index.html">
    Selayang Pandang
   </a>
  </li>
 </ul>
-<ul class="nav bd-sidenav">
- <li class="toctree-l1">
-  <a class="reference internal" href="1_pendahuluan.html">
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
    Pendahuluan
   </a>
  </li>
@@ -168,7 +169,7 @@ const thebe_selector_output = ".output, .cell_output"
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="_sources/index.md"><button type="button"
+        <a class="dropdown-buttons" href="_sources/1_pendahuluan.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -188,7 +189,7 @@ const thebe_selector_output = ".output, .cell_output"
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/abell1689/M-HITE//issues/new?title=Issue%20on%20page%20%2Findex.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/abell1689/M-HITE//issues/new?title=Issue%20on%20page%20%2F1_pendahuluan.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
         
@@ -215,23 +216,38 @@ const thebe_selector_output = ".output, .cell_output"
             <nav id="bd-toc-nav" aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#apa-itu-hite">
-   Apa itu HITE?
+  <a class="reference internal nav-link" href="#latar-belakang">
+   Latar Belakang
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#hite-termodifikasi-m-hite">
-   HITE Termodifikasi (M-HITE)
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#catatan">
-   Catatan
+  <a class="reference internal nav-link" href="#tutorial-teknis">
+   Tutorial Teknis
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#daftar-isi">
-     Daftar Isi
+    <a class="reference internal nav-link" href="#instalasi-environment">
+     Instalasi
+     <em>
+      environment
+     </em>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#berkas">
+     Berkas
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#langkah-pertama">
+     Langkah pertama
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#live-sandbox">
+     <em>
+      Live sandbox
+     </em>
     </a>
    </li>
   </ul>
@@ -246,7 +262,7 @@ const thebe_selector_output = ".output, .cell_output"
         <div class="col-12 col-md-9 pl-md-3 pr-md-0">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Selayang Pandang</h1>
+                <h1>Pendahuluan</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -257,23 +273,38 @@ const thebe_selector_output = ".output, .cell_output"
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#apa-itu-hite">
-   Apa itu HITE?
+  <a class="reference internal nav-link" href="#latar-belakang">
+   Latar Belakang
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#hite-termodifikasi-m-hite">
-   HITE Termodifikasi (M-HITE)
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#catatan">
-   Catatan
+  <a class="reference internal nav-link" href="#tutorial-teknis">
+   Tutorial Teknis
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#daftar-isi">
-     Daftar Isi
+    <a class="reference internal nav-link" href="#instalasi-environment">
+     Instalasi
+     <em>
+      environment
+     </em>
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#berkas">
+     Berkas
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#langkah-pertama">
+     Langkah pertama
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#live-sandbox">
+     <em>
+      Live sandbox
+     </em>
     </a>
    </li>
   </ul>
@@ -287,49 +318,69 @@ const thebe_selector_output = ".output, .cell_output"
             
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="selayang-pandang">
-<h1>Selayang Pandang<a class="headerlink" href="#selayang-pandang" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="apa-itu-hite">
-<h2>Apa itu HITE?<a class="headerlink" href="#apa-itu-hite" title="Permalink to this headline">¶</a></h2>
-<p><strong>HITE (<em>Habitability Index for Transiting Exoplanets</em>) adalah</strong> indeks yang merepresentasikan probabilitas kelayakhunian eksoplanet.</p>
-<p>Probabilitas kelayakhunian didefinisikan sebagai kemungkinan planet tersebut:</p>
-<p><strong>a) mempunyai permukaan padat</strong>; dan</p>
-<p><strong>b) memiliki air berfase cair di permukaannya</strong>.</p>
-<p>Nilainya memiliki rentang antara 1 (sangat berpotensi layak hidup) sampai 0 (sangat tidak berpotensi).
-Indeks ini bertujuan untuk menentukan prioritas pengamatan eksoplanet, sehingga sumber daya riset keplanetan luar surya yang terbatas dapat diarahkan untuk mengamati lebih lanjut planet-planet dengan karakteristik tertentu.</p>
-<div class="admonition-bias admonition">
-<p class="admonition-title">Bias</p>
-<p>Melalui definisi kelayakhunian yang dipakai HITE, karakteristik yang dinilai lebih tinggi oleh HITE adalah karakteristik yang mirip Bumi.</p>
+  <div class="tex2jax_ignore mathjax_ignore section" id="pendahuluan">
+<h1>Pendahuluan<a class="headerlink" href="#pendahuluan" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="latar-belakang">
+<h2>Latar Belakang<a class="headerlink" href="#latar-belakang" title="Permalink to this headline">¶</a></h2>
+<p>Planet-planet luar surya telah (dan sedang) ditemukan dalam jumlah yang membuat pengamatan intensif tidak memungkinkan untuk dilakukan secara merata terhadap setiap planet, terutama untuk pengamatan yang bertujuan mengungkap potensi keberadaan makhluk hidup di permukaan planet-planet tersebut. Indeks kelayakhunian dapat menjadi panduan dalam memprioritaskan planet-planet yang menarik untuk diamati lebih lanjut. Salah satu sistem indeks seperti itu adalah <em>Habitability Index for Transiting Exoplanets</em> (HITE).</p>
+<p>Perkembangan dalam pengamatan dan pemodelan mengenai planet luar surya sejak saat HITE disusun membuka kemungkinan untuk memperbarui beberapa komponen HITE dan membuatnya lebih akurat dan inklusif. <em>Modified</em> HITE (M-HITE) yang dijelaskan dalam dokumentasi ini adalah HITE dengan proses data masukan yang disederhanakan  dan algoritma yang disuplemen dengan subrutin dari beberapa literatur penelitian keplanetan luar surya.</p>
+<p>M-HITE diharapkan dapat menghasilkan sistem pengindeksan yang lebih akurat dalam memberikan gambaran kelayakhunian planet luar surya untuk keperluan pemrioritasan observasi.</p>
 </div>
-</div>
-<div class="section" id="hite-termodifikasi-m-hite">
-<h2>HITE Termodifikasi (M-HITE)<a class="headerlink" href="#hite-termodifikasi-m-hite" title="Permalink to this headline">¶</a></h2>
-<p>Program yang cara kerjanya akan dijelaskan di sini adalah HITE Termodifikasi/<strong><em>Modified HITE</em></strong> <strong>(M-HITE)</strong>. Untuk penjelasan tentang modifikasi yang dilakukan, lihat pada laman <a class="reference internal" href="2_perincian_algoritma.html"><span class="doc">Perincian Algoritma</span></a>.</p>
-</div>
-<div class="section" id="catatan">
-<h2>Catatan<a class="headerlink" href="#catatan" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="tutorial-teknis">
+<h2>Tutorial Teknis<a class="headerlink" href="#tutorial-teknis" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="instalasi-environment">
+<h3>Instalasi <em>environment</em><a class="headerlink" href="#instalasi-environment" title="Permalink to this headline">¶</a></h3>
+<p>Program M-HITE dikembangkan menggunakan IDE Jupyter Notebook. Jika perangkat yang akan digunakan belum memiliki instalasi Python, disarankan untuk menginstal Python bersamaan dengan Jupyter Notebook melalui distribusi Anaconda atau Miniconda.</p>
+<p><strong>Dependensi</strong>. M-HITE juga membutuhkan <em>package</em> Python berikut ini:</p>
 <ul class="simple">
-<li><p>Dokumentasi ini menggunakan tanda titik sebagai pemisah desimal.</p></li>
-<li><p>Dokumentasi ini ditulis dengan lebih jelas dan mudah diikuti daripada skripsi penulis tentang M-HITE yang tersimpan di repositori IPB. Jika ada perbedaan antara teks dokumentasi ini dengan teks pada skripsi tersebut, ikuti teks dokumentasi ini.</p></li>
-<li><p>Dokumentasi ini lebih berfokus pada penjelasan modifikasi yang dilakukan pada HITE sehingga menjadi M-HITE, serta penjelasan program Python dari M-HITE. Untuk penjelasan lebih lanjut mengenai HITE orisinal, silakan membaca artikel <a class="reference external" href="https://doi.org/10.1088/0004-637X/814/2/91">Barnes <em>et al</em>. (2015)</a>.</p></li>
-<li><p>Penulis dapat dihubungi lewat surel zulfarahma [at] proton [dot] me.</p></li>
+<li><p>pandas</p></li>
+<li><p>numpy</p></li>
+<li><p>scipy</p></li>
 </ul>
-<div class="admonition-catatan-tentang-lisensi admonition">
-<p class="admonition-title"><strong>Catatan tentang lisensi</strong></p>
-<p><strong>HITE orisinal disusun oleh <a class="reference external" href="https://github.com/RoryBarnes/HITE">Rory Barnes</a></strong> dari University of Washington. Program HITE dibagikan dengan lisensi GNU General Public License v3.0 yang memperbolehkan penggunaan dan perubahan terhadap program tersebut secara bebas. Info lebih lanjut tentang lisensinya bisa diperoleh <a class="reference external" href="https://github.com/RoryBarnes/HITE/blob/master/LICENSE">di sini</a>. Sesuai ketentuan lisensi tersebut, modifikasi dari program HITE ini juga dibagikan dengan lisensi yang sama.</p>
 </div>
-<div class="section" id="daftar-isi">
-<h3>Daftar Isi<a class="headerlink" href="#daftar-isi" title="Permalink to this headline">¶</a></h3>
-<div class="toctree-wrapper compound">
+<div class="section" id="berkas">
+<h3>Berkas<a class="headerlink" href="#berkas" title="Permalink to this headline">¶</a></h3>
+<p>Berkas-berkas yang diperlukan untuk menjalankan M-HITE dapat diunduh di <a class="reference external" href="https://github.com/abell1689/M-HITE/raw/main/docs/M-HITE.zip">sini</a>. Berkas-berkas tersebut adalah:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">main.ipynb</span></code></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="1_pendahuluan.html">Pendahuluan</a></li>
-<li class="toctree-l1"><a class="reference internal" href="2_perincian_algoritma.html">Perincian Algoritma</a></li>
-<li class="toctree-l1"><a class="reference internal" href="3_perincian_kode.html">Perincian Kode</a></li>
-<li class="toctree-l1"><a class="reference internal" href="4_live_sandbox.html">Live Sandbox</a></li>
-<li class="toctree-l1"><a class="reference internal" href="5_saran_pengembangan.html">Saran Pengembangan</a></li>
-<li class="toctree-l1"><a class="reference internal" href="6_daftar_pustaka.html">Daftar Pustaka</a></li>
+<li><p>berkas utama yang berisi algoritma penghitungan indeks</p></li>
+<li><p>bisa dibuka dan diubah menggunakan Jupyter Notebook</p></li>
+<li><p>berkas yang isinya dijelaskan pada laman <a class="reference internal" href="3_perincian_kode.html"><span class="doc">Perincian Kode</span></a>.</p></li>
+</ul>
+</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">exoplanet.csv</span></code></p>
+<ul>
+<li><p>berkas yang berisi data planet luar surya</p></li>
+<li><p>didapat dari <span class="xref myst">exoplanets.org</span></p></li>
+<li><p>digunakan sebagai sumber data masukan dalam <code class="docutils literal notranslate"><span class="pre">main.ipynb</span></code></p></li>
+<li><p>kolom yang tidak digunakan oleh M-HITE bisa dihilangkan untuk membuatnya lebih rapi</p></li>
+<li><p>bisa di-filter dan dibuat sub-daftar sesuai karakteristik planet yang ingin dibuatkan daftar indeks</p></li>
+<li><p>disediakan pula <code class="docutils literal notranslate"><span class="pre">exoplanets_noKOI.csv</span></code> (berkas yang sama tapi tanpa mengikutkan <em>Kepler object of interest</em> (KOI), planet-planet luar surya yang belum cukup terkonfirmasi keberadaannya)</p></li>
+</ul>
+</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">zsboundaries.csv</span></code></p>
+<ul>
+<li><p>berkas yang berisi tabel nilai radius dan massa</p></li>
+<li><p>diadaptasi dari Zeng &amp; Sasselov (2013)</p></li>
+<li><p>digunakan untuk menentukan komposisi penyusun planet (dan apakah planet bersifat terestrial atau tidak)</p></li>
+</ul>
+</li>
+<li><p><code class="docutils literal notranslate"><span class="pre">out.txt</span></code></p>
+<ul>
+<li><p>berkas untuk menyimpan hasil pengindeksan</p></li>
+</ul>
+</li>
 </ul>
 </div>
+<div class="section" id="langkah-pertama">
+<h3>Langkah pertama<a class="headerlink" href="#langkah-pertama" title="Permalink to this headline">¶</a></h3>
+<p>Ekstrak unduhan dan simpan semua berkas dalam satu folder.
+Jalankan Jupyter Notebook (dari command prompt atau Anaconda launcher) dan buka <code class="docutils literal notranslate"><span class="pre">main.ipynb</span></code>.</p>
+</div>
+<div class="section" id="live-sandbox">
+<h3><em>Live sandbox</em><a class="headerlink" href="#live-sandbox" title="Permalink to this headline">¶</a></h3>
+<p>Pada dokumentasi ini disediakan juga <em>live sandbox</em> yang langsung bisa digunakan tanpa menginstal apapun. (Ikon roket –&gt; Live Code)</p>
 </div>
 </div>
 </div>
@@ -358,11 +409,18 @@ Indeks ini bertujuan untuk menentukan prioritas pengamatan eksoplanet, sehingga 
               
             
                 <!-- Previous / next buttons -->
-<div class='prev-next-area'>
-    <a class='right-next' id="next-link" href="1_pendahuluan.html" title="next page">
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="index.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Selayang Pandang</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="2_perincian_algoritma.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Pendahuluan</p>
+        <p class="prev-next-title">Perincian Algoritma</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
