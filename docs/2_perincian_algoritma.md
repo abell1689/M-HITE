@@ -139,7 +139,10 @@ Sementara itu, batas maksimum $F_{max}$ **berbeda** untuk setiap planet. Persama
 dengan $B$ adalah koefisien berorde ~1 yang memastikan persamaan analitis ini sesuai dengan model transfer energi radiatif, $\sigma$ adalah konstanta Stefan-Boltzmann, $l$ adalah kapasitas panas laten dari air, $R$ adalah konstanta gas universal, $P_{0}$ adalah tekanan tertentu di mana intensitas garis spektrum uap air (*water vapor line strength*) dievaluasi, $g$ adalah percepatan gravitasi di permukaan planet, dan $\kappa$ adalah koefisien absorpsi *gray*.
 
 $P_{*}$ adalah tekanan terskala (*scaled*) yang dihitung dengan persamaan berikut:
-$$P_{*}=P_{ref} \space e^{\frac{l}{RT_{ref}}},$$ di mana $P_{ref}$ dan $T_{ref}$ merujuk pada titik tertentu pada kurva saturasi uap air.
+
+$$P_{*}=P_{ref} \space e^{\frac{l}{RT_{ref}}},$$
+
+di mana $P_{ref}$ dan $T_{ref}$ merujuk pada titik tertentu pada kurva saturasi uap air.
 
 Beberapa nilai dari variabel-variabel di atas didapat dari Pierrehumbert (2010) dan bisa dilihat pada laman {doc}`3_perincian_kode`.
 
