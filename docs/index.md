@@ -11,7 +11,7 @@ Probabilitas kelayakhunian didefinisikan sebagai kemungkinan planet tersebut:
 Nilainya memiliki rentang antara 1 (sangat berpotensi layak hidup) sampai 0 (sangat tidak berpotensi). 
 Indeks ini bertujuan untuk menentukan prioritas pengamatan eksoplanet, sehingga sumber daya riset keplanetan luar surya yang terbatas dapat diarahkan untuk mengamati lebih lanjut planet-planet dengan karakteristik tertentu.
 
-:::{admonition}
+:::{admonition} Bias
 Melalui definisi kelayakhunian yang dipakai HITE, karakteristik yang dinilai lebih tinggi oleh HITE adalah karakteristik yang mirip Bumi.
 :::
 

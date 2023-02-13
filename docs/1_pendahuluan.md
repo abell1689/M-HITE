@@ -20,7 +20,7 @@ Program M-HITE dikembangkan menggunakan IDE Jupyter Notebook. Jika perangkat yan
 - scipy
 
 ### Berkas
-Berkas-berkas yang diperlukan untuk menjalankan M-HITE dapat diunduh di [sini](https://github.com/abell1689/M-HITE/raw/main/docs/M-HITE.zip) Berkas-berkas tersebut adalah:
+Berkas-berkas yang diperlukan untuk menjalankan M-HITE dapat diunduh di [sini](https://github.com/abell1689/M-HITE/raw/main/docs/M-HITE.zip). Berkas-berkas tersebut adalah:
 - `main.ipynb`
 	- berkas utama yang berisi algoritma penghitungan indeks
 	- bisa dibuka dan diubah menggunakan Jupyter Notebook
