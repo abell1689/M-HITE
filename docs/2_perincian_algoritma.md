@@ -44,8 +44,8 @@ Syarat kelayakhunian ini didasarkan pada asumsi bahwa air berfase cair merupakan
 Keterestrialan planet diestimasi melalui model _ad hoc_ berikut ini.
 
 \\begin{align}
+p_{ter}(r)=
 \\begin{cases}
-p_{ter}(r)= \\\\
 0, & r <= 1 \\\\
 (2.5-r), & 1.5 < r < 2.5 \\\\
 1, & r >= 2.5.

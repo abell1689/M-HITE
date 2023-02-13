@@ -7,6 +7,14 @@ logo: logo-2.png
 
 # Force re-execution of notebooks on each build.
 # See https://jupyterbook.org/content/execute.html
+
+sphinx:
+  extra_extensions:
+  - sphinx_jupyterbook_latex
+  # config:
+  #   jblatex_load_imgconverter: true
+  #   jblatex_captions_to_parts: true
+
 execute:
   execute_notebooks: cache
 only_build_toc_files: auto
