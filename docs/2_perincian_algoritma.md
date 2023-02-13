@@ -1,16 +1,6 @@
 # Perincian Algoritma
 Laman ini memuat perincian algoritma yang dipakai dalam menentukan nilai indeks HITE bagi suatu eksoplanet, serta modifikasi yang dilakukan terhadap algoritma tersebut sehingga menjadi HITE termodifikasi (M-HITE)
 
-$$\begin{align}
-p_{ter}(r)=
-\begin{cases}
-0, & r \leq 1.5 \\
-(2.5-r), & 1.5 < r < 2.5 \\
-1, & r \geq 2.5.
-\end{cases}
-\end{align}$$
-
-
 ## Asumsi
 ### Definisi ‘Layak Huni’
 Definisi ‘layak huni bagi makhluk hidup’ tentu bergantung pada definisi makhluk hidup itu sendiri. Perlu diingat bahwa kehidupan di planet lain, jika ada, tentu saja bisa memiliki proses-proses biokimia yang berbeda jauh dengan kehidupan yang kita ketahui—sesuatu yang sulit dibayangkan karena contoh bentuk kehidupan yang kita ketahui saat ini baru satu, yaitu kehidupan di Bumi.
@@ -55,14 +45,14 @@ Syarat kelayakhunian ini didasarkan pada asumsi bahwa air berfase cair merupakan
 #### Orisinal
 Keterestrialan planet diestimasi melalui model _ad hoc_ berikut ini.
 
-\\begin{align}
+$$\begin{align}
 p_{ter}(r)=
-\\begin{cases}
-0, & r <= 1 \\\\
-(2.5-r), & 1.5 < r < 2.5 \\\\
-1, & r >= 2.5.
-\\end{cases}
-\\end{align}
+\begin{cases}
+0, & r \leq 1.5 \\
+(2.5-r), & 1.5 < r < 2.5 \\
+1, & r \geq 2.5.
+\end{cases}
+\end{align}$$
 
 $p_{ter}$ adalah probabilitas keterestrialan planet, dengan rentang nilai antara 0 (dianggap sama sekali tidak mungkin bersifat terestrial) hingga 1 (dianggap pasti bersifat terestrial), dan $r$ adalah rasio antara radius planet $r_p$ dengan radius Bumi $R_⊕$.
 
@@ -95,16 +85,15 @@ Tabel di bawah ini merangkum hubungan antara komposisi planet dengan probabilita
 
 Nilai tepat $p_{ter}$ di daerah (2) dihitung menggunakan suatu persamaan pseudo-Gaussian yang didapat dari *Statistical-likelihood Extrasolar Planet Habitability Index* (SEPHI) [Rodrı́guez-Mozos dan Moya 2016](https://doi.org/10.1093/mnras/stx1910):
 
-
-\\begin{align}
+$$\begin{align}
   p_{ter}(r_p)=
-  \\begin{cases}
-    1, & r_p \\leq \\mu_{1, m_p} \\\\
-    \\text{exp}(-\\frac{1}{2}\\frac{(r_p-\\mu_{1, m_p})^2}{\\sigma_{m_p}}, & \\mu_{1, m_p} < r_p < \\mu_{2, m_p} \\\\
-    0, & r_p \\geq \\mu_{2, m_p}.
-  \\end{cases}
-\\end{align}
-
+  \begin{cases}
+    1, & r_p \leq \mu_{1, m_p} \\
+    \text{exp}(-\frac{1}{2}\frac{(r_p-\mu_{1, m_p})^2}{\sigma_{m_p}}, & \mu_{1, m_p} < r_p < \mu_{2, m_p} \\
+    0, & r_p \geq \mu_{2, m_p}
+  \end{cases}
+\end{align}
+$$
 
 dengan $\sigma_{m_{p}} = \frac{1}{3} (\mu_{2,m_{p}}-\mu_{1,m_{p}})$.
 
@@ -131,22 +120,24 @@ Penghitungan $F_{OLR}$, $F_{min}$, dan $F_{max}$ membutuhkan pengetahuan mendala
 
 **Persamaan-persamaan**. $F_{OLR}$ dihitung menggunakan persamaan ini:
 
-\\begin{align}
+$$\begin{align}
   F_{OLR}=
-  \\frac{L_{\*}(1-A)}{16 \\pi a^2 \\sqrt(1-e^2)},
-\\end{align}
+  \frac{L_{*}(1-A)}{16 \pi a^2 \sqrt(1-e^2)},
+\end{align}
+$$
 
-dengan $A$ adalah nilai albedo Bond planet, $a$ adalah sumbu semi-mayor orbit planet, dan $e$ adalah eksentrisitas orbit planet. Persamaan di atas mengasumsikan bahwa fluks yang terpancarkan kembali adalah seperempat dari fluks yang diserap [Berger et al. 1993](https://doi.org/10.1029/93JD00222).
+dengan $A$ adalah nilai albedo Bond planet, $a$ adalah sumbu semi-mayor orbit planet, dan $e$ adalah eksentrisitas orbit planet. Persamaan di atas mengasumsikan bahwa fluks yang terpancarkan kembali adalah seperempat dari fluks yang diserap [Berger *et al*. 1993](https://doi.org/10.1029/93JD00222).
 
-Batas minimum $F_{min}$ didapat dari [Kopparapu et al. (2014)](https://doi.org/10.1088/0004-637X/765/2/131) dengan nilai sekitar $67 \space Wm^{-2}$ untuk planet dengan massa dan radius dalam rentang tertentu. HITE **menyamakan** nilai dari batas minimum ini untuk semua planet terestrial.
+Batas minimum $F_{min}$ didapat dari [Kopparapu *et al*. (2014)](https://doi.org/10.1088/0004-637X/765/2/131) dengan nilai sekitar $67 \space Wm^{-2}$ untuk planet dengan massa dan radius dalam rentang tertentu. HITE **menyamakan** nilai dari batas minimum ini untuk semua planet terestrial.
 
 Sementara itu, batas maksimum $F_{max}$ **berbeda** untuk setiap planet. Persamaan berikut didapat dari Pierrehumbert (2010) dan merupakan fungsi implisit dari $m_p$ dan $r_p$ (melalui $g$, percepatan gravitasi di permukaan planet):
 
-\\begin{align}
+$$\begin{align}
   F_{max}=
-	B \\sigma
-	(\\frac{l}{2R \\space \\text{ln} (P_{\*} \\sqrt{\\kappa} P_{0} g)})
-\\end{align}
+	B \sigma
+	(\frac{l}{2R \space \text{ln} (P_{*} \sqrt{\\kappa} P_{0} g)})
+\end{align}
+$$
 
 dengan $B$ adalah koefisien berorde ~1 yang memastikan persamaan analitis ini sesuai dengan model transfer energi radiatif, $\sigma$ adalah konstanta Stefan-Boltzmann, $l$ adalah kapasitas panas laten dari air, $R$ adalah konstanta gas universal, $P_{0}$ adalah tekanan tertentu di mana intensitas garis spektrum uap air (*water vapor line strength*) dievaluasi, $g$ adalah percepatan gravitasi di permukaan planet, dan $\kappa$ adalah koefisien absorpsi *gray*.
 
@@ -185,13 +176,14 @@ Sebagai contoh, misal suatu planet X, dievaluasi menggunakan metode yang dijelas
 
 Informasi ini dapat dienkapsulasikan ke dalam suatu parameter intermediet $h$, dengan
 
-\\begin{align}
+$$\begin{align}
   h =
-  \\begin{cases}
-    1, & F_{min} \\leq F_{OLR} \\leq F_{max} \\\\
-    0, & \\text{otherwise}.
-  \\end{cases}
-\\end{align}.
+  \begin{cases}
+    1, & F_{min} \leq F_{OLR} \leq F_{max} \\
+    0, & \text{otherwise}.
+  \end{cases}
+\end{align}.
+$$
 
 Probabilitas suatu planet dapat menopang keberadaan air berfase cair di permukaannya, atau $p_{water}$, kemudian dapat diformulasikan sebagai fraksi kasus $F_{OLR}$ di mana $h$ bernilai 1:
 $$p_{water}=\frac{\sum\limits h_{j} p_{j} (e)}{\sum\limits p_{j}(e)},$$
@@ -206,10 +198,13 @@ Dalam menghitung $p_{rocky}$, M-HITE mengambil data $m_p$ dan $r_p$ dari [exopla
 ##### Albedo
 Albedo dari planet-planet luar surya pada umumnya belum dapat diukur secara langsung, sehingga potensi kelayakhunian biasanya diperhitungkan dengan mengasumsikan albedo $A ≅ 0.3$ seperti Bumi, atau menggunakan rentang yang lebar seperti yang dilakukan dalam HITE orisinal ($0.05 ≤ A ≤ 0.8$). Kekurangan dari asumsi yang pertama ialah tidak dipertimbangkannya keberagaman karakteristik eksoplanet, sedangkan yang kedua terlalu lebar sehingga tidak terlalu berguna.
 
-Dugaan albedo eksoplanet sesungguhnya dapat dibuat lebih sempit dan spesifik. Mengingat albedo suatu planet adalah efek kumulatif dari gas atmosferik serta tutupan awan, es, dan samudra, simulasi dari sistem atmosfer dan samudra planet (biasanya menggunakan salah satu atau gabungan beberapa *3-dimensional general circulation model* [3D-GCM]) dapat memperkirakan besar albedo planet tersebut Pierrehumbert (2010). Perkiraan ini dapat diperoleh hanya dengan mengetahui informasi mengenai fluks radiasi yang diterima planet dari bintang inangnya serta temperatur efektif bintang tersebut—informasi yang umumnya diketahui untuk setiap eksoplanet. Namun, simulasi seperti ini menggunakan sumber daya komputasi yang intensif dan umumnya tidak tersedia secara luas,
-sehingga hanya segelintir planet yang albedonya dapat diperkirakan melalui cara tersebut.
+Dugaan albedo eksoplanet sesungguhnya dapat dibuat lebih sempit dan spesifik. Mengingat albedo suatu planet adalah efek kumulatif dari gas atmosferik serta tutupan awan, es, dan samudra, simulasi dari sistem atmosfer dan samudra planet (biasanya menggunakan salah satu atau gabungan beberapa *3-dimensional general circulation model* [3D-GCM]) dapat memperkirakan besar albedo planet tersebut Pierrehumbert (2010).
 
-Pendekatan berbeda untuk menduga albedo eksoplanet telah dicoba oleh [del Genio et al. (2019)](https://doi.org/10.3847/1538-4357/ab3be8). Simulasi 3D-GCM dilakukan hanya untuk 48 planet, tapi daftar planet yang diikutkan dalam simulasi dipilih sebagaimana rupa sehingga hasil kumulatif dari simulasi dapat dipakai untuk menemukan relasi umum antara albedo dan tipe bintang inang. Hal ini mungkin untuk dilakukan karena trayek evolusi bintang (yang berbeda untuk setiap tipe bintang) berkaitan erat dengan formasi planet yang terbentuk di sekitarnya. Sintesis dari rangkaian simulasi yang dilakukan dalam studi tersebut menunjukkan bahwa albedo planet terestrial diperkirakan bernilai tidak kurang dari 0.25 untuk bintang inang tipe G (temperatur efektif $5370 > T_{eff} > 5980$), dan tidak lebih dari 0.35 untuk bintang tipe M ($2300> T_{eff} > 3800$). Relasi ini hanya berlaku untuk bintang dengan kedua tipe tersebut, yang menyusun sekitar 40 persen dari bintang inang eksoplanet yang telah ditemukan sejauh ini.
+Perkiraan ini dapat diperoleh hanya dengan mengetahui informasi mengenai fluks radiasi yang diterima planet dari bintang inangnya serta temperatur efektif bintang tersebut—informasi yang umumnya diketahui untuk setiap eksoplanet. Namun, simulasi seperti ini menggunakan sumber daya komputasi yang intensif dan umumnya tidak tersedia secara luas, sehingga hanya segelintir planet yang albedonya dapat diperkirakan melalui cara tersebut.
+
+Pendekatan berbeda untuk menduga albedo eksoplanet telah dicoba oleh [del Genio et al. (2019)](https://doi.org/10.3847/1538-4357/ab3be8). Simulasi 3D-GCM dilakukan hanya untuk 48 planet, tapi daftar planet yang diikutkan dalam simulasi dipilih sebagaimana rupa sehingga hasil kumulatif dari simulasi dapat dipakai untuk menemukan relasi umum antara albedo dan tipe bintang inang. Hal ini mungkin untuk dilakukan karena trayek evolusi bintang (yang berbeda untuk setiap tipe bintang) berkaitan erat dengan formasi planet yang terbentuk di sekitarnya.
+
+Sintesis dari rangkaian simulasi yang dilakukan dalam studi tersebut menunjukkan bahwa albedo planet terestrial diperkirakan bernilai tidak kurang dari 0.25 untuk bintang inang tipe G (temperatur efektif $5370 > T_{eff} > 5980$), dan tidak lebih dari 0.35 untuk bintang tipe M ($2300> T_{eff} > 3800$). Relasi ini hanya berlaku untuk bintang dengan kedua tipe tersebut, yang menyusun sekitar 40 persen dari bintang inang eksoplanet yang telah ditemukan sejauh ini.
 
 ### Penghitungan nilai indeks kelayakhunian (*H*)
 #### Orisinal
