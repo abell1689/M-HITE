@@ -45,14 +45,14 @@ Syarat kelayakhunian ini didasarkan pada asumsi bahwa air berfase cair merupakan
 #### Orisinal
 Keterestrialan planet diestimasi melalui model _ad hoc_ berikut ini.
 
-\\begin{align}
+\begin{align}
 p_{ter}(r)=
-\\begin{cases}
-0, & r <= 1 \\\\
-(2.5-r), & 1.5 < r < 2.5 \\\\
+\begin{cases}
+0, & r <= 1 \\
+(2.5-r), & 1.5 < r < 2.5 \\
 1, & r >= 2.5.
-\\end{cases}
-\\end{align}
+\end{cases}
+\end{align}
 
 $p_{ter}$ adalah probabilitas keterestrialan planet, dengan rentang nilai antara 0 (dianggap sama sekali tidak mungkin bersifat terestrial) hingga 1 (dianggap pasti bersifat terestrial), dan $r$ adalah rasio antara radius planet $r_p$ dengan radius Bumi $R_⊕$.
 
@@ -85,6 +85,7 @@ Tabel di bawah ini merangkum hubungan antara komposisi planet dengan probabilita
 
 Nilai tepat $p_{ter}$ di daerah (2) dihitung menggunakan suatu persamaan pseudo-Gaussian yang didapat dari *Statistical-likelihood Extrasolar Planet Habitability Index* (SEPHI) [Rodrı́guez-Mozos dan Moya 2016](https://doi.org/10.1093/mnras/stx1910):
 
+
 \\begin{align}
   p_{ter}(r_p)=
   \\begin{cases}
@@ -92,7 +93,8 @@ Nilai tepat $p_{ter}$ di daerah (2) dihitung menggunakan suatu persamaan pseudo-
     \\text{exp}(-\\frac{1}{2}\\frac{(r_p-\\mu_{1, m_p})^2}{\\sigma_{m_p}}, & \\mu_{1, m_p} < r_p < \\mu_{2, m_p} \\\\
     0, & r_p \\geq \\mu_{2, m_p}.
   \\end{cases}
-\\end{align},
+\\end{align}
+
 
 dengan $\sigma_{m_{p}} = \frac{1}{3} (\mu_{2,m_{p}}-\mu_{1,m_{p}})$.
 
@@ -134,7 +136,7 @@ Sementara itu, batas maksimum $F_{max}$ **berbeda** untuk setiap planet. Persama
   F_{max}=
 	B \\sigma
 	(\\frac{l}{2R \\space \\text{ln} (P_{\*} \\sqrt{\\kappa} P_{0} g)})
-\\end{align},
+\\end{align}
 
 dengan $B$ adalah koefisien berorde ~1 yang memastikan persamaan analitis ini sesuai dengan model transfer energi radiatif, $\sigma$ adalah konstanta Stefan-Boltzmann, $l$ adalah kapasitas panas laten dari air, $R$ adalah konstanta gas universal, $P_{0}$ adalah tekanan tertentu di mana intensitas garis spektrum uap air (*water vapor line strength*) dievaluasi, $g$ adalah percepatan gravitasi di permukaan planet, dan $\kappa$ adalah koefisien absorpsi *gray*.
 
@@ -155,7 +157,10 @@ Beberapa nilai dari variabel-variabel di atas didapat dari Pierrehumbert (2010) 
 **Albedo dan eksentrisitas**. Untuk menghitung $F_{OLR}$ suatu planet, dibutuhkan nilai albedo $A$ dan eksentrisitas $e$. Untuk saat ini, hasil observasi eksoplanet belum dapat menentukan kedua parameter ini dengan akurasi yang tinggi, terutama untuk albedo. HITE mengatasi ini dengan menganggap kedua parameter tersebut sebagai rentang dan memperkirakan batas minimum dan maksimum dari rentang tersebut dengan berbagai cara. Untuk penjelasan yang lebih mendetail tentang penentuan rentang eksentrisitas, lihat subbab 2.2 dan 2.3 dalam [Barnes *et al*. (2015)](https://doi.org/10.1088/0004-637X/814/2/91). Jika  hal tersebut tidak memungkinkan, seperti terjadi dalam banyak kasus,  rentang eksentrisitas ditentukan sebagai $0.05 ≤ e ≤ 0.8$.   Sementara itu, rentang albedo disamakan $0.05 \leq A \leq 0.8$ untuk semua planet sedari  awal.
 
 **Probabilitas distribusi eksentrisitas $p(e)$**. Lebih jauh lagi mengenai eksentrisitas, dalam kalkulasinya, HITE tidak menganggap semua nilai eksentrisitas mempunyai probabilitas yang sama.  Terdapat suatu distribusi frekuensi $p(e)$ yang didapat dari data eksoplanet-eksoplanet yang telah ditemukan sejauh ini (subbab *2.4 The Eccentricity Distribution* dalam [Barnes _et al_. (2015)](https://doi.org/10.1088/0004-637X/814/2/91), dengan 
-$$p(e)= 0.1619 - 0.5352e + 0.6358e^2 - 0.2557e^3.$$Distribusi frekuensi ini nantinya akan digunakan untuk melakukan pembobotan terhadap nilai eksentrisitas di bagian kalkulasi nilai $p_{water}$.
+
+$$p(e)= 0.1619 - 0.5352e + 0.6358e^2 - 0.2557e^3.$$
+
+Distribusi frekuensi ini nantinya akan digunakan untuk melakukan pembobotan terhadap nilai eksentrisitas di bagian kalkulasi nilai $p_{water}$.
 
 **Kalkulasi nilai $F_{OLR}$**. Karena nilai $A$ dan $e$ berupa rentang, penghitungan nilai $F_{OLR}$ dari suatu planet akan menghasilkan sebuah himpunan yang berisi ‘semua’ nilai $F_{OLR} \space (e,\space A)$ yang mungkin. Dalam prakteknya, tentu jumlah anggota himpunan ini ditentukan oleh inkremen yang digunakan dalam merunut rentang $A$ dan $e$.
 
