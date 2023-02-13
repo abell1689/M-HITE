@@ -46,24 +46,31 @@ Syarat kelayakhunian ini didasarkan pada asumsi bahwa air berfase cair merupakan
 Keterestrialan planet diestimasi melalui model _ad hoc_ berikut ini.
 
 \\begin{align}
+
 p_{ter}(r)=
+
 \\begin{cases}
+
 0, & r <= 1 \\\\
+
 (2.5-r), & 1.5 < r < 2.5 \\\\
+
 1, & r >= 2.5.
+
 \\end{cases}
+
 \\end{align}
 
 $p_{ter}$ adalah probabilitas keterestrialan planet, dengan rentang nilai antara 0 (dianggap sama sekali tidak mungkin bersifat terestrial) hingga 1 (dianggap pasti bersifat terestrial), dan $r$ adalah rasio antara radius planet $r_p$ dengan radius Bumi $R_⊕$.
 
-:::{admonition}
+:::{admonition} TL;DR
 Dalam HITE orisinal, $p_{ter}$ hanya merupakan fungsi dari radius planet.
 :::
 
 Model ini diperoleh dari statistik eksoplanet terestrial (yang jumlah sampelnya masih sangat kecil) di mana belum ditemukan planet yang lebih kecil dari $1.5R_⊕$ yang memiliki atmosfer gas tebal seperti yang dimiliki Jupiter.
 
 #### Setelah modifikasi
-:::{admonition}
+:::{admonition} TL;DR
 Dalam M-HITE, $p_{ter}$ adalah fungsi dari radius dan massa planet ($r_p$ dan $m_p$).
 :::
 
@@ -85,6 +92,7 @@ Tabel di bawah ini merangkum hubungan antara komposisi planet dengan probabilita
 
 Nilai tepat $p_{ter}$ di daerah (2) dihitung menggunakan suatu persamaan pseudo-Gaussian yang didapat dari *Statistical-likelihood Extrasolar Planet Habitability Index* (SEPHI) [Rodrı́guez-Mozos dan Moya 2016](https://doi.org/10.1093/mnras/stx1910):
 
+
 \\begin{align}
   p_{ter}(r_p)=
   \\begin{cases}
@@ -92,7 +100,8 @@ Nilai tepat $p_{ter}$ di daerah (2) dihitung menggunakan suatu persamaan pseudo-
     \\text{exp}(-\\frac{1}{2}\\frac{(r_p-\\mu_{1, m_p})^2}{\\sigma_{m_p}}, & \\mu_{1, m_p} < r_p < \\mu_{2, m_p} \\\\
     0, & r_p \\geq \\mu_{2, m_p}.
   \\end{cases}
-\\end{align},
+\\end{align}
+
 
 dengan $\sigma_{m_{p}} = \frac{1}{3} (\mu_{2,m_{p}}-\mu_{1,m_{p}})$.
 
@@ -111,7 +120,7 @@ HITE orisinal menentukan $p_{water}$, probabilitas suatu planet dapat menopang k
 
 Untuk setiap planet, terdapat suatu rentang nilai $F_{OLR}$ yang memungkinkannya memiliki air berfase cair di permukaannya, atau $p_{water} \geq 0$. Dalam dokumentasi ini, batas-batas minimum dan maksimum dari rentang tersebut dinotasikan dengan $F_{min}$ dan $F_{max}$.
 
-:::{admonition}
+:::{admonition} TL;DR
 Suatu planet bisa dikatakan bisa menopang keberadaan air berfase cair di permukaannya jika $F_{min}<F_{OLR}<F_{max}$ .
 :::
 
@@ -134,16 +143,19 @@ Sementara itu, batas maksimum $F_{max}$ **berbeda** untuk setiap planet. Persama
   F_{max}=
 	B \\sigma
 	(\\frac{l}{2R \\space \\text{ln} (P_{\*} \\sqrt{\\kappa} P_{0} g)})
-\\end{align},
+\\end{align}
 
 dengan $B$ adalah koefisien berorde ~1 yang memastikan persamaan analitis ini sesuai dengan model transfer energi radiatif, $\sigma$ adalah konstanta Stefan-Boltzmann, $l$ adalah kapasitas panas laten dari air, $R$ adalah konstanta gas universal, $P_{0}$ adalah tekanan tertentu di mana intensitas garis spektrum uap air (*water vapor line strength*) dievaluasi, $g$ adalah percepatan gravitasi di permukaan planet, dan $\kappa$ adalah koefisien absorpsi *gray*.
 
 $P_{*}$ adalah tekanan terskala (*scaled*) yang dihitung dengan persamaan berikut:
-$$P_{*}=P_{ref} \space e^{\frac{l}{RT_{ref}}},$$ di mana $P_{ref}$ dan $T_{ref}$ merujuk pada titik tertentu pada kurva saturasi uap air.
+
+$$P_{*}=P_{ref} \space e^{\frac{l}{RT_{ref}}},$$
+
+di mana $P_{ref}$ dan $T_{ref}$ merujuk pada titik tertentu pada kurva saturasi uap air.
 
 Beberapa nilai dari variabel-variabel di atas didapat dari Pierrehumbert (2010) dan bisa dilihat pada laman {doc}`3_perincian_kode`.
 
-:::{admonition}
+:::{admonition} TL;DR
 - Nilai $F_{OLR}$ adalah fungsi dari $A$ dan $e$. 
 - Nilai $F_{min}$ dianggap sama untuk setiap planet.
 - Nilai $F_{max}$ spesifik terhadap setiap planet dan merupakan fungsi dari $m_p$ dan $r_p$.
@@ -152,7 +164,10 @@ Beberapa nilai dari variabel-variabel di atas didapat dari Pierrehumbert (2010) 
 **Albedo dan eksentrisitas**. Untuk menghitung $F_{OLR}$ suatu planet, dibutuhkan nilai albedo $A$ dan eksentrisitas $e$. Untuk saat ini, hasil observasi eksoplanet belum dapat menentukan kedua parameter ini dengan akurasi yang tinggi, terutama untuk albedo. HITE mengatasi ini dengan menganggap kedua parameter tersebut sebagai rentang dan memperkirakan batas minimum dan maksimum dari rentang tersebut dengan berbagai cara. Untuk penjelasan yang lebih mendetail tentang penentuan rentang eksentrisitas, lihat subbab 2.2 dan 2.3 dalam [Barnes *et al*. (2015)](https://doi.org/10.1088/0004-637X/814/2/91). Jika  hal tersebut tidak memungkinkan, seperti terjadi dalam banyak kasus,  rentang eksentrisitas ditentukan sebagai $0.05 ≤ e ≤ 0.8$.   Sementara itu, rentang albedo disamakan $0.05 \leq A \leq 0.8$ untuk semua planet sedari  awal.
 
 **Probabilitas distribusi eksentrisitas $p(e)$**. Lebih jauh lagi mengenai eksentrisitas, dalam kalkulasinya, HITE tidak menganggap semua nilai eksentrisitas mempunyai probabilitas yang sama.  Terdapat suatu distribusi frekuensi $p(e)$ yang didapat dari data eksoplanet-eksoplanet yang telah ditemukan sejauh ini (subbab *2.4 The Eccentricity Distribution* dalam [Barnes _et al_. (2015)](https://doi.org/10.1088/0004-637X/814/2/91), dengan 
-$$p(e)= 0.1619 - 0.5352e + 0.6358e^2 - 0.2557e^3.$$Distribusi frekuensi ini nantinya akan digunakan untuk melakukan pembobotan terhadap nilai eksentrisitas di bagian kalkulasi nilai $p_{water}$.
+
+$$p(e)= 0.1619 - 0.5352e + 0.6358e^2 - 0.2557e^3.$$
+
+Distribusi frekuensi ini nantinya akan digunakan untuk melakukan pembobotan terhadap nilai eksentrisitas di bagian kalkulasi nilai $p_{water}$.
 
 **Kalkulasi nilai $F_{OLR}$**. Karena nilai $A$ dan $e$ berupa rentang, penghitungan nilai $F_{OLR}$ dari suatu planet akan menghasilkan sebuah himpunan yang berisi ‘semua’ nilai $F_{OLR} \space (e,\space A)$ yang mungkin. Dalam prakteknya, tentu jumlah anggota himpunan ini ditentukan oleh inkremen yang digunakan dalam merunut rentang $A$ dan $e$.
 
@@ -182,7 +197,7 @@ dengan $j$ mengindeks ($A$, $e$) dan $p_{j}(e)$ adalah distribusi probabilitas e
 Secara garis besar, M-HITE tidak mengubah langkah kalkulasi $p_{water}$. Perubahan hanya dilakukan pada penentuan rentang $e$ dan $A$.
 
 ##### Eksentrisitas
-Dalam menghitung $p_{rocky}$, M-HITE mengambil data $m_p$ dan $r_p$ dari [exoplanets.org](exoplanets.org). Hal yang sama dilakukan untuk mendapat nilai $e$. Karena yang dibutuhkan adalah rentang, digunakan batas-batas ketidakpastian nilai $e$ sebagai batas-batas rentang tersebut (didapat dari kolom `ECCUPPER` dan `ECCLOWER` pada berkas CSV yang dapat diperoleh dari situs web [exoplanets.org](exoplanets.org)).
+Dalam menghitung $p_{rocky}$, M-HITE mengambil data $m_p$ dan $r_p$ dari [exoplanets.org](https://www.exoplanets.org). Hal yang sama dilakukan untuk mendapat nilai $e$. Karena yang dibutuhkan adalah rentang, digunakan batas-batas ketidakpastian nilai $e$ sebagai batas-batas rentang tersebut (didapat dari kolom `ECCUPPER` dan `ECCLOWER` pada berkas CSV yang dapat diperoleh dari situs web [exoplanets.org](https://www.exoplanets.org)).
 
 ##### Albedo
 Albedo dari planet-planet luar surya pada umumnya belum dapat diukur secara langsung, sehingga potensi kelayakhunian biasanya diperhitungkan dengan mengasumsikan albedo $A ≅ 0.3$ seperti Bumi, atau menggunakan rentang yang lebar seperti yang dilakukan dalam HITE orisinal ($0.05 ≤ A ≤ 0.8$). Kekurangan dari asumsi yang pertama ialah tidak dipertimbangkannya keberagaman karakteristik eksoplanet, sedangkan yang kedua terlalu lebar sehingga tidak terlalu berguna.

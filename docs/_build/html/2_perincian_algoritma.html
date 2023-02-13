@@ -653,19 +653,27 @@ const thebe_selector_output = ".output, .cell_output"
 <div class="section" id="id3">
 <h4>Orisinal<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h4>
 <p>Keterestrialan planet diestimasi melalui model <em>ad hoc</em> berikut ini.</p>
-<p>\begin{align}
-p_{ter}(r)=
-\begin{cases}
-0, &amp; r &lt;= 1 \
-(2.5-r), &amp; 1.5 &lt; r &lt; 2.5 \
-1, &amp; r &gt;= 2.5.
-\end{cases}
-\end{align}</p>
+<p>\begin{align}</p>
+<p>p_{ter}(r)=</p>
+<p>\begin{cases}</p>
+<p>0, &amp; r &lt;= 1 \</p>
+<p>(2.5-r), &amp; 1.5 &lt; r &lt; 2.5 \</p>
+<p>1, &amp; r &gt;= 2.5.</p>
+<p>\end{cases}</p>
+<p>\end{align}</p>
 <p><span class="math notranslate nohighlight">\(p_{ter}\)</span> adalah probabilitas keterestrialan planet, dengan rentang nilai antara 0 (dianggap sama sekali tidak mungkin bersifat terestrial) hingga 1 (dianggap pasti bersifat terestrial), dan <span class="math notranslate nohighlight">\(r\)</span> adalah rasio antara radius planet <span class="math notranslate nohighlight">\(r_p\)</span> dengan radius Bumi <span class="math notranslate nohighlight">\(R_⊕\)</span>.</p>
+<div class="admonition-tl-dr admonition">
+<p class="admonition-title">TL;DR</p>
+<p>Dalam HITE orisinal, <span class="math notranslate nohighlight">\(p_{ter}\)</span> hanya merupakan fungsi dari radius planet.</p>
+</div>
 <p>Model ini diperoleh dari statistik eksoplanet terestrial (yang jumlah sampelnya masih sangat kecil) di mana belum ditemukan planet yang lebih kecil dari <span class="math notranslate nohighlight">\(1.5R_⊕\)</span> yang memiliki atmosfer gas tebal seperti yang dimiliki Jupiter.</p>
 </div>
 <div class="section" id="setelah-modifikasi">
 <h4>Setelah modifikasi<a class="headerlink" href="#setelah-modifikasi" title="Permalink to this headline">¶</a></h4>
+<div class="admonition-tl-dr admonition">
+<p class="admonition-title">TL;DR</p>
+<p>Dalam M-HITE, <span class="math notranslate nohighlight">\(p_{ter}\)</span> adalah fungsi dari radius dan massa planet (<span class="math notranslate nohighlight">\(r_p\)</span> dan <span class="math notranslate nohighlight">\(m_p\)</span>).</p>
+</div>
 <p>Nilai  <span class="math notranslate nohighlight">\(p_{ter}\)</span> diperoleh dengan menggunakan data hasil pemodelan komposisi planet ‘padat’ yang dikembangkan oleh <a class="reference external" href="https://doi.org/10.1086/669163">Zeng &amp; Sasselov (2013)</a>. Pemodelan ini mengumpamakan materi penyusun planet ‘padat’ sebagai kombinasi dari satu atau dua dari tiga unsur/senyawa berikut: Fe, MgSiO<sub>3</sub>, dan H<sub>2</sub>O. Menggunakan data <span class="math notranslate nohighlight">\(m_p\)</span> dan <span class="math notranslate nohighlight">\(r_p\)</span> suatu planet, model ini dapat menempatkan planet tersebut pada suatu spektrum seperti pada contoh di bawah ini.</p>
 <p><strong>Contoh</strong>. Misal, sebuah planet diketahui memiliki massa <span class="math notranslate nohighlight">\(m_{p} = 3 \space M_⊕\)</span>. Melalui pemodelan Zeng &amp; Sasselov, probabilitas keterestrialannya, <span class="math notranslate nohighlight">\(p_{ter}\)</span>, dapat diplotkan sebagai fungsi dari <span class="math notranslate nohighlight">\(r_p\)</span>, seperti pada grafik di bawah ini. Terdapat tiga rentang atau ‘daerah’ pada grafik tersebut: daerah (1), (2), dan (3).</p>
 <p><img alt="Terrestrial range of radius for a planet with a mass 3 times of Earth's mass" src="_images/zeng-sasselov_1.png" /></p>
@@ -705,7 +713,7 @@ p_{ter}(r_p)=
 \text{exp}(-\frac{1}{2}\frac{(r_p-\mu_{1, m_p})^2}{\sigma_{m_p}}, &amp; \mu_{1, m_p} &lt; r_p &lt; \mu_{2, m_p} \
 0, &amp; r_p \geq \mu_{2, m_p}.
 \end{cases}
-\end{align},</p>
+\end{align}</p>
 <p>dengan <span class="math notranslate nohighlight">\(\sigma_{m_{p}} = \frac{1}{3} (\mu_{2,m_{p}}-\mu_{1,m_{p}})\)</span>.</p>
 <p>Perlu diingat bahwa plot di atas, beserta nilai-nilai batas <span class="math notranslate nohighlight">\(\mu_1\)</span> dan <span class="math notranslate nohighlight">\(\mu_2\)</span>, adalah spesifik untuk planet dengan <span class="math notranslate nohighlight">\(m_{p} = 3 \space M_⊕\)</span>. Untuk sembarang planet, bentuk umum plotnya akan serupa, namun dengan nilai-nilai batas yang berbeda. Persamaan di atas menggunakan notasi <span class="math notranslate nohighlight">\(\mu_{1, m_p}\)</span> dan <span class="math notranslate nohighlight">\(\mu_{2, m_p}\)</span> untuk menggarisbawahi poin ini.</p>
 <p>Perhatikan pula bahwa penentuan komposisi ini tergantung pada pasangan radius dan massa planet, dan bukan pada densitas. Dua planet dengan densitas yang sama namun radius dan massa yang berbeda kemungkinan tidak memiliki komposisi yang sama. Ini dikarenakan pemodelan Zeng &amp; Sasselov mempertimbangkan bahwa komposisi suatu planet juga bergantung pada faktor-faktor lain yang lebih kompleks seperti struktur internalnya, yang ditentukan oleh sejarah pembentukan dan trayek evolusi keplanetan yang spesifik terhadap planet tersebut.</p>
@@ -719,6 +727,10 @@ p_{ter}(r_p)=
 <p><strong>Apa itu <span class="math notranslate nohighlight">\(F_{OLR}\)</span>?</strong> Dalam neraca ekuilibrium transfer energi keplanetan, terdapat sebagian fluks radiasi datang (<em>incoming flux</em>) dari bintang yang diserap oleh permukaan planet kemudian dipancarkan kembali dalam rentang panjang gelombang ‘inframerah termal’. Fluks keluaran dalam rentang panjang gelombang ini yang disebut <span class="math notranslate nohighlight">\(F_{OLR}\)</span>. Kesetimbangan antara fluks datang dan <span class="math notranslate nohighlight">\(F_{OLR}\)</span> ini sangat menentukan iklim planet, yang termasuk siklus hidrologinya.</p>
 <p><img alt="Ilustrasi FOLR|500" src="_images/FOLR.png" /></p>
 <p>Untuk setiap planet, terdapat suatu rentang nilai <span class="math notranslate nohighlight">\(F_{OLR}\)</span> yang memungkinkannya memiliki air berfase cair di permukaannya, atau <span class="math notranslate nohighlight">\(p_{water} \geq 0\)</span>. Dalam dokumentasi ini, batas-batas minimum dan maksimum dari rentang tersebut dinotasikan dengan <span class="math notranslate nohighlight">\(F_{min}\)</span> dan <span class="math notranslate nohighlight">\(F_{max}\)</span>.</p>
+<div class="admonition-tl-dr admonition">
+<p class="admonition-title">TL;DR</p>
+<p>Suatu planet bisa dikatakan bisa menopang keberadaan air berfase cair di permukaannya jika <span class="math notranslate nohighlight">\(F_{min}&lt;F_{OLR}&lt;F_{max}\)</span> .</p>
+</div>
 <p>Penghitungan <span class="math notranslate nohighlight">\(F_{OLR}\)</span>, <span class="math notranslate nohighlight">\(F_{min}\)</span>, dan <span class="math notranslate nohighlight">\(F_{max}\)</span> membutuhkan pengetahuan mendalam tentang atmosfer planet, yang umumnya masih jarang tersedia dalam kasus eksoplanet. Karena itu, HITE melakukan beberapa penyederhanaan, seperti yang dijelaskan di bawah ini.</p>
 <p><strong>Persamaan-persamaan</strong>. <span class="math notranslate nohighlight">\(F_{OLR}\)</span> dihitung menggunakan persamaan ini:</p>
 <p>\begin{align}
@@ -732,14 +744,26 @@ F_{OLR}=
 F_{max}=
 B \sigma
 (\frac{l}{2R \space \text{ln} (P_{*} \sqrt{\kappa} P_{0} g)})
-\end{align},</p>
+\end{align}</p>
 <p>dengan <span class="math notranslate nohighlight">\(B\)</span> adalah koefisien berorde ~1 yang memastikan persamaan analitis ini sesuai dengan model transfer energi radiatif, <span class="math notranslate nohighlight">\(\sigma\)</span> adalah konstanta Stefan-Boltzmann, <span class="math notranslate nohighlight">\(l\)</span> adalah kapasitas panas laten dari air, <span class="math notranslate nohighlight">\(R\)</span> adalah konstanta gas universal, <span class="math notranslate nohighlight">\(P_{0}\)</span> adalah tekanan tertentu di mana intensitas garis spektrum uap air (<em>water vapor line strength</em>) dievaluasi, <span class="math notranslate nohighlight">\(g\)</span> adalah percepatan gravitasi di permukaan planet, dan <span class="math notranslate nohighlight">\(\kappa\)</span> adalah koefisien absorpsi <em>gray</em>.</p>
-<p><span class="math notranslate nohighlight">\(P_{*}\)</span> adalah tekanan terskala (<em>scaled</em>) yang dihitung dengan persamaan berikut:
-$<span class="math notranslate nohighlight">\(P_{*}=P_{ref} \space e^{\frac{l}{RT_{ref}}},\)</span><span class="math notranslate nohighlight">\( di mana \)</span>P_{ref}<span class="math notranslate nohighlight">\( dan \)</span>T_{ref}$ merujuk pada titik tertentu pada kurva saturasi uap air.</p>
+<p><span class="math notranslate nohighlight">\(P_{*}\)</span> adalah tekanan terskala (<em>scaled</em>) yang dihitung dengan persamaan berikut:</p>
+<div class="math notranslate nohighlight">
+\[P_{*}=P_{ref} \space e^{\frac{l}{RT_{ref}}},\]</div>
+<p>di mana <span class="math notranslate nohighlight">\(P_{ref}\)</span> dan <span class="math notranslate nohighlight">\(T_{ref}\)</span> merujuk pada titik tertentu pada kurva saturasi uap air.</p>
 <p>Beberapa nilai dari variabel-variabel di atas didapat dari Pierrehumbert (2010) dan bisa dilihat pada laman <a class="reference internal" href="3_perincian_kode.html"><span class="doc">Perincian Kode</span></a>.</p>
+<div class="admonition-tl-dr admonition">
+<p class="admonition-title">TL;DR</p>
+<ul class="simple">
+<li><p>Nilai <span class="math notranslate nohighlight">\(F_{OLR}\)</span> adalah fungsi dari <span class="math notranslate nohighlight">\(A\)</span> dan <span class="math notranslate nohighlight">\(e\)</span>.</p></li>
+<li><p>Nilai <span class="math notranslate nohighlight">\(F_{min}\)</span> dianggap sama untuk setiap planet.</p></li>
+<li><p>Nilai <span class="math notranslate nohighlight">\(F_{max}\)</span> spesifik terhadap setiap planet dan merupakan fungsi dari <span class="math notranslate nohighlight">\(m_p\)</span> dan <span class="math notranslate nohighlight">\(r_p\)</span>.</p></li>
+</ul>
+</div>
 <p><strong>Albedo dan eksentrisitas</strong>. Untuk menghitung <span class="math notranslate nohighlight">\(F_{OLR}\)</span> suatu planet, dibutuhkan nilai albedo <span class="math notranslate nohighlight">\(A\)</span> dan eksentrisitas <span class="math notranslate nohighlight">\(e\)</span>. Untuk saat ini, hasil observasi eksoplanet belum dapat menentukan kedua parameter ini dengan akurasi yang tinggi, terutama untuk albedo. HITE mengatasi ini dengan menganggap kedua parameter tersebut sebagai rentang dan memperkirakan batas minimum dan maksimum dari rentang tersebut dengan berbagai cara. Untuk penjelasan yang lebih mendetail tentang penentuan rentang eksentrisitas, lihat subbab 2.2 dan 2.3 dalam <a class="reference external" href="https://doi.org/10.1088/0004-637X/814/2/91">Barnes <em>et al</em>. (2015)</a>. Jika  hal tersebut tidak memungkinkan, seperti terjadi dalam banyak kasus,  rentang eksentrisitas ditentukan sebagai <span class="math notranslate nohighlight">\(0.05 ≤ e ≤ 0.8\)</span>.   Sementara itu, rentang albedo disamakan <span class="math notranslate nohighlight">\(0.05 \leq A \leq 0.8\)</span> untuk semua planet sedari  awal.</p>
-<p><strong>Probabilitas distribusi eksentrisitas <span class="math notranslate nohighlight">\(p(e)\)</span></strong>. Lebih jauh lagi mengenai eksentrisitas, dalam kalkulasinya, HITE tidak menganggap semua nilai eksentrisitas mempunyai probabilitas yang sama.  Terdapat suatu distribusi frekuensi <span class="math notranslate nohighlight">\(p(e)\)</span> yang didapat dari data eksoplanet-eksoplanet yang telah ditemukan sejauh ini (subbab <em>2.4 The Eccentricity Distribution</em> dalam <a class="reference external" href="https://doi.org/10.1088/0004-637X/814/2/91">Barnes <em>et al</em>. (2015)</a>, dengan
-$<span class="math notranslate nohighlight">\(p(e)= 0.1619 - 0.5352e + 0.6358e^2 - 0.2557e^3.\)</span><span class="math notranslate nohighlight">\(Distribusi frekuensi ini nantinya akan digunakan untuk melakukan pembobotan terhadap nilai eksentrisitas di bagian kalkulasi nilai \)</span>p_{water}$.</p>
+<p><strong>Probabilitas distribusi eksentrisitas <span class="math notranslate nohighlight">\(p(e)\)</span></strong>. Lebih jauh lagi mengenai eksentrisitas, dalam kalkulasinya, HITE tidak menganggap semua nilai eksentrisitas mempunyai probabilitas yang sama.  Terdapat suatu distribusi frekuensi <span class="math notranslate nohighlight">\(p(e)\)</span> yang didapat dari data eksoplanet-eksoplanet yang telah ditemukan sejauh ini (subbab <em>2.4 The Eccentricity Distribution</em> dalam <a class="reference external" href="https://doi.org/10.1088/0004-637X/814/2/91">Barnes <em>et al</em>. (2015)</a>, dengan</p>
+<div class="math notranslate nohighlight">
+\[p(e)= 0.1619 - 0.5352e + 0.6358e^2 - 0.2557e^3.\]</div>
+<p>Distribusi frekuensi ini nantinya akan digunakan untuk melakukan pembobotan terhadap nilai eksentrisitas di bagian kalkulasi nilai <span class="math notranslate nohighlight">\(p_{water}\)</span>.</p>
 <p><strong>Kalkulasi nilai <span class="math notranslate nohighlight">\(F_{OLR}\)</span></strong>. Karena nilai <span class="math notranslate nohighlight">\(A\)</span> dan <span class="math notranslate nohighlight">\(e\)</span> berupa rentang, penghitungan nilai <span class="math notranslate nohighlight">\(F_{OLR}\)</span> dari suatu planet akan menghasilkan sebuah himpunan yang berisi ‘semua’ nilai <span class="math notranslate nohighlight">\(F_{OLR} \space (e,\space A)\)</span> yang mungkin. Dalam prakteknya, tentu jumlah anggota himpunan ini ditentukan oleh inkremen yang digunakan dalam merunut rentang <span class="math notranslate nohighlight">\(A\)</span> dan <span class="math notranslate nohighlight">\(e\)</span>.</p>
 <p>Sebagai contoh, misal suatu planet X, dievaluasi menggunakan metode yang dijelaskan dalam <a class="reference external" href="https://doi.org/10.1088/0004-637X/814/2/91">Barnes <em>et al</em>. (2015)</a>, memiliki kemungkinan rentang eksentrisitas <span class="math notranslate nohighlight">\(0 \leq e \leq 0.2\)</span>. Rentang kemungkinan albedonya ditentukan  sama untuk setiap planet yaitu <span class="math notranslate nohighlight">\(0.05 \leq A \leq 0.8\)</span>. Jika inkremen yang digunakan adalah <span class="math notranslate nohighlight">\(0.1\)</span> untuk <span class="math notranslate nohighlight">\(e\)</span> dan <span class="math notranslate nohighlight">\(0.05\)</span> untuk <span class="math notranslate nohighlight">\(A\)</span>, akan didapat himpunan nilai <span class="math notranslate nohighlight">\(F_{OLR} \space (e,\space A)\)</span> sebagai berikut:</p>
 <p><img alt="Himpunan nilai FOLR" src="_images/FOLR2.png" /></p>
@@ -762,7 +786,7 @@ dengan \)</span>j<span class="math notranslate nohighlight">\( mengindeks (\)</s
 <p>Secara garis besar, M-HITE tidak mengubah langkah kalkulasi <span class="math notranslate nohighlight">\(p_{water}\)</span>. Perubahan hanya dilakukan pada penentuan rentang <span class="math notranslate nohighlight">\(e\)</span> dan <span class="math notranslate nohighlight">\(A\)</span>.</p>
 <div class="section" id="eksentrisitas">
 <h5>Eksentrisitas<a class="headerlink" href="#eksentrisitas" title="Permalink to this headline">¶</a></h5>
-<p>Dalam menghitung <span class="math notranslate nohighlight">\(p_{rocky}\)</span>, M-HITE mengambil data <span class="math notranslate nohighlight">\(m_p\)</span> dan <span class="math notranslate nohighlight">\(r_p\)</span> dari <span class="xref myst">exoplanets.org</span>. Hal yang sama dilakukan untuk mendapat nilai <span class="math notranslate nohighlight">\(e\)</span>. Karena yang dibutuhkan adalah rentang, digunakan batas-batas ketidakpastian nilai <span class="math notranslate nohighlight">\(e\)</span> sebagai batas-batas rentang tersebut (didapat dari kolom <code class="docutils literal notranslate"><span class="pre">ECCUPPER</span></code> dan <code class="docutils literal notranslate"><span class="pre">ECCLOWER</span></code> pada berkas CSV yang dapat diperoleh dari situs web <span class="xref myst">exoplanets.org</span>).</p>
+<p>Dalam menghitung <span class="math notranslate nohighlight">\(p_{rocky}\)</span>, M-HITE mengambil data <span class="math notranslate nohighlight">\(m_p\)</span> dan <span class="math notranslate nohighlight">\(r_p\)</span> dari <a class="reference external" href="https://www.exoplanets.org">exoplanets.org</a>. Hal yang sama dilakukan untuk mendapat nilai <span class="math notranslate nohighlight">\(e\)</span>. Karena yang dibutuhkan adalah rentang, digunakan batas-batas ketidakpastian nilai <span class="math notranslate nohighlight">\(e\)</span> sebagai batas-batas rentang tersebut (didapat dari kolom <code class="docutils literal notranslate"><span class="pre">ECCUPPER</span></code> dan <code class="docutils literal notranslate"><span class="pre">ECCLOWER</span></code> pada berkas CSV yang dapat diperoleh dari situs web <a class="reference external" href="https://www.exoplanets.org">exoplanets.org</a>).</p>
 </div>
 <div class="section" id="albedo">
 <h5>Albedo<a class="headerlink" href="#albedo" title="Permalink to this headline">¶</a></h5>
