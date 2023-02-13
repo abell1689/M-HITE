@@ -1,6 +1,16 @@
 # Perincian Algoritma
 Laman ini memuat perincian algoritma yang dipakai dalam menentukan nilai indeks HITE bagi suatu eksoplanet, serta modifikasi yang dilakukan terhadap algoritma tersebut sehingga menjadi HITE termodifikasi (M-HITE)
 
+$$\begin{align}
+p_{ter}(r)=
+\begin{cases}
+0, & r \leq 1.5 \\
+(2.5-r), & 1.5 < r < 2.5 \\
+1, & r \geq 2.5.
+\end{cases}
+\end{align}$$
+
+
 ## Asumsi
 ### Definisi ‘Layak Huni’
 Definisi ‘layak huni bagi makhluk hidup’ tentu bergantung pada definisi makhluk hidup itu sendiri. Perlu diingat bahwa kehidupan di planet lain, jika ada, tentu saja bisa memiliki proses-proses biokimia yang berbeda jauh dengan kehidupan yang kita ketahui—sesuatu yang sulit dibayangkan karena contoh bentuk kehidupan yang kita ketahui saat ini baru satu, yaitu kehidupan di Bumi.
@@ -45,16 +55,14 @@ Syarat kelayakhunian ini didasarkan pada asumsi bahwa air berfase cair merupakan
 #### Orisinal
 Keterestrialan planet diestimasi melalui model _ad hoc_ berikut ini.
 
-.. math::
-	:nowrap:
-	\\begin{align}
-		p_{ter}(r)=
-		\\begin{cases}
-            0, & r <= 1 \\\\
-            (2.5-r), & 1.5 < r < 2.5 \\\\
-            1, & r >= 2.5.
-        \\end{cases}
-    \\end{align}
+\\begin{align}
+p_{ter}(r)=
+\\begin{cases}
+0, & r <= 1 \\\\
+(2.5-r), & 1.5 < r < 2.5 \\\\
+1, & r >= 2.5.
+\\end{cases}
+\\end{align}
 
 $p_{ter}$ adalah probabilitas keterestrialan planet, dengan rentang nilai antara 0 (dianggap sama sekali tidak mungkin bersifat terestrial) hingga 1 (dianggap pasti bersifat terestrial), dan $r$ adalah rasio antara radius planet $r_p$ dengan radius Bumi $R_⊕$.
 

@@ -1,5 +1,14 @@
 # Perincian Algoritma
 Laman ini memuat perincian algoritma yang dipakai dalam menentukan nilai indeks HITE bagi suatu eksoplanet, serta modifikasi yang dilakukan terhadap algoritma tersebut sehingga menjadi HITE termodifikasi (M-HITE)
+$$\begin{align}
+p_{ter}(r)=
+\begin{cases}
+0, & r <= 1 \\
+(2.5-r), & 1.5 < r < 2.5 \\
+1, & r >= 2.5.
+\end{cases}
+\end{align}$$
+
 
 ## Asumsi
 ### Definisi ‘Layak Huni’
