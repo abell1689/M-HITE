@@ -44,8 +44,8 @@ Syarat kelayakhunian ini didasarkan pada asumsi bahwa air berfase cair merupakan
 Keterestrialan planet diestimasi melalui model _ad hoc_ berikut ini.
 
 \\begin{align}
-p_{ter}(r)=
-\\begin{cases}
+\\begin{cases} \\
+p_{ter}(r)= \\
 0, & r <= 1 \\\\
 (2.5-r), & 1.5 < r < 2.5 \\\\
 1, & r >= 2.5.
@@ -54,14 +54,16 @@ p_{ter}(r)=
 
 $p_{ter}$ adalah probabilitas keterestrialan planet, dengan rentang nilai antara 0 (dianggap sama sekali tidak mungkin bersifat terestrial) hingga 1 (dianggap pasti bersifat terestrial), dan $r$ adalah rasio antara radius planet $r_p$ dengan radius Bumi $R_⊕$.
 
-> [!summary]
+:::{admonition}
 Dalam HITE orisinal, $p_{ter}$ hanya merupakan fungsi dari radius planet.
+:::
 
 Model ini diperoleh dari statistik eksoplanet terestrial (yang jumlah sampelnya masih sangat kecil) di mana belum ditemukan planet yang lebih kecil dari $1.5R_⊕$ yang memiliki atmosfer gas tebal seperti yang dimiliki Jupiter.
 
 #### Setelah modifikasi
-> [!summary]
-> Dalam M-HITE, $p_{ter}$ adalah fungsi dari radius dan massa planet ($r_p$ dan $m_p$).
+:::{admonition}
+Dalam M-HITE, $p_{ter}$ adalah fungsi dari radius dan massa planet ($r_p$ dan $m_p$).
+:::
 
 Nilai  $p_{ter}$ diperoleh dengan menggunakan data hasil pemodelan komposisi planet ‘padat’ yang dikembangkan oleh [Zeng & Sasselov (2013)](https://doi.org/10.1086/669163). Pemodelan ini mengumpamakan materi penyusun planet ‘padat’ sebagai kombinasi dari satu atau dua dari tiga unsur/senyawa berikut: Fe, MgSiO<sub>3</sub>, dan H<sub>2</sub>O. Menggunakan data $m_p$ dan $r_p$ suatu planet, model ini dapat menempatkan planet tersebut pada suatu spektrum seperti pada contoh di bawah ini.
 
@@ -107,8 +109,9 @@ HITE orisinal menentukan $p_{water}$, probabilitas suatu planet dapat menopang k
 
 Untuk setiap planet, terdapat suatu rentang nilai $F_{OLR}$ yang memungkinkannya memiliki air berfase cair di permukaannya, atau $p_{water} \geq 0$. Dalam dokumentasi ini, batas-batas minimum dan maksimum dari rentang tersebut dinotasikan dengan $F_{min}$ dan $F_{max}$.
 
-> [!summary]
-> Suatu planet bisa dikatakan bisa menopang keberadaan air berfase cair di permukaannya jika $F_{min}<F_{OLR}<F_{max}$ .
+:::{admonition}
+Suatu planet bisa dikatakan bisa menopang keberadaan air berfase cair di permukaannya jika $F_{min}<F_{OLR}<F_{max}$ .
+:::
 
 Penghitungan $F_{OLR}$, $F_{min}$, dan $F_{max}$ membutuhkan pengetahuan mendalam tentang atmosfer planet, yang umumnya masih jarang tersedia dalam kasus eksoplanet. Karena itu, HITE melakukan beberapa penyederhanaan, seperti yang dijelaskan di bawah ini.
 
@@ -138,10 +141,11 @@ $$P_{*}=P_{ref} \space e^{\frac{l}{RT_{ref}}},$$ di mana $P_{ref}$ dan $T_{ref}$
 
 Beberapa nilai dari variabel-variabel di atas didapat dari Pierrehumbert (2010) dan bisa dilihat pada laman {doc}`3_perincian_kode`.
 
-> [!summary]
-> Nilai $F_{OLR}$ adalah fungsi dari $A$ dan $e$. 
-> Nilai $F_{min}$ dianggap sama untuk setiap planet.
-> Nilai $F_{max}$ spesifik terhadap setiap planet dan merupakan fungsi dari $m_p$ dan $r_p$.
+:::{admonition}
+- Nilai $F_{OLR}$ adalah fungsi dari $A$ dan $e$. 
+- Nilai $F_{min}$ dianggap sama untuk setiap planet.
+- Nilai $F_{max}$ spesifik terhadap setiap planet dan merupakan fungsi dari $m_p$ dan $r_p$.
+:::
 
 **Albedo dan eksentrisitas**. Untuk menghitung $F_{OLR}$ suatu planet, dibutuhkan nilai albedo $A$ dan eksentrisitas $e$. Untuk saat ini, hasil observasi eksoplanet belum dapat menentukan kedua parameter ini dengan akurasi yang tinggi, terutama untuk albedo. HITE mengatasi ini dengan menganggap kedua parameter tersebut sebagai rentang dan memperkirakan batas minimum dan maksimum dari rentang tersebut dengan berbagai cara. Untuk penjelasan yang lebih mendetail tentang penentuan rentang eksentrisitas, lihat subbab 2.2 dan 2.3 dalam [Barnes *et al*. (2015)](https://doi.org/10.1088/0004-637X/814/2/91). Jika  hal tersebut tidak memungkinkan, seperti terjadi dalam banyak kasus,  rentang eksentrisitas ditentukan sebagai $0.05 ≤ e ≤ 0.8$.   Sementara itu, rentang albedo disamakan $0.05 \leq A \leq 0.8$ untuk semua planet sedari  awal.
 
