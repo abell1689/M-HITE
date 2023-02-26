@@ -24,7 +24,7 @@
 
 :root {
 	--pst-font-family-base: spectral;
-  --pst-font-family-heading: spectral;
+  --pst-font-family-heading: sans-serif;
 
 	--pst-sidebar-font-size: 1.2rem;
 	--pst-sidebar-font-size-mobile: 1.2rem;
