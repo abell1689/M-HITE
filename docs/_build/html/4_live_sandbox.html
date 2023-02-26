@@ -1,0 +1,687 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Live Sandbox &#8212; Dokumentasi M-HITE</title>
+    
+  <link href="_static/css/theme.css" rel="stylesheet">
+  <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <link rel="shortcut icon" href="_static/favicon.png"/>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Saran Pengembangan" href="5_saran_pengembangan.html" />
+    <link rel="prev" title="Perincian Kode" href="3_perincian_kode.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="_static/logo-2.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Dokumentasi M-HITE</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="index.html">
+   Selayang Pandang
+  </a>
+ </li>
+</ul>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="1_pendahuluan.html">
+   Pendahuluan
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="2_perincian_algoritma.html">
+   Perincian Algoritma
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="3_perincian_kode.html">
+   Perincian Kode
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Live Sandbox
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="5_saran_pengembangan.html">
+   Saran Pengembangan
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="6_daftar_pustaka.html">
+   Daftar Pustaka
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/4_live_sandbox.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/abell1689/M-HITE/"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/abell1689/M-HITE//issues/new?title=Issue%20on%20page%20%2F4_live_sandbox.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/abell1689/M-HITE/master?urlpath=lab/tree/docs/4_live_sandbox.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        <button type="button" class="btn btn-secondary topbarbtn"
+            onclick="initThebeSBT()" title="Launch Thebe" data-toggle="tooltip" data-placement="left"><i
+                class="fas fa-play"></i><span style="margin-left: .4em;">Live Code</span></button>
+        
+    </div>
+</div>
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Live Sandbox</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="live-sandbox">
+<h1>Live Sandbox<a class="headerlink" href="#live-sandbox" title="Permalink to this headline">¶</a></h1>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">math</span>
+<span class="kn">from</span> <span class="nn">scipy</span> <span class="kn">import</span> <span class="n">interpolate</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Definition of constants and variables</span>
+
+<span class="c1"># Some common physical constants, mainly used to calculate `maxFlux`</span>
+<span class="c1">## (the upper bound of energy flux received by a planet that allows it</span>
+<span class="c1">## to be habitable according to Pierrehumbert (2015))</span>
+
+<span class="n">BIGG</span>       <span class="o">=</span> <span class="mf">6.67428e-11</span>       <span class="c1"># Gravitational constant</span>
+<span class="n">PI</span>         <span class="o">=</span> <span class="mf">3.1415926535</span>
+<span class="n">A</span>          <span class="o">=</span> <span class="mf">0.7344</span>            <span class="c1"># Pierrehumbert&#39;s Constant</span>
+<span class="n">SB</span>         <span class="o">=</span> <span class="mf">5.670373e-8</span>       <span class="c1"># Stefan-Boltzmann Constant</span>
+<span class="n">LH2O</span>       <span class="o">=</span> <span class="mf">2.425e6</span>           <span class="c1"># Latent Heat Capacity of Water</span>
+<span class="n">RGAS</span>       <span class="o">=</span> <span class="mf">461.5</span>             <span class="c1"># Universal Gas Constant</span>
+<span class="n">PLINE</span>      <span class="o">=</span> <span class="mf">1e4</span>               
+<span class="n">PREF</span>       <span class="o">=</span> <span class="mf">610.616</span>           <span class="c1"># Reference Pressure</span>
+<span class="n">TREF</span>       <span class="o">=</span> <span class="mf">273.13</span>            <span class="c1"># Reference Temperature</span>
+<span class="n">K0</span>         <span class="o">=</span> <span class="mf">0.055</span>             <span class="c1"># A constant in Runaway Greenhouse calculation</span>
+
+
+<span class="c1"># Boundaries for albedo values:</span>
+<span class="n">ALBMINELSE</span> <span class="o">=</span> <span class="mf">0.05</span>              <span class="c1"># General lower bound</span>
+<span class="n">ALBMAXELSE</span> <span class="o">=</span> <span class="mf">0.8</span>               <span class="c1"># General upper bound</span>
+<span class="n">ALBMING</span>    <span class="o">=</span> <span class="mf">0.25</span>              <span class="c1"># Lower bound for planets orbiting G-type stars</span>
+<span class="n">ALBMAXM</span>    <span class="o">=</span> <span class="mf">0.35</span>              <span class="c1"># Upper bound for planets orbiting M-type stars</span>
+
+
+<span class="c1"># The counterpart to maxFlux</span>
+<span class="c1">## (unlike maxFlux, MINFLUX is a constant that does not depend on a planet&#39;s properties)</span>
+<span class="n">MINFLUX</span>    <span class="o">=</span> <span class="mi">67</span>
+
+<span class="c1"># Definitions of units of measurement,</span>
+<span class="c1">## mainly used to convert [exoplanet.org](exoplanet.org) data into SI units:</span>
+<span class="n">MEARTH</span>     <span class="o">=</span> <span class="mf">5.972186e24</span>       <span class="c1"># Earth mass in kilograms</span>
+<span class="n">REARTH</span>     <span class="o">=</span> <span class="mi">6378100</span>           <span class="c1"># Earth&#39;s radius in meters</span>
+<span class="n">S0</span>         <span class="o">=</span> <span class="mi">1362</span>              <span class="c1"># Solar constant in watts per square meter</span>
+<span class="n">MSUN</span>       <span class="o">=</span> <span class="mf">1.988416e30</span>       <span class="c1"># Solar mass in kilograms</span>
+<span class="n">RSUN</span>       <span class="o">=</span> <span class="mf">6.957e8</span>           <span class="c1"># Solar radius in meters</span>
+<span class="n">LSUN</span>       <span class="o">=</span> <span class="mf">3.828e26</span>          <span class="c1"># Solar luminosity in watts</span>
+<span class="n">RJUP</span>       <span class="o">=</span> <span class="mf">7.1492e7</span>          <span class="c1"># Jovian radius in meters</span>
+<span class="n">MJUP</span>       <span class="o">=</span> <span class="mf">1.8982e27</span>         <span class="c1"># Jovian mass in kilograms</span>
+<span class="n">AU</span>         <span class="o">=</span> <span class="mf">1.496e11</span>          <span class="c1"># The astronomical unit in meters</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Definition of functions</span>
+
+<span class="c1"># 1) A function to calculate the probability distribution of orbital eccentricity</span>
+<span class="k">def</span> <span class="nf">pofe</span><span class="p">(</span><span class="n">ecc</span><span class="p">,</span><span class="n">mu</span><span class="p">,</span><span class="n">sigma</span><span class="p">):</span>
+    <span class="k">return</span> <span class="p">((</span><span class="n">sigma</span><span class="o">*</span><span class="n">math</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">math</span><span class="o">.</span><span class="n">pi</span><span class="p">))</span><span class="o">**</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">))</span><span class="o">*</span><span class="n">math</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="o">-</span><span class="p">(((</span><span class="n">ecc</span><span class="o">-</span><span class="n">mu</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">sigma</span><span class="o">**</span><span class="mi">2</span><span class="p">)))</span><span class="o">/</span><span class="mi">1000</span>
+
+<span class="c1"># 2) A function to calculate the probability of a planet&#39;s terrestriality</span>
+<span class="k">def</span> <span class="nf">fp_ter</span><span class="p">(</span><span class="n">mPlanet</span><span class="p">,</span><span class="n">rPlanet</span><span class="p">,</span><span class="n">exoName</span><span class="p">):</span>
+    <span class="c1"># Convert the unit to Earth&#39;s masses and radii</span>
+    <span class="n">mPlanet</span> <span class="o">=</span> <span class="n">mPlanet</span><span class="o">/</span><span class="n">MEARTH</span> 
+    <span class="n">rPlanet</span> <span class="o">=</span> <span class="n">rPlanet</span><span class="o">/</span><span class="n">REARTH</span>
+    
+    <span class="c1"># Calculate mu1</span>
+    <span class="c1">## Initialize mu1 value to 0</span>
+    <span class="n">mu1</span> <span class="o">=</span> <span class="mf">0.0</span>       
+    
+    <span class="c1"># Initialize temporary variables to hold a mass/radius value</span>
+    <span class="c1">## from the (i-1)th row of the ZS table</span>
+    <span class="n">mZSimin1</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">rZSimin1</span> <span class="o">=</span> <span class="mi">0</span>
+
+    <span class="c1"># This block iterates through the the &#39;M-Pure-MgSiO3&#39; column</span>
+    <span class="c1">#to find the bracket that contains mPlanet value</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">rowNum</span><span class="p">:</span>
+        <span class="c1"># Initialize temporary variables to hold a mass/radius value</span>
+        <span class="c1">#from the i-th row of the ZS table</span>
+        <span class="n">mZSi</span> <span class="o">=</span> <span class="n">zs</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="s2">&quot;M-PureMgSiO3&quot;</span><span class="p">]</span>
+        <span class="n">rZSi</span> <span class="o">=</span> <span class="n">zs</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="s2">&quot;R-PureMgSiO3&quot;</span><span class="p">]</span>
+        
+        <span class="c1"># Comparing mPlanet to the current value of mZSi</span>
+        <span class="k">if</span> <span class="n">mPlanet</span> <span class="o">==</span> <span class="n">mZSi</span><span class="p">:</span>
+            <span class="n">mu1</span> <span class="o">=</span> <span class="n">rZSi</span>
+            <span class="k">break</span>                          
+        <span class="k">elif</span> <span class="n">mPlanet</span> <span class="o">&gt;</span> <span class="n">mZSi</span><span class="p">:</span>               
+            <span class="n">mZSimin1</span> <span class="o">=</span> <span class="n">mZSi</span>                
+            <span class="n">rZSimin1</span> <span class="o">=</span> <span class="n">rZSi</span>                  
+        <span class="k">else</span><span class="p">:</span> <span class="c1"># if mPlanet &lt; mZSi --&gt; we have found the correct bracket</span>
+            <span class="n">f</span> <span class="o">=</span> <span class="n">interpolate</span><span class="o">.</span><span class="n">interp1d</span><span class="p">(</span><span class="n">zs</span><span class="o">.</span><span class="n">loc</span><span class="p">[(</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">):(</span><span class="n">i</span><span class="p">),</span> <span class="s2">&quot;M-PureMgSiO3&quot;</span><span class="p">],</span> <span class="n">zs</span><span class="o">.</span><span class="n">loc</span><span class="p">[(</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">):(</span><span class="n">i</span><span class="p">),</span> <span class="s2">&quot;R-PureMgSiO3&quot;</span><span class="p">],</span> <span class="n">kind</span><span class="o">=</span><span class="s1">&#39;linear&#39;</span><span class="p">,</span> <span class="n">assume_sorted</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+            <span class="n">mu1</span> <span class="o">=</span> <span class="n">f</span><span class="p">(</span><span class="n">mPlanet</span><span class="p">)</span>
+            <span class="k">break</span>
+
+    <span class="c1"># Calculate mu2</span>
+    <span class="n">mu2</span> <span class="o">=</span> <span class="mf">0.0</span>
+    <span class="n">mZSimin1</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">rZSimin1</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">rowNum</span><span class="p">:</span>
+        <span class="n">mZSi</span> <span class="o">=</span> <span class="n">zs</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="s2">&quot;M-MgSiO3-H2O-5050&quot;</span><span class="p">]</span>
+        <span class="n">rZSi</span> <span class="o">=</span> <span class="n">zs</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="s2">&quot;R-MgSiO3-H2O-5050&quot;</span><span class="p">]</span>
+        <span class="k">if</span> <span class="n">mPlanet</span> <span class="o">==</span> <span class="n">mZSi</span><span class="p">:</span>
+            <span class="n">mu2</span> <span class="o">=</span> <span class="n">rZSi</span>
+            <span class="k">break</span>
+        <span class="k">elif</span> <span class="n">mPlanet</span> <span class="o">&gt;</span> <span class="n">mZSi</span><span class="p">:</span>
+            <span class="n">mZSimin1</span> <span class="o">=</span> <span class="n">mZSi</span>
+            <span class="n">rZSimin1</span> <span class="o">=</span> <span class="n">rZSi</span>
+        <span class="k">else</span><span class="p">:</span> 
+            <span class="n">f</span> <span class="o">=</span> <span class="n">interpolate</span><span class="o">.</span><span class="n">interp1d</span><span class="p">(</span><span class="n">zs</span><span class="o">.</span><span class="n">loc</span><span class="p">[(</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">):(</span><span class="n">i</span><span class="p">),</span> <span class="s2">&quot;M-MgSiO3-H2O-5050&quot;</span><span class="p">],</span> <span class="n">zs</span><span class="o">.</span><span class="n">loc</span><span class="p">[(</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">):(</span><span class="n">i</span><span class="p">),</span> <span class="s2">&quot;R-MgSiO3-H2O-5050&quot;</span><span class="p">],</span> <span class="n">kind</span><span class="o">=</span><span class="s1">&#39;linear&#39;</span><span class="p">,</span> <span class="n">assume_sorted</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+            <span class="n">mu2</span> <span class="o">=</span> <span class="n">f</span><span class="p">(</span><span class="n">mPlanet</span><span class="p">)</span>
+            <span class="k">break</span>
+
+    <span class="c1"># Calculate sigma1</span>
+    <span class="n">sigma1</span> <span class="o">=</span> <span class="p">(</span><span class="n">mu2</span><span class="o">-</span><span class="n">mu1</span><span class="p">)</span><span class="o">/</span><span class="mi">3</span>
+    
+    <span class="c1"># Calculate the terrestrial probability</span>
+    <span class="n">p_ter</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">if</span> <span class="n">rPlanet</span> <span class="o">&lt;=</span> <span class="n">mu1</span><span class="p">:</span>
+        <span class="n">p_ter</span> <span class="o">=</span> <span class="mi">1</span>
+    <span class="k">elif</span> <span class="n">rPlanet</span> <span class="o">&gt;=</span> <span class="n">mu2</span><span class="p">:</span>
+        <span class="n">p_ter</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">else</span><span class="p">:</span> <span class="c1"># uses a pseudo-gaussian function</span>
+        <span class="n">p_ter</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="o">-</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span><span class="o">*</span><span class="p">((</span><span class="n">rPlanet</span><span class="o">-</span><span class="n">mu1</span><span class="p">)</span><span class="o">/</span><span class="n">sigma1</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">p_ter</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Data input</span>
+<span class="c1">## Import exoplanet data from a CSV file into a pandas dataframe</span>
+<span class="n">exo</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span> <span class="p">(</span><span class="sa">r</span><span class="s1">&#39;exoplanets_noKOI.csv&#39;</span><span class="p">,</span> <span class="n">low_memory</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+
+<span class="c1"># Set the column with the header NAME to be used as an index to identify row </span>
+<span class="n">exo</span> <span class="o">=</span> <span class="n">exo</span><span class="o">.</span><span class="n">set_index</span><span class="p">(</span><span class="s2">&quot;NAME&quot;</span><span class="p">,</span> <span class="n">drop</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span>
+
+<span class="c1"># Extract names of planets as a list (to be used as a calling list)</span>
+<span class="n">exoList</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">exo</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;NAME&#39;</span><span class="p">])</span>
+<span class="n">exoList</span> <span class="o">=</span> <span class="n">exoList</span><span class="p">[</span><span class="s1">&#39;NAME&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="o">.</span><span class="n">tolist</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Zeng-Sasselov boundaries input</span>
+
+<span class="c1">## Import CSV of Zeng &amp; Sasselov boundaries</span>
+<span class="n">zs</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span> <span class="p">(</span><span class="sa">r</span><span class="s1">&#39;zsboundaries.csv&#39;</span><span class="p">)</span>
+
+<span class="c1">## Set index using the RowNum column</span>
+<span class="n">zs</span> <span class="o">=</span> <span class="n">zs</span><span class="o">.</span><span class="n">set_index</span><span class="p">(</span><span class="s2">&quot;RowNum&quot;</span><span class="p">,</span> <span class="n">drop</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span>
+
+<span class="c1">## Extract the column &quot;RowNum&quot; as a list (to be used as a calling list)</span>
+<span class="n">rowNum</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">zs</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;RowNum&#39;</span><span class="p">])</span>
+<span class="n">rowNum</span> <span class="o">=</span> <span class="n">rowNum</span><span class="p">[</span><span class="s1">&#39;RowNum&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="o">.</span><span class="n">tolist</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Main subroutine to determine the habitability index value</span>
+
+<span class="n">habIndex</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">habIndexWithName</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">habIndexNotZero</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="k">for</span> <span class="n">exoName</span> <span class="ow">in</span> <span class="n">exoList</span><span class="p">:</span>
+    <span class="c1"># Extract data of individual planets</span>
+    
+    <span class="c1"># HOST STAR PROPERTIES</span>
+    <span class="c1"># Stellar radius (in solar radii)</span>
+    <span class="n">rStar</span> <span class="o">=</span> <span class="n">exo</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">exoName</span><span class="p">,</span> <span class="s2">&quot;RSTAR&quot;</span><span class="p">]</span>
+    <span class="c1">## Convert to SI</span>
+    <span class="n">rStar</span> <span class="o">=</span> <span class="n">rStar</span><span class="o">*</span><span class="n">RSUN</span>
+    
+    <span class="c1"># Stellar temperature (in Kelvin)</span>
+    <span class="n">teffStar</span> <span class="o">=</span> <span class="n">exo</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">exoName</span><span class="p">,</span> <span class="s2">&quot;TEFF&quot;</span><span class="p">]</span>
+    
+    <span class="c1"># Stellar luminosity</span>
+    <span class="n">luminosity</span> <span class="o">=</span> <span class="mi">4</span><span class="o">*</span><span class="n">math</span><span class="o">.</span><span class="n">pi</span><span class="o">*</span><span class="n">rStar</span><span class="o">*</span><span class="n">rStar</span><span class="o">*</span><span class="n">SB</span><span class="o">*</span><span class="n">teffStar</span><span class="o">**</span><span class="mi">4</span>
+    
+    <span class="c1"># PLANET PROPERTIES   </span>
+    <span class="c1"># Planetary radius (in Jovian radii)</span>
+    <span class="n">rPlanet</span> <span class="o">=</span> <span class="n">exo</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">exoName</span><span class="p">,</span> <span class="s2">&quot;R&quot;</span><span class="p">]</span>
+    <span class="c1">## If R is not available, calculate it from  transit depth</span>
+    <span class="k">if</span> <span class="n">math</span><span class="o">.</span><span class="n">isnan</span><span class="p">(</span><span class="n">rPlanet</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+        <span class="n">depth</span> <span class="o">=</span> <span class="n">exo</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">exoName</span><span class="p">,</span> <span class="s2">&quot;DEPTH&quot;</span><span class="p">]</span>
+        <span class="n">rPlanet</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">depth</span><span class="p">)</span><span class="o">*</span><span class="n">rStar</span>
+    <span class="c1">## Convert to SI</span>
+    <span class="n">rPlanet</span> <span class="o">=</span> <span class="n">rPlanet</span><span class="o">*</span><span class="n">RJUP</span>
+    
+    <span class="c1"># Planetary mass (in Jovian masses)</span>
+    <span class="n">mPlanet</span> <span class="o">=</span> <span class="n">exo</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">exoName</span><span class="p">,</span> <span class="s2">&quot;MASS&quot;</span><span class="p">]</span> 
+    <span class="c1">## If MASS is not available, calculate it from a common scaling law</span>
+    <span class="c1">### from the original HITE</span>
+    <span class="k">if</span> <span class="n">math</span><span class="o">.</span><span class="n">isnan</span><span class="p">(</span><span class="n">mPlanet</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">rPlanet</span><span class="o">/</span><span class="n">REARTH</span> <span class="o">&lt;=</span> <span class="mi">1</span><span class="p">:</span>
+            <span class="n">mPlanet</span> <span class="o">=</span> <span class="p">((</span><span class="n">rPlanet</span><span class="o">/</span><span class="n">REARTH</span><span class="p">)</span><span class="o">**</span><span class="mf">3.268</span><span class="p">)</span><span class="o">*</span><span class="n">MEARTH</span>
+        <span class="k">elif</span> <span class="n">rPlanet</span><span class="o">/</span><span class="n">REARTH</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">:</span>
+            <span class="n">mPlanet</span> <span class="o">=</span> <span class="p">((</span><span class="n">rPlanet</span><span class="o">/</span><span class="n">REARTH</span><span class="p">)</span><span class="o">**</span><span class="mf">3.65</span><span class="p">)</span><span class="o">*</span><span class="n">MEARTH</span>
+    <span class="c1">## Convert to SI</span>
+    <span class="n">mPlanet</span> <span class="o">=</span> <span class="n">mPlanet</span><span class="o">*</span><span class="n">MJUP</span>
+    
+    <span class="c1"># Surface planet gravity (in SI)</span>
+    <span class="n">surfGrav</span> <span class="o">=</span> <span class="n">BIGG</span><span class="o">*</span><span class="n">mPlanet</span><span class="o">/</span><span class="p">(</span><span class="n">rPlanet</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>    
+    
+    <span class="c1"># ORBITAL PROPERTIES</span>
+    
+    <span class="c1"># Orbital eccentricity</span>
+    <span class="n">ecc</span> <span class="o">=</span> <span class="n">exo</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">exoName</span><span class="p">,</span> <span class="s2">&quot;ECC&quot;</span><span class="p">]</span>
+
+    <span class="c1"># Measurement uncertainty of orbital eccentricity    </span>
+    <span class="c1">## Upper bound (relative from E)</span>
+    <span class="n">eccUpRel</span> <span class="o">=</span> <span class="n">exo</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">exoName</span><span class="p">,</span> <span class="s2">&quot;ECCUPPER&quot;</span><span class="p">]</span>
+    <span class="c1">### If measurement uncertainty is not available, assign it as 0.01</span>
+    <span class="k">if</span> <span class="n">math</span><span class="o">.</span><span class="n">isnan</span><span class="p">(</span><span class="n">eccUpRel</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+        <span class="n">eccUpRel</span> <span class="o">=</span> <span class="mf">0.01</span>
+    <span class="c1">### Upper bound (absolute)</span>
+    <span class="n">eccUpper</span> <span class="o">=</span> <span class="n">ecc</span> <span class="o">+</span> <span class="n">eccUpRel</span>
+    
+    <span class="c1">## Lower bound (relative from E)</span>
+    <span class="n">eccLowRel</span> <span class="o">=</span> <span class="n">exo</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">exoName</span><span class="p">,</span> <span class="s2">&quot;ECCLOWER&quot;</span><span class="p">]</span>
+    <span class="c1">### If measurement uncertainty is not available, assign it as 0.01</span>
+    <span class="k">if</span> <span class="n">math</span><span class="o">.</span><span class="n">isnan</span><span class="p">(</span><span class="n">eccLowRel</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+        <span class="n">eccLowRel</span> <span class="o">=</span> <span class="mf">0.01</span>
+    <span class="c1">###Lower bound (absolute)</span>
+    <span class="n">eccLower</span> <span class="o">=</span> <span class="n">ecc</span> <span class="o">-</span> <span class="n">eccLowRel</span>
+    
+    <span class="c1"># Orbital semi-major axis (in AU)</span>
+    <span class="n">semiAxis</span> <span class="o">=</span> <span class="n">exo</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">exoName</span><span class="p">,</span> <span class="s2">&quot;A&quot;</span><span class="p">]</span>      
+    <span class="c1">## Convert to SI</span>
+    <span class="n">semiAxis</span> <span class="o">=</span> <span class="n">semiAxis</span><span class="o">*</span><span class="n">AU</span>
+    
+    
+    <span class="c1"># Calculate the upper and lower bounds of F_OLR [...]</span>
+    <span class="c1">## that would allow for surface liquid water to exist</span>
+    <span class="n">pStar</span> <span class="o">=</span> <span class="n">PREF</span><span class="o">*</span><span class="n">math</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="n">LH2O</span><span class="o">/</span><span class="p">(</span><span class="n">RGAS</span><span class="o">*</span><span class="n">TREF</span><span class="p">))</span>
+    <span class="c1"># Upper bound: maximum F_OLR</span>
+    <span class="n">maxFlux</span> <span class="o">=</span> <span class="n">A</span><span class="o">*</span><span class="n">SB</span><span class="o">*</span><span class="p">(</span><span class="n">LH2O</span><span class="o">/</span><span class="p">(</span><span class="n">RGAS</span><span class="o">*</span><span class="n">math</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">pStar</span><span class="o">*</span><span class="n">math</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">K0</span><span class="o">/</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">PLINE</span><span class="o">*</span><span class="n">surfGrav</span><span class="p">)))))</span><span class="o">**</span><span class="mi">4</span>
+    <span class="c1"># Lower bound: minimum F_OLR is the constant MINFLUX</span>
+    <span class="n">minFlux</span> <span class="o">=</span> <span class="n">MINFLUX</span>
+    
+    <span class="c1"># Probability of the planet being terrestrial</span>
+    <span class="n">p_ter</span> <span class="o">=</span> <span class="n">fp_ter</span><span class="p">(</span><span class="n">mPlanet</span><span class="p">,</span><span class="n">rPlanet</span><span class="p">,</span><span class="n">exoName</span><span class="p">)</span>
+        
+    
+    <span class="c1"># Albedo (new)</span>
+    <span class="c1">## Boundaries</span>
+    <span class="n">albMin</span> <span class="o">=</span> <span class="n">ALBMINELSE</span>
+    <span class="n">albMax</span> <span class="o">=</span> <span class="n">ALBMAXELSE</span>
+    <span class="c1">## Special conditions</span>
+    <span class="c1">### For planets with M-type host star</span>
+    <span class="k">if</span> <span class="n">teffStar</span> <span class="o">&gt;=</span> <span class="mi">2300</span> <span class="ow">and</span> <span class="n">teffStar</span> <span class="o">&lt;=</span><span class="mi">3800</span><span class="p">:</span>
+        <span class="n">albMax</span> <span class="o">=</span> <span class="n">ALBMAXM</span>
+    <span class="c1">### For planets with G-type host star</span>
+    <span class="k">elif</span> <span class="n">teffStar</span> <span class="o">&gt;=</span> <span class="mi">5370</span> <span class="ow">and</span> <span class="n">teffStar</span> <span class="o">&lt;=</span><span class="mi">5980</span><span class="p">:</span>
+        <span class="n">albMin</span> <span class="o">=</span> <span class="n">ALBMING</span>
+        
+        
+    
+    <span class="c1"># Calculate F_OLR</span>
+    <span class="c1">## Albedo increments</span>
+    <span class="n">da</span> <span class="o">=</span> <span class="mf">0.01</span>
+    <span class="c1">## Eccentricity increments</span>
+    <span class="n">de</span> <span class="o">=</span> <span class="mf">0.01</span>
+    <span class="c1">## Sum of pofe (probability of eccentricity);</span>
+    <span class="c1">### (is used to normalize the index value, later)</span>
+    <span class="c1">### Initialized to 0</span>
+    <span class="n">pofeSum</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="c1">### Sum of how many instances of F_OLR meets the requirements for</span>
+    <span class="c1">#### the planet to have surface liquid water. Each instances will then be</span>
+    <span class="c1">#### multiplied by the probability of its eccentricity (pofe)</span>
+    <span class="c1">### Initialized to 0</span>
+    <span class="n">habFact</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="c1">### Incoming stellar radiation (instellation)</span>
+    <span class="n">flux0</span> <span class="o">=</span> <span class="n">luminosity</span><span class="o">/</span><span class="p">(</span><span class="mi">16</span><span class="o">*</span><span class="n">math</span><span class="o">.</span><span class="n">pi</span><span class="o">*</span><span class="n">semiAxis</span><span class="o">*</span><span class="n">semiAxis</span><span class="p">)</span>
+
+    <span class="c1"># Calculate the habitability index</span>
+    <span class="c1">## Iterate through the albedo &amp; eccentricity 2D matrix</span>
+    <span class="n">a</span> <span class="o">=</span> <span class="n">albMin</span>
+    <span class="k">while</span> <span class="n">a</span> <span class="o">&lt;</span> <span class="n">albMax</span><span class="p">:</span>
+        <span class="n">e</span> <span class="o">=</span> <span class="n">eccLower</span>
+        <span class="k">while</span> <span class="n">e</span> <span class="o">&lt;</span> <span class="n">eccUpper</span><span class="p">:</span>
+            <span class="n">flux</span> <span class="o">=</span> <span class="n">flux0</span><span class="o">*</span><span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">a</span><span class="p">)</span><span class="o">/</span><span class="n">math</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">e</span><span class="o">*</span><span class="n">e</span><span class="p">)</span>
+            <span class="n">pofeSum</span> <span class="o">=</span> <span class="n">pofeSum</span> <span class="o">+</span> <span class="n">pofe</span><span class="p">(</span><span class="n">e</span><span class="p">,</span> <span class="n">ecc</span><span class="p">,</span> <span class="n">eccUpRel</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">flux</span> <span class="o">&lt;</span> <span class="n">maxFlux</span> <span class="ow">and</span> <span class="n">flux</span> <span class="o">&gt;</span> <span class="n">MINFLUX</span><span class="p">:</span>
+                <span class="n">habFact</span> <span class="o">=</span> <span class="n">habFact</span> <span class="o">+</span> <span class="n">pofe</span><span class="p">(</span><span class="n">e</span><span class="p">,</span> <span class="n">ecc</span><span class="p">,</span> <span class="n">eccUpRel</span><span class="p">)</span>
+            <span class="n">e</span> <span class="o">=</span> <span class="n">e</span> <span class="o">+</span> <span class="n">de</span>
+        <span class="n">a</span> <span class="o">=</span> <span class="n">a</span> <span class="o">+</span> <span class="n">da</span>   
+    
+    <span class="k">if</span> <span class="n">ecc</span> <span class="o">&gt;</span> <span class="mf">0.8</span><span class="p">:</span>
+        <span class="n">H</span> <span class="o">=</span> <span class="mf">0.0</span>
+    <span class="k">elif</span> <span class="n">pofeSum</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">H</span> <span class="o">=</span> <span class="p">(</span><span class="n">habFact</span><span class="o">/</span><span class="n">pofeSum</span><span class="p">)</span><span class="o">*</span><span class="n">p_ter</span>
+    <span class="k">else</span><span class="p">:</span> <span class="c1"># in the case of error; might be better to replace this with a throw exception statement</span>
+        <span class="n">H</span> <span class="o">=</span> <span class="mf">0.0</span>
+    
+    <span class="n">habIndex</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">H</span><span class="p">)</span>
+    <span class="n">habIndexWithName</span><span class="o">.</span><span class="n">extend</span><span class="p">([</span><span class="n">exoName</span><span class="p">,</span> <span class="s2">&quot;,&quot;</span><span class="p">,</span> <span class="n">H</span><span class="p">])</span>
+    
+    <span class="k">if</span> <span class="n">H</span> <span class="o">&gt;</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">habIndexNotZero</span><span class="o">.</span><span class="n">extend</span><span class="p">([</span><span class="n">exoName</span><span class="o">+</span> <span class="s2">&quot;: &quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">H</span><span class="p">)])</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>C:\Users\Zulfa\AppData\Local\Temp\ipykernel_6516\1628034387.py:79: RuntimeWarning: divide by zero encountered in double_scalars
+  maxFlux = A*SB*(LH2O/(RGAS*math.log(pStar*math.sqrt(K0/(2*PLINE*surfGrav)))))**4
+</pre></div>
+</div>
+<div class="output stderr highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>C:\Users\Zulfa\AppData\Local\Temp\ipykernel_6516\1628034387.py:116: RuntimeWarning: divide by zero encountered in double_scalars
+  flux0 = luminosity/(16*math.pi*semiAxis*semiAxis)
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">habIndexNotZero</span><span class="p">:</span>
+    <span class="nb">print</span><span class="p">(</span><span class="n">i</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>Kepler-1185 b: 0.07272727272727285
+Kepler-1229 b: 1.0
+Kepler-1389 b: 0.031657133627311713
+Kepler-1410 b: 0.05782394210427908
+Kepler-1450 b: 0.04062712679331838
+Kepler-1459 b: 0.09333333333333332
+Kepler-1544 b: 0.09302112425470993
+Kepler-1599 b: 0.01143145047211334
+Kepler-1605 b: 0.05333333333333334
+Kepler-1638 b: 0.013956575564003688
+Kepler-186 f: 0.7810451825750875
+Kepler-440 b: 0.019990687758356804
+Kepler-441 b: 0.22378053033591983
+Kepler-442 b: 0.9466666666666661
+Kepler-62 f: 0.6533333333333328
+Kepler-69 c: 0.18015940504014624
+LHS 1140 b: 1.0
+TRAPPIST-1 d: 0.08605137345977325
+TRAPPIST-1 e: 1.0
+TRAPPIST-1 f: 0.7668910798209205
+TRAPPIST-1 g: 0.21768360577007193
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Append the result (planet&#39;s name and index value) to a .txt file in the same folder </span>
+<span class="c1">#with open(&#39;out.txt&#39;,&#39;w&#39;) as f:</span>
+<span class="c1">#    i = 1</span>
+<span class="c1">#    for a in habIndexWithName:</span>
+<span class="c1">#        if i == 3:</span>
+<span class="c1">#            print(a, file=f)</span>
+<span class="c1">#            i = 1</span>
+<span class="c1">#        else:</span>
+<span class="c1">#            print(a, file=f, end=&quot;&quot;)</span>
+<span class="c1">#            i += 1</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "abell1689/M-HITE",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="3_perincian_kode.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Perincian Kode</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="5_saran_pengembangan.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Saran Pengembangan</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      By Zulfa Aulia Rahma (zulfarahma [at] proton [dot] me)<br/>
+    
+        &copy; Copyright 2021.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>

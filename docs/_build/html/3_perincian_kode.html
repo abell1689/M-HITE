@@ -1,0 +1,948 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Perincian Kode &#8212; Dokumentasi M-HITE</title>
+    
+  <link href="_static/css/theme.css" rel="stylesheet">
+  <link href="_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/custom.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/togglebutton.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="shortcut icon" href="_static/favicon.png"/>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Live Sandbox" href="4_live_sandbox.html" />
+    <link rel="prev" title="Perincian Algoritma" href="2_perincian_algoritma.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="_static/logo-2.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Dokumentasi M-HITE</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="index.html">
+   Selayang Pandang
+  </a>
+ </li>
+</ul>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="1_pendahuluan.html">
+   Pendahuluan
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="2_perincian_algoritma.html">
+   Perincian Algoritma
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Perincian Kode
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="4_live_sandbox.html">
+   Live Sandbox
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="5_saran_pengembangan.html">
+   Saran Pengembangan
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="6_daftar_pustaka.html">
+   Daftar Pustaka
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/3_perincian_kode.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.ipynb</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/abell1689/M-HITE/"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/abell1689/M-HITE//issues/new?title=Issue%20on%20page%20%2F3_perincian_kode.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/abell1689/M-HITE/master?urlpath=lab/tree/docs/3_perincian_kode.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        <button type="button" class="btn btn-secondary topbarbtn"
+            onclick="initThebeSBT()" title="Launch Thebe" data-toggle="tooltip" data-placement="left"><i
+                class="fas fa-play"></i><span style="margin-left: .4em;">Live Code</span></button>
+        
+    </div>
+</div>
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#libraries-import-declarations">
+   <strong>
+    Libraries import declarations
+   </strong>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#definition-of-constants-and-variables">
+   <strong>
+    Definition of constants and variables
+   </strong>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#definition-of-functions">
+   <strong>
+    Definition of functions
+   </strong>
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#a-function-to-calculate-the-probability-distribution-of-orbital-eccentricity">
+     <strong>
+      1) A function to calculate the probability distribution of orbital eccentricity
+     </strong>
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#original-probability-distribution-of-eccentricity-from-the-original-code-not-used-in-m-hite">
+       <strong>
+        Original probability distribution of eccentricity (from the original code, not used in M-HITE).
+       </strong>
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#new-probability-distribution-of-eccentricity">
+       <strong>
+        New probability distribution of eccentricity
+       </strong>
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#a-function-to-calculate-the-probability-of-a-planet-s-terrestriality">
+     <strong>
+      2) A function to calculate the probability of a planet’s terrestriality
+     </strong>
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#calculation-of-the-lower-bound-mu1">
+       Calculation of the lower bound (
+       <em>
+        mu1
+       </em>
+       )
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#calculation-of-the-mu2">
+       Calculation of the  (
+       <em>
+        mu2
+       </em>
+       )
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#calculation-of-terrestriality-probability">
+       Calculation of terrestriality probability
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#the-code">
+       The code
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#data-input">
+   <strong>
+    Data input
+   </strong>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#zeng-sasselov-boundaries-input">
+   <strong>
+    Zeng-Sasselov boundaries input
+   </strong>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#main-subroutine-to-determine-the-habitability-index-value">
+   <strong>
+    Main subroutine to determine the habitability index value
+   </strong>
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Perincian Kode</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#libraries-import-declarations">
+   <strong>
+    Libraries import declarations
+   </strong>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#definition-of-constants-and-variables">
+   <strong>
+    Definition of constants and variables
+   </strong>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#definition-of-functions">
+   <strong>
+    Definition of functions
+   </strong>
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#a-function-to-calculate-the-probability-distribution-of-orbital-eccentricity">
+     <strong>
+      1) A function to calculate the probability distribution of orbital eccentricity
+     </strong>
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#original-probability-distribution-of-eccentricity-from-the-original-code-not-used-in-m-hite">
+       <strong>
+        Original probability distribution of eccentricity (from the original code, not used in M-HITE).
+       </strong>
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#new-probability-distribution-of-eccentricity">
+       <strong>
+        New probability distribution of eccentricity
+       </strong>
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#a-function-to-calculate-the-probability-of-a-planet-s-terrestriality">
+     <strong>
+      2) A function to calculate the probability of a planet’s terrestriality
+     </strong>
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#calculation-of-the-lower-bound-mu1">
+       Calculation of the lower bound (
+       <em>
+        mu1
+       </em>
+       )
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#calculation-of-the-mu2">
+       Calculation of the  (
+       <em>
+        mu2
+       </em>
+       )
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#calculation-of-terrestriality-probability">
+       Calculation of terrestriality probability
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#the-code">
+       The code
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#data-input">
+   <strong>
+    Data input
+   </strong>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#zeng-sasselov-boundaries-input">
+   <strong>
+    Zeng-Sasselov boundaries input
+   </strong>
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#main-subroutine-to-determine-the-habitability-index-value">
+   <strong>
+    Main subroutine to determine the habitability index value
+   </strong>
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="perincian-kode">
+<h1>Perincian Kode<a class="headerlink" href="#perincian-kode" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="libraries-import-declarations">
+<h2><strong>Libraries import declarations</strong><a class="headerlink" href="#libraries-import-declarations" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">math</span>
+<span class="kn">from</span> <span class="nn">scipy</span> <span class="kn">import</span> <span class="n">interpolate</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="definition-of-constants-and-variables">
+<h2><strong>Definition of constants and variables</strong><a class="headerlink" href="#definition-of-constants-and-variables" title="Permalink to this headline">¶</a></h2>
+<p>Some common physical constants, mainly used to calculate <code class="docutils literal notranslate"><span class="pre">maxFlux</span></code> (the upper bound of energy flux received by a planet that allows it to be habitable according to Pierrehumbert (2015)):</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">BIGG</span>       <span class="o">=</span> <span class="mf">6.67428e-11</span>       <span class="c1"># Gravitational constant</span>
+<span class="n">PI</span>         <span class="o">=</span> <span class="mf">3.1415926535</span>
+<span class="n">A</span>          <span class="o">=</span> <span class="mf">0.7344</span>            <span class="c1"># Pierrehumbert&#39;s Constant</span>
+<span class="n">SB</span>         <span class="o">=</span> <span class="mf">5.670373e-8</span>       <span class="c1"># Stefan-Boltzmann Constant</span>
+<span class="n">LH2O</span>       <span class="o">=</span> <span class="mf">2.425e6</span>           <span class="c1"># Latent Heat Capacity of Water</span>
+<span class="n">RGAS</span>       <span class="o">=</span> <span class="mf">461.5</span>             <span class="c1"># Universal Gas Constant</span>
+<span class="n">PLINE</span>      <span class="o">=</span> <span class="mf">1e4</span>               
+<span class="n">PREF</span>       <span class="o">=</span> <span class="mf">610.616</span>           <span class="c1"># Reference Pressure</span>
+<span class="n">TREF</span>       <span class="o">=</span> <span class="mf">273.13</span>            <span class="c1"># Reference Temperature</span>
+<span class="n">K0</span>         <span class="o">=</span> <span class="mf">0.055</span>             <span class="c1"># A constant in Runaway Greenhouse calculation</span>
+</pre></div>
+</div>
+<p>Boundaries for albedo values:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">ALBMINELSE</span> <span class="o">=</span> <span class="mf">0.05</span>              <span class="c1"># General lower bound</span>
+<span class="n">ALBMAXELSE</span> <span class="o">=</span> <span class="mf">0.8</span>               <span class="c1"># General upper bound</span>
+<span class="n">ALBMING</span>    <span class="o">=</span> <span class="mf">0.25</span>              <span class="c1"># Lower bound for planets orbiting G-type stars</span>
+<span class="n">ALBMAXM</span>    <span class="o">=</span> <span class="mf">0.35</span>              <span class="c1"># Upper bound for planets orbiting M-type stars</span>
+</pre></div>
+</div>
+<p>The counterpart to maxFlux (unlike maxFlux, MINFLUX is a constant that does not depend on a planet’s properties)</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">MINFLUX</span>    <span class="o">=</span> <span class="mi">67</span>                
+</pre></div>
+</div>
+<p>Definitions of units of measurement, mainly used to convert <span class="xref myst">exoplanet.org</span> data into SI units:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">MEARTH</span>     <span class="o">=</span> <span class="mf">5.972186e24</span>       <span class="c1"># Earth mass in kilograms</span>
+<span class="n">REARTH</span>     <span class="o">=</span> <span class="mi">6378100</span>           <span class="c1"># Earth&#39;s radius in meters</span>
+<span class="n">S0</span>         <span class="o">=</span> <span class="mi">1362</span>              <span class="c1"># Solar constant in watts per square meter</span>
+<span class="n">MSUN</span>       <span class="o">=</span> <span class="mf">1.988416e30</span>       <span class="c1"># Solar mass in kilograms</span>
+<span class="n">RSUN</span>       <span class="o">=</span> <span class="mf">6.957e8</span>           <span class="c1"># Solar radius in meters</span>
+<span class="n">LSUN</span>       <span class="o">=</span> <span class="mf">3.828e26</span>          <span class="c1"># Solar luminosity in watts</span>
+<span class="n">RJUP</span>       <span class="o">=</span> <span class="mf">7.1492e7</span>          <span class="c1"># Jovian radius in meters</span>
+<span class="n">MJUP</span>       <span class="o">=</span> <span class="mf">1.8982e27</span>         <span class="c1"># Jovian mass in kilograms</span>
+<span class="n">AU</span>         <span class="o">=</span> <span class="mf">1.496e11</span>          <span class="c1"># The astronomical unit in meters</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="definition-of-functions">
+<h2><strong>Definition of functions</strong><a class="headerlink" href="#definition-of-functions" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="a-function-to-calculate-the-probability-distribution-of-orbital-eccentricity">
+<h3><strong>1) A function to calculate the probability distribution of orbital eccentricity</strong><a class="headerlink" href="#a-function-to-calculate-the-probability-distribution-of-orbital-eccentricity" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="original-probability-distribution-of-eccentricity-from-the-original-code-not-used-in-m-hite">
+<h4><strong>Original probability distribution of eccentricity (from the original code, not used in M-HITE).</strong><a class="headerlink" href="#original-probability-distribution-of-eccentricity-from-the-original-code-not-used-in-m-hite" title="Permalink to this headline">¶</a></h4>
+<p>Note how it differs from the new one. In the explanation for the algorithm section (previous page), this is the function <em>p(e)</em>.</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">pofe</span> <span class="o">=</span> <span class="s1">&#39;probability of e&#39;</span>
+<span class="k">def</span> <span class="nf">pofe</span><span class="p">(</span><span class="n">ecc</span><span class="p">):</span>
+    <span class="k">return</span> <span class="mf">0.1619</span> <span class="o">-</span> <span class="mf">0.5352</span><span class="o">*</span><span class="n">ecc</span> <span class="o">+</span> <span class="mf">0.6358</span><span class="o">*</span><span class="n">ecc</span><span class="o">*</span><span class="n">ecc</span> <span class="o">-</span> <span class="mf">0.2557</span><span class="o">*</span><span class="n">ecc</span><span class="o">**</span><span class="mi">3</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="new-probability-distribution-of-eccentricity">
+<h4><strong>New probability distribution of eccentricity</strong><a class="headerlink" href="#new-probability-distribution-of-eccentricity" title="Permalink to this headline">¶</a></h4>
+<p>Unlike the original, this new function uses known eccentricity data from <span class="xref myst">exoplanet.org</span>, but retains the form of a probability distribution.
+<code class="docutils literal notranslate"><span class="pre">mu</span></code> is the uncertainty of the eccentricity value (either from the ECCLOWER or ECCUPPER columns in the data input file).</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="k">def</span> <span class="nf">pofe</span><span class="p">(</span><span class="n">ecc</span><span class="p">,</span><span class="n">mu</span><span class="p">,</span><span class="n">sigma</span><span class="p">):</span>
+    <span class="k">return</span> <span class="p">((</span><span class="n">sigma</span><span class="o">*</span><span class="n">math</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">math</span><span class="o">.</span><span class="n">pi</span><span class="p">))</span><span class="o">**</span><span class="p">(</span><span class="o">-</span><span class="mi">1</span><span class="p">))</span><span class="o">*</span><span class="n">math</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="o">-</span><span class="p">(((</span><span class="n">ecc</span><span class="o">-</span><span class="n">mu</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span><span class="o">/</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">sigma</span><span class="o">**</span><span class="mi">2</span><span class="p">)))</span><span class="o">/</span><span class="mi">1000</span>
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="a-function-to-calculate-the-probability-of-a-planet-s-terrestriality">
+<h3><strong>2) A function to calculate the probability of a planet’s terrestriality</strong><a class="headerlink" href="#a-function-to-calculate-the-probability-of-a-planet-s-terrestriality" title="Permalink to this headline">¶</a></h3>
+<p>To predict a planet’s <strong>composition</strong>, M-HITE uses a model developed by Zeng-Sasselov (ZS) (2013). This model assesses the density of a planet to determine its place in a spectrum of combination between three substances: Fe (iron), MgSiO<sub>3</sub>, and H<sub>2</sub>O.</p>
+<p><img alt="Terrestrial range of radius for a planet with a mass 3 times of Earth's mass" src="_images/zeng-sasselov_1_en.png" /></p>
+<p>The plot above shows such a probability function <span class="math notranslate nohighlight">\(p_{ter}\)</span>.
+Note that this particular function is specific to a planet with a mass of 3 Earth’s masses (M<sub>🜨</sub>). Planets with different masses have different distributions.</p>
+<p>For any planet, a terrestriality chance of not zero is only possible when its radius is smaller than <span class="math notranslate nohighlight">\(\mu_2\)</span> (<em>mu2</em>). Moreover, if the radius is smaller than <span class="math notranslate nohighlight">\(\mu_1\)</span> (<em>mu1</em>), the terrestriality chance is valued as 1. These two constants, <em>mu1</em> and <em>mu2</em> are planet-specific.</p>
+<p>The purpose of the code in this section is: 1) to determine the upper and lower bounds (<em>mu1</em> and <em>mu2</em>) of the ‘terrestrial range’ for a given planet, and then, 2) to assess where the planet’s radius fall between those boundaries and determine the planet’s probability of being terrestrial.</p>
+<p>The code uses values from a CSV table adapted from the dataset of Zeng-Sasselov (2013). This table is imported to a panda dataframe in the ‘Zeng-Sasselov boundaries input’ subsection below on this page. and will be called as <strong>ZS table</strong> from here onward.</p>
+<div class="section" id="calculation-of-the-lower-bound-mu1">
+<h4>Calculation of the lower bound (<em>mu1</em>)<a class="headerlink" href="#calculation-of-the-lower-bound-mu1" title="Permalink to this headline">¶</a></h4>
+<p>For any given planet of mass <em>m<sub>p</sub></em>, the lower bound of the ‘terrestrial range’ is defined as the radius that the planet would have if it was composed of pure MgSiO<sub>3</sub>.</p>
+<p>The ZS table contains several columns, two of them are labeled ‘M-Pure-MgSiO3’ and ‘R-Pure-MgSiO3’. The values stored in these columns are mass and radius values in units of M<sub>🜨</sub> and R<sub>🜨</sub>, respectively. Each row of these two columns is a pair of mass-radius values that represents a planet of 100% MgSiO<sub>3</sub>.</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p><img alt="Inside the ZS table" src="_images/zeng-sasselov_2.png" /></p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><b>A peek inside the ZS table</b></p></td>
+</tr>
+</tbody>
+</table>
+<p>For example, according to this model, a planet with a mass of 0.00623 M<sub>🜨</sub> and a radius of 0.2029 R<sub>🜨</sub> is considered to be composed of 100 percent MgSiO<sub>3</sub>. That means, any theoretically existing planets with that exact mass would have 0.2029 as its <em>mu1</em>.</p>
+<p>Let’s say that we wish to find <em>mu1</em> for exoplanet WASP-96 b (mass: 152.6 M<sub>🜨</sub>; radius: 13.45 R<sub>🜨</sub>). This requires us to find the radius of WASP-96 b <em>if it were</em> a planet of pure MgSiO<sub>3</sub>.</p>
+<p>If the exact value of WASP-96 b’s mass is present in the ‘M-Pure-MgSiO3’ column, the process would be a straigtforward one: <em>mu1</em> is its corresponding value in ‘R-Pure-MgSiO3’ column (i.e. the radius value that is in the same row as its mass).</p>
+<p>More often than not, a planet’s mass is not present in the column, such as in the case of WASP-96 b here, so we have to interpolate to approximate in-between values. Unfortunately, although the dataset is graphically algorithmic, it’s not advisable to set up a global regression equation due to low accuracy. In the graphic below, the thick data points are values from the ZS table, while the dotted line is the plot of a logarithmic regression equation. It can be seen that especially for large radius, the approximation veers quite far from the actual value.</p>
+<p><img alt="Logarithmic interpolation" src="_images/zeng-sasselov_4.png" /></p>
+<p>M-HITE solves this problem by using piece-wise linear interpolation.</p>
+<p>Continuing the aforementioned example, we do this by first finding the bracket in the ‘M-Pure-MgSiO3’ column in which WASP-96 b’s <em>m<sub>p</sub></em> is contained. The endpoints of this bracket are then used as input for a linear polynomial (uses a function from the python <code class="docutils literal notranslate"><span class="pre">scipy</span></code> package).</p>
+<p><img alt="Iterating through the ZS table to place WASP-96 b' mass inside the list" src="_images/zeng-sasselov_3b.png" /></p>
+<p>The picture above shows a peek inside the ZS table and the ‘bracket of interest’ for WASP-96b.</p>
+<p>To expound on the steps that the code goes through in the process of finding these endpoints:</p>
+<p>Suppose we have already iterated through the first <strong>43 rows</strong> of the ‘M-Pure-MgSiO3’ and have not found a value bracket that contains the mass of WASP-96 b, <strong><em>m<sub>p</sub></em> = 152.6</strong>.</p>
+<p>We now compare <em>m<sub>p</sub></em> to the value in the <strong>44th row</strong>, which is 140.3 and still smaller than  <em>m<sub>p</sub></em> = 152.6. It means that this bracket, formed by the value in the 44th row and its predecessor, is <em>not</em> our bracket of interest.</p>
+<p>So we go forward in the list and compare <em>m<sub>p</sub></em> to the value in the <strong>45th row</strong>, which is <strong>158.2</strong> and larger thann <em>m<sub>p</sub></em>. It means that the mass of WASP-96 b is contained between this row and its predecessor–this is our bracket of interest.</p>
+<p>The next step is to create an interpolation function:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">f</span> <span class="o">=</span> <span class="n">interpolate</span><span class="o">.</span><span class="n">interp1d</span><span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">kind</span><span class="o">=</span><span class="s1">&#39;linear&#39;</span><span class="p">,</span> <span class="n">assume_sorted</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>wherein <em>x</em> is an array containing the endpoints of the aforementioned ‘M-Pure-MgSiO3’ bracket and <em>y</em> is an array containing the corresponding values from the ‘R-Pure-MgSiO3’ column.</p>
+<p>The final piece of code looks like this:</p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="n">mu1</span> <span class="o">=</span> <span class="n">f</span><span class="p">(</span><span class="n">mPlanet</span><span class="p">)</span>
+</pre></div>
+</div>
+<p>wherein <code class="docutils literal notranslate"><span class="pre">mPlanet</span></code> is the mass of the planet, which in WASP-96b’s case is 152.6.</p>
+</div>
+<div class="section" id="calculation-of-the-mu2">
+<h4>Calculation of the  (<em>mu2</em>)<a class="headerlink" href="#calculation-of-the-mu2" title="Permalink to this headline">¶</a></h4>
+<p>Similar to that of <em>mu1</em> but uses these columns: ‘R-MgSiO3-H2O-5050’ and ‘M-MgSiO3-H2O-5050’.</p>
+</div>
+<div class="section" id="calculation-of-terrestriality-probability">
+<h4>Calculation of terrestriality probability<a class="headerlink" href="#calculation-of-terrestriality-probability" title="Permalink to this headline">¶</a></h4>
+<p>This part is fairly straightforward. We already have the lower and upper boundaries (<em>mu1</em> and <em>mu2</em>), and the only thing left to do to determine the terrestriality probability is to assess the actual radius of the planet compared to these boundaries. The assessment criteria and results are summarized in this table below.</p>
+<table class="colwidths-auto table">
+<thead>
+<tr class="row-odd"><th class="text-align:center head"><p>Planet’s radius in relation to the boundaries</p></th>
+<th class="text-align:center head"><p>Probability of being terrestrial</p></th>
+</tr>
+</thead>
+<tbody>
+<tr class="row-even"><td class="text-align:center"><p><span class="math notranslate nohighlight">\(r_{p}≤\mu_1\)</span></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(p_{ter} = 1\)</span></p></td>
+</tr>
+<tr class="row-odd"><td class="text-align:center"><p><span class="math notranslate nohighlight">\(\mu_{1} &lt; r_{p} &lt; \mu_2\)</span></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(1 &lt; p_{ter} &lt; 0\)</span></p></td>
+</tr>
+<tr class="row-even"><td class="text-align:center"><p><span class="math notranslate nohighlight">\(r_{p} \geq \mu_{2}\)</span></p></td>
+<td class="text-align:center"><p><span class="math notranslate nohighlight">\(p_{ter} = 0\)</span></p></td>
+</tr>
+</tbody>
+</table>
+</div>
+<div class="section" id="the-code">
+<h4>The code<a class="headerlink" href="#the-code" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Start of the function definition</span>
+<span class="k">def</span> <span class="nf">p_ter</span> <span class="p">(</span><span class="n">mPlanet</span><span class="p">,</span><span class="n">rPlanet</span><span class="p">,</span><span class="n">exoName</span><span class="p">):</span>
+    <span class="c1"># Convert the unit to Earth&#39;s masses and radii</span>
+    <span class="n">mPlanet</span> <span class="o">=</span> <span class="n">mPlanet</span><span class="o">/</span><span class="n">MEARTH</span> 
+    <span class="n">rPlanet</span> <span class="o">=</span> <span class="n">rPlanet</span><span class="o">/</span><span class="n">REARTH</span> 
+    <span class="c1">## (the Zeng-Sasselov dataset table uses Earth&#39;s mass and radius as the units,</span>
+    <span class="c1">##while the data input from exoplanets.org uses SI)</span>
+    
+    <span class="c1"># Calculate mu1</span>
+    <span class="c1"># Initialize mu1 value</span>
+    <span class="n">mu1</span> <span class="o">=</span> <span class="mf">0.0</span>       
+    
+    <span class="c1"># Initialize temporary variables to hold a mass/radius value</span>
+    <span class="c1">#from the (i-1)th row of the ZS table</span>
+    <span class="n">mZSimin1</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">rZSimin1</span> <span class="o">=</span> <span class="mi">0</span>
+    
+    <span class="c1"># This block iterates through the the &#39;M-Pure-MgSiO3&#39; column</span>
+    <span class="c1">#to find the bracket that contains mPlanet value</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">rowNum</span><span class="p">:</span>
+        <span class="c1"># Initialize temporary variables to hold a mass/radius value</span>
+        <span class="c1">#from the i-th row of the ZS table</span>
+        <span class="n">mZSi</span> <span class="o">=</span> <span class="n">zs</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="s2">&quot;M-PureMgSiO3&quot;</span><span class="p">]</span>
+        <span class="n">rZSi</span> <span class="o">=</span> <span class="n">zs</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="s2">&quot;R-PureMgSiO3&quot;</span><span class="p">]</span>
+        
+        <span class="c1"># Comparing mPlanet to the current value of mZSi</span>
+        <span class="k">if</span> <span class="n">mPlanet</span> <span class="o">==</span> <span class="n">mZSi</span><span class="p">:</span>
+            <span class="n">mu1</span> <span class="o">=</span> <span class="n">rZSi</span>
+            <span class="k">break</span>                          
+        <span class="k">elif</span> <span class="n">mPlanet</span> <span class="o">&gt;</span> <span class="n">mZSi</span><span class="p">:</span>               
+            <span class="n">mZSimin1</span> <span class="o">=</span> <span class="n">mZSi</span>                
+            <span class="n">rZSimin1</span> <span class="o">=</span> <span class="n">rZSi</span>                  
+        <span class="k">else</span><span class="p">:</span> <span class="c1"># if mPlanet &lt; mZSi --&gt; we have found the correct bracket</span>
+            <span class="n">f</span> <span class="o">=</span> <span class="n">interpolate</span><span class="o">.</span><span class="n">interp1d</span><span class="p">(</span><span class="n">zs</span><span class="o">.</span><span class="n">loc</span><span class="p">[(</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">):(</span><span class="n">i</span><span class="p">),</span> <span class="s2">&quot;M-PureMgSiO3&quot;</span><span class="p">],</span> <span class="n">zs</span><span class="o">.</span><span class="n">loc</span><span class="p">[(</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">):(</span><span class="n">i</span><span class="p">),</span> <span class="s2">&quot;R-PureMgSiO3&quot;</span><span class="p">],</span> <span class="n">kind</span><span class="o">=</span><span class="s1">&#39;linear&#39;</span><span class="p">,</span> <span class="n">assume_sorted</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+            <span class="n">mu1</span> <span class="o">=</span> <span class="n">f</span><span class="p">(</span><span class="n">mPlanet</span><span class="p">)</span>
+            <span class="k">break</span>
+
+    <span class="c1"># Calculate mu2</span>
+    <span class="n">mu2</span> <span class="o">=</span> <span class="mf">0.0</span>
+    <span class="n">mZSimin1</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="n">rZSimin1</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="n">rowNum</span><span class="p">:</span>
+        <span class="n">mZSi</span> <span class="o">=</span> <span class="n">zs</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="s2">&quot;M-MgSiO3-H2O-5050&quot;</span><span class="p">]</span>
+        <span class="n">rZSi</span> <span class="o">=</span> <span class="n">zs</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">i</span><span class="p">,</span> <span class="s2">&quot;R-MgSiO3-H2O-5050&quot;</span><span class="p">]</span>
+        <span class="k">if</span> <span class="n">mPlanet</span> <span class="o">==</span> <span class="n">mZSi</span><span class="p">:</span>
+            <span class="n">mu2</span> <span class="o">=</span> <span class="n">rZSi</span>
+            <span class="k">break</span>
+        <span class="k">elif</span> <span class="n">mPlanet</span> <span class="o">&gt;</span> <span class="n">mZSi</span><span class="p">:</span>
+            <span class="n">mZSimin1</span> <span class="o">=</span> <span class="n">mZSi</span>
+            <span class="n">rZSimin1</span> <span class="o">=</span> <span class="n">rZSi</span>
+        <span class="k">else</span><span class="p">:</span> 
+            <span class="n">f</span> <span class="o">=</span> <span class="n">interpolate</span><span class="o">.</span><span class="n">interp1d</span><span class="p">(</span><span class="n">zs</span><span class="o">.</span><span class="n">loc</span><span class="p">[(</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">):(</span><span class="n">i</span><span class="p">),</span> <span class="s2">&quot;M-MgSiO3-H2O-5050&quot;</span><span class="p">],</span> <span class="n">zs</span><span class="o">.</span><span class="n">loc</span><span class="p">[(</span><span class="n">i</span><span class="o">-</span><span class="mi">1</span><span class="p">):(</span><span class="n">i</span><span class="p">),</span> <span class="s2">&quot;R-MgSiO3-H2O-5050&quot;</span><span class="p">],</span> <span class="n">kind</span><span class="o">=</span><span class="s1">&#39;linear&#39;</span><span class="p">,</span> <span class="n">assume_sorted</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+            <span class="n">mu2</span> <span class="o">=</span> <span class="n">f</span><span class="p">(</span><span class="n">mPlanet</span><span class="p">)</span>
+            <span class="k">break</span>
+
+    <span class="c1"># Calculate sigma1</span>
+    <span class="n">sigma1</span> <span class="o">=</span> <span class="p">(</span><span class="n">mu2</span><span class="o">-</span><span class="n">mu1</span><span class="p">)</span><span class="o">/</span><span class="mi">3</span>
+    
+    <span class="c1"># Calculate the terrestrial probability</span>
+    <span class="n">p_ter</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">if</span> <span class="n">rPlanet</span> <span class="o">&lt;=</span> <span class="n">mu1</span><span class="p">:</span>
+        <span class="n">p_ter</span> <span class="o">=</span> <span class="mi">1</span>
+    <span class="k">elif</span> <span class="n">rPlanet</span> <span class="o">&gt;=</span> <span class="n">mu2</span><span class="p">:</span>
+        <span class="n">p_ter</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">else</span><span class="p">:</span> <span class="c1"># uses a pseudo-gaussian function</span>
+        <span class="n">p_ter</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="o">-</span><span class="p">(</span><span class="mf">0.5</span><span class="p">)</span><span class="o">*</span><span class="p">((</span><span class="n">rPlanet</span><span class="o">-</span><span class="n">mu1</span><span class="p">)</span><span class="o">/</span><span class="n">sigma1</span><span class="p">)</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>
+    <span class="k">return</span> <span class="n">p_ter</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="data-input">
+<h2><strong>Data input</strong><a class="headerlink" href="#data-input" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Import exoplanet data from a CSV file into a pandas dataframe</span>
+<span class="n">exo</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span> <span class="p">(</span><span class="sa">r</span><span class="s1">&#39;exoplanets.csv&#39;</span><span class="p">,</span> <span class="n">low_memory</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+
+<span class="c1"># Set the column with the header NAME to be used as an index to identify row </span>
+<span class="n">exo</span> <span class="o">=</span> <span class="n">exo</span><span class="o">.</span><span class="n">set_index</span><span class="p">(</span><span class="s2">&quot;NAME&quot;</span><span class="p">,</span> <span class="n">drop</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span>
+
+<span class="c1"># Extract names of planets as a list (to be used as a calling list)</span>
+<span class="n">exoList</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">exo</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;NAME&#39;</span><span class="p">])</span>
+<span class="n">exoList</span> <span class="o">=</span> <span class="n">exoList</span><span class="p">[</span><span class="s1">&#39;NAME&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="o">.</span><span class="n">tolist</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="zeng-sasselov-boundaries-input">
+<h2><strong>Zeng-Sasselov boundaries input</strong><a class="headerlink" href="#zeng-sasselov-boundaries-input" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># Import CSV of Zeng &amp; Sasselov boundaries</span>
+<span class="n">zs</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span> <span class="p">(</span><span class="sa">r</span><span class="s1">&#39;zeng-sasselov_boundaries.csv&#39;</span><span class="p">)</span>
+
+<span class="c1"># Set index using the RowNum column</span>
+<span class="n">zs</span> <span class="o">=</span> <span class="n">zs</span><span class="o">.</span><span class="n">set_index</span><span class="p">(</span><span class="s2">&quot;RowNum&quot;</span><span class="p">,</span> <span class="n">drop</span> <span class="o">=</span> <span class="kc">False</span><span class="p">)</span>
+
+<span class="c1"># Extract the column &quot;RowNum&quot; as a list (to be used as a calling list)</span>
+<span class="n">rowNum</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">zs</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s1">&#39;RowNum&#39;</span><span class="p">])</span>
+<span class="n">rowNum</span> <span class="o">=</span> <span class="n">rowNum</span><span class="p">[</span><span class="s1">&#39;RowNum&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">values</span><span class="o">.</span><span class="n">tolist</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="section" id="main-subroutine-to-determine-the-habitability-index-value">
+<h2><strong>Main subroutine to determine the habitability index value</strong><a class="headerlink" href="#main-subroutine-to-determine-the-habitability-index-value" title="Permalink to this headline">¶</a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span>
+<span class="n">habIndex</span> <span class="o">=</span> <span class="p">[]</span>
+<span class="n">habIndexWithName</span> <span class="o">=</span> <span class="p">[]</span>
+
+<span class="k">for</span> <span class="n">exoName</span> <span class="ow">in</span> <span class="n">exoList</span><span class="p">:</span>
+    <span class="c1"># Extract data of individual planets</span>
+    
+    <span class="c1"># HOST STAR PROPERTIES</span>
+    <span class="c1"># Stellar radius (in solar radii)</span>
+    <span class="n">rStar</span> <span class="o">=</span> <span class="n">exo</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">exoName</span><span class="p">,</span> <span class="s2">&quot;RSTAR&quot;</span><span class="p">]</span>
+    <span class="c1">## Convert to SI</span>
+    <span class="n">rStar</span> <span class="o">=</span> <span class="n">rStar</span><span class="o">*</span><span class="n">RSUN</span>
+    
+    <span class="c1"># Stellar temperature (in Kelvin)</span>
+    <span class="n">teffStar</span> <span class="o">=</span> <span class="n">exo</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">exoName</span><span class="p">,</span> <span class="s2">&quot;TEFF&quot;</span><span class="p">]</span>
+    
+    <span class="c1"># Stellar luminosity</span>
+    <span class="n">luminosity</span> <span class="o">=</span> <span class="mi">4</span><span class="o">*</span><span class="n">math</span><span class="o">.</span><span class="n">pi</span><span class="o">*</span><span class="n">rStar</span><span class="o">*</span><span class="n">rStar</span><span class="o">*</span><span class="n">SB</span><span class="o">*</span><span class="n">teffStar</span><span class="o">**</span><span class="mi">4</span>
+    
+    <span class="c1"># PLANET PROPERTIES   </span>
+    <span class="c1"># Planetary radius (in Jovian radii)</span>
+    <span class="n">rPlanet</span> <span class="o">=</span> <span class="n">exo</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">exoName</span><span class="p">,</span> <span class="s2">&quot;R&quot;</span><span class="p">]</span>
+    <span class="c1">## If R is not available, calculate it from  transit depth</span>
+    <span class="k">if</span> <span class="n">math</span><span class="o">.</span><span class="n">isnan</span><span class="p">(</span><span class="n">rPlanet</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+        <span class="n">depth</span> <span class="o">=</span> <span class="n">exo</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">exoName</span><span class="p">,</span> <span class="s2">&quot;DEPTH&quot;</span><span class="p">]</span>
+        <span class="n">rPlanet</span> <span class="o">=</span> <span class="n">math</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">depth</span><span class="p">)</span><span class="o">*</span><span class="n">rStar</span>
+    <span class="c1">## Convert to SI</span>
+    <span class="n">rPlanet</span> <span class="o">=</span> <span class="n">rPlanet</span><span class="o">*</span><span class="n">RJUP</span>
+    
+    <span class="c1"># Planetary mass (in Jovian masses)</span>
+    <span class="n">mPlanet</span> <span class="o">=</span> <span class="n">exo</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">exoName</span><span class="p">,</span> <span class="s2">&quot;MASS&quot;</span><span class="p">]</span> 
+    <span class="c1">## If MASS is not available, calculate it from a common scaling law [...]</span>
+    <span class="c1">##from the original HITE</span>
+    <span class="k">if</span> <span class="n">math</span><span class="o">.</span><span class="n">isnan</span><span class="p">(</span><span class="n">mPlanet</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">rPlanet</span><span class="o">/</span><span class="n">REARTH</span> <span class="o">&lt;=</span> <span class="mi">1</span><span class="p">:</span>
+            <span class="n">mPlanet</span> <span class="o">=</span> <span class="p">((</span><span class="n">rPlanet</span><span class="o">/</span><span class="n">REARTH</span><span class="p">)</span><span class="o">**</span><span class="mf">3.268</span><span class="p">)</span><span class="o">*</span><span class="n">MEARTH</span>
+        <span class="k">elif</span> <span class="n">rPlanet</span><span class="o">/</span><span class="n">REARTH</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">:</span>
+            <span class="n">mPlanet</span> <span class="o">=</span> <span class="p">((</span><span class="n">rPlanet</span><span class="o">/</span><span class="n">REARTH</span><span class="p">)</span><span class="o">**</span><span class="mf">3.65</span><span class="p">)</span><span class="o">*</span><span class="n">MEARTH</span>
+    <span class="c1">## Convert to SI</span>
+    <span class="n">mPlanet</span> <span class="o">=</span> <span class="n">mPlanet</span><span class="o">*</span><span class="n">MJUP</span>
+    
+    <span class="c1"># Surface planet gravity (in SI)</span>
+    <span class="n">surfGrav</span> <span class="o">=</span> <span class="n">BIGG</span><span class="o">*</span><span class="n">mPlanet</span><span class="o">/</span><span class="p">(</span><span class="n">rPlanet</span><span class="o">**</span><span class="mi">2</span><span class="p">)</span>    
+    
+    <span class="c1"># ORBITAL PROPERTIES</span>
+    
+    <span class="c1"># Orbital eccentricity</span>
+    <span class="n">ecc</span> <span class="o">=</span> <span class="n">exo</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">exoName</span><span class="p">,</span> <span class="s2">&quot;ECC&quot;</span><span class="p">]</span>
+
+    <span class="c1"># Measurement uncertainty of orbital eccentricity    </span>
+    <span class="c1">## Upper bound (relative from E)</span>
+    <span class="n">eccUpRel</span> <span class="o">=</span> <span class="n">exo</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">exoName</span><span class="p">,</span> <span class="s2">&quot;ECCUPPER&quot;</span><span class="p">]</span>
+    <span class="c1">### If measurement uncertainty is not available, assign it as 0.01</span>
+    <span class="k">if</span> <span class="n">math</span><span class="o">.</span><span class="n">isnan</span><span class="p">(</span><span class="n">eccUpRel</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+        <span class="n">eccUpRel</span> <span class="o">=</span> <span class="mf">0.01</span>
+    <span class="c1">### Upper bound (absolute)</span>
+    <span class="n">eccUpper</span> <span class="o">=</span> <span class="n">ecc</span> <span class="o">+</span> <span class="n">eccUpRel</span>
+    
+    <span class="c1">## Lower bound (relative from E)</span>
+    <span class="n">eccLowRel</span> <span class="o">=</span> <span class="n">exo</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">exoName</span><span class="p">,</span> <span class="s2">&quot;ECCLOWER&quot;</span><span class="p">]</span>
+    <span class="c1">### If measurement uncertainty is not available, assign it as 0.01</span>
+    <span class="k">if</span> <span class="n">math</span><span class="o">.</span><span class="n">isnan</span><span class="p">(</span><span class="n">eccLowRel</span><span class="p">)</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+        <span class="n">eccLowRel</span> <span class="o">=</span> <span class="mf">0.01</span>
+    <span class="c1">###Lower bound (absolute)</span>
+    <span class="n">eccLower</span> <span class="o">=</span> <span class="n">ecc</span> <span class="o">-</span> <span class="n">eccLowRel</span>
+    
+    <span class="c1"># Orbital semi-major axis (in AU)</span>
+    <span class="n">semiAxis</span> <span class="o">=</span> <span class="n">exo</span><span class="o">.</span><span class="n">loc</span><span class="p">[</span><span class="n">exoName</span><span class="p">,</span> <span class="s2">&quot;A&quot;</span><span class="p">]</span>      
+    <span class="c1">## Convert to SI</span>
+    <span class="n">semiAxis</span> <span class="o">=</span> <span class="n">semiAxis</span><span class="o">*</span><span class="n">AU</span>
+    
+    
+    <span class="c1"># Calculate the upper and lower bounds of F_OLR [...]</span>
+    <span class="c1">#that would allow for surface liquid water to exist</span>
+    <span class="n">pStar</span> <span class="o">=</span> <span class="n">PREF</span><span class="o">*</span><span class="n">math</span><span class="o">.</span><span class="n">exp</span><span class="p">(</span><span class="n">LH2O</span><span class="o">/</span><span class="p">(</span><span class="n">RGAS</span><span class="o">*</span><span class="n">TREF</span><span class="p">))</span>
+    <span class="c1"># Upper bound: maximum F_OLR</span>
+    <span class="n">maxFlux</span> <span class="o">=</span> <span class="n">A</span><span class="o">*</span><span class="n">SB</span><span class="o">*</span><span class="p">(</span><span class="n">LH2O</span><span class="o">/</span><span class="p">(</span><span class="n">RGAS</span><span class="o">*</span><span class="n">math</span><span class="o">.</span><span class="n">log</span><span class="p">(</span><span class="n">pStar</span><span class="o">*</span><span class="n">math</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="n">K0</span><span class="o">/</span><span class="p">(</span><span class="mi">2</span><span class="o">*</span><span class="n">PLINE</span><span class="o">*</span><span class="n">surfGrav</span><span class="p">)))))</span><span class="o">**</span><span class="mi">4</span>
+    <span class="c1"># Lower bound: minimum F_OLR is the constant MINFLUX</span>
+    <span class="n">minFlux</span> <span class="o">=</span> <span class="n">MINFLUX</span>
+    
+    <span class="c1"># Probability of the planet being terrestrial</span>
+    <span class="n">p_ter</span> <span class="o">=</span> <span class="n">p_ter</span><span class="p">(</span><span class="n">mPlanet</span><span class="p">,</span><span class="n">rPlanet</span><span class="p">,</span><span class="n">exoName</span><span class="p">)</span>
+        
+    
+    <span class="c1"># Albedo (new)</span>
+    <span class="c1">## Boundaries</span>
+    <span class="n">albMin</span> <span class="o">=</span> <span class="n">ALBMINELSE</span>
+    <span class="n">albMax</span> <span class="o">=</span> <span class="n">ALBMAXELSE</span>
+    <span class="c1">## Special conditions</span>
+    <span class="c1">### For planets with M-type host star</span>
+    <span class="k">if</span> <span class="n">teffStar</span> <span class="o">&gt;=</span> <span class="mi">2300</span> <span class="ow">and</span> <span class="n">teffStar</span> <span class="o">&lt;=</span><span class="mi">3800</span><span class="p">:</span>
+        <span class="n">albMax</span> <span class="o">=</span> <span class="n">ALBMAXM</span>
+    <span class="c1">### For planets with G-type host star</span>
+    <span class="k">elif</span> <span class="n">teffStar</span> <span class="o">&gt;=</span> <span class="mi">5370</span> <span class="ow">and</span> <span class="n">teffStar</span> <span class="o">&lt;=</span><span class="mi">5980</span><span class="p">:</span>
+        <span class="n">albMin</span> <span class="o">=</span> <span class="n">ALBMING</span>
+        
+        
+    
+    <span class="c1"># Calculate F_OLR</span>
+    <span class="c1">## Albedo increments</span>
+    <span class="n">da</span> <span class="o">=</span> <span class="mf">0.01</span>
+    <span class="c1">## Eccentricity increments</span>
+    <span class="n">de</span> <span class="o">=</span> <span class="mf">0.01</span>
+    <span class="c1">## Sum of pofe (probability of eccentricity);</span>
+    <span class="c1">### (is used to normalize the index value, later)</span>
+    <span class="c1">### Initialized to 0</span>
+    <span class="n">pofeSum</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="c1">### Sum of how many instances of F_OLR meets the requirements for</span>
+    <span class="c1">###the planet to have surface liquid water. Each instances will then be</span>
+    <span class="c1">###multiplied by the probability of its eccentricity (pofe)</span>
+    <span class="c1">### Initialized to 0</span>
+    <span class="n">habFact</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="c1">### Incoming stellar radiation (instellation)</span>
+    <span class="n">flux0</span> <span class="o">=</span> <span class="n">luminosity</span><span class="o">/</span><span class="p">(</span><span class="mi">16</span><span class="o">*</span><span class="n">math</span><span class="o">.</span><span class="n">pi</span><span class="o">*</span><span class="n">semiAxis</span><span class="o">*</span><span class="n">semiAxis</span><span class="p">)</span>
+
+    <span class="c1"># Calculate the habitability index</span>
+    <span class="c1">## Iterate through the albedo &amp; eccentricity 2D matrix</span>
+    <span class="n">a</span> <span class="o">=</span> <span class="n">albMin</span>
+    <span class="k">while</span> <span class="n">a</span> <span class="o">&lt;</span> <span class="n">albMax</span><span class="p">:</span>
+        <span class="n">e</span> <span class="o">=</span> <span class="n">eccLower</span>
+        <span class="k">while</span> <span class="n">e</span> <span class="o">&lt;</span> <span class="n">eccUpper</span><span class="p">:</span>
+            <span class="n">flux</span> <span class="o">=</span> <span class="n">flux0</span><span class="o">*</span><span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">a</span><span class="p">)</span><span class="o">/</span><span class="n">math</span><span class="o">.</span><span class="n">sqrt</span><span class="p">(</span><span class="mi">1</span><span class="o">-</span><span class="n">e</span><span class="o">*</span><span class="n">e</span><span class="p">)</span>
+            <span class="n">pofeSum</span> <span class="o">=</span> <span class="n">pofeSum</span> <span class="o">+</span> <span class="n">pofe</span><span class="p">(</span><span class="n">e</span><span class="p">,</span> <span class="n">ecc</span><span class="p">,</span> <span class="n">eccUpRel</span><span class="p">)</span>
+            <span class="k">if</span> <span class="n">flux</span> <span class="o">&lt;</span> <span class="n">maxFlux</span> <span class="ow">and</span> <span class="n">flux</span> <span class="o">&gt;</span> <span class="n">MINFLUX</span><span class="p">:</span>
+                <span class="n">habFact</span> <span class="o">=</span> <span class="n">habFact</span> <span class="o">+</span> <span class="n">pofe</span><span class="p">(</span><span class="n">e</span><span class="p">,</span> <span class="n">ecc</span><span class="p">,</span> <span class="n">eccUpRel</span><span class="p">)</span>
+            <span class="n">e</span> <span class="o">=</span> <span class="n">e</span> <span class="o">+</span> <span class="n">de</span>
+        <span class="n">a</span> <span class="o">=</span> <span class="n">a</span> <span class="o">+</span> <span class="n">da</span>   
+    
+    <span class="k">if</span> <span class="n">ecc</span> <span class="o">&gt;</span> <span class="mf">0.8</span><span class="p">:</span>
+        <span class="n">H</span> <span class="o">=</span> <span class="mf">0.0</span>
+    <span class="k">elif</span> <span class="n">pofeSum</span> <span class="o">!=</span> <span class="mi">0</span><span class="p">:</span>
+        <span class="n">H</span> <span class="o">=</span> <span class="p">(</span><span class="n">habFact</span><span class="o">/</span><span class="n">pofeSum</span><span class="p">)</span><span class="o">*</span><span class="n">p_ter</span>
+    <span class="k">else</span><span class="p">:</span> <span class="c1"># in the case of error; might be better to replace this with a throw exception statement</span>
+        <span class="n">H</span> <span class="o">=</span> <span class="mf">0.0</span>
+    
+    <span class="n">habIndex</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">H</span><span class="p">)</span>
+    <span class="n">habIndexWithName</span><span class="o">.</span><span class="n">extend</span><span class="p">([</span><span class="n">exoName</span><span class="p">,</span> <span class="s2">&quot;,&quot;</span><span class="p">,</span> <span class="n">H</span><span class="p">])</span>
+    
+        
+    <span class="nb">print</span><span class="p">(</span><span class="n">exoName</span><span class="p">,</span> <span class="n">H</span><span class="p">)</span>
+    
+</pre></div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Append the result (planet&#39;s name and index value) to a .txt file in the same folder </span>
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s1">&#39;out.txt&#39;</span><span class="p">,</span><span class="s1">&#39;w&#39;</span><span class="p">)</span> <span class="k">as</span> <span class="n">f</span><span class="p">:</span>
+    <span class="n">i</span> <span class="o">=</span> <span class="mi">1</span>
+    <span class="k">for</span> <span class="n">a</span> <span class="ow">in</span> <span class="n">habIndexWithName</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">i</span> <span class="o">==</span> <span class="mi">3</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">file</span><span class="o">=</span><span class="n">f</span><span class="p">)</span>
+            <span class="n">i</span> <span class="o">=</span> <span class="mi">1</span>
+        <span class="k">else</span><span class="p">:</span>
+            <span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">,</span> <span class="n">file</span><span class="o">=</span><span class="n">f</span><span class="p">,</span> <span class="n">end</span><span class="o">=</span><span class="s2">&quot;&quot;</span><span class="p">)</span>
+            <span class="n">i</span> <span class="o">+=</span> <span class="mi">1</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "abell1689/M-HITE",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="2_perincian_algoritma.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Perincian Algoritma</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="4_live_sandbox.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Live Sandbox</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      By Zulfa Aulia Rahma (zulfarahma [at] proton [dot] me)<br/>
+    
+        &copy; Copyright 2021.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>
