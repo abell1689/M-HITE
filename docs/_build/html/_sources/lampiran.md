@@ -1,3 +1,0 @@
-# Lampiran
-
-## Daftar Pustaka

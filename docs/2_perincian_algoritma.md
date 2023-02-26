@@ -230,7 +230,6 @@ Studi yang dilakukan oleh [Bolmont _et al_. (2016)](https://doi.org/10.1051/0004
 M-HITE mempertimbangkan ini dan menambahkan langkah sebelum atau setelah kalkulasi nilai indeks sehingga planet dengan eksentrisitas yang melebihi batas maksimum seperti yang dijelaskan di atas akan diberi nilai indeks HITE $H = 0$.
 
 ## Rangkuman Modifikasi
-
 Berikut adalah modifikasi yang telah dilakukan terhadap program HITE sehingga menjadi M-HITE:
 1) **program telah ditulis ulang**, dari C ke Python;
 2) **pengubahan data masukan (penggunaan basis data [exoplanets.org](https://www.exoplanets.org))**; **Program HITE orisinal**, sesuai namanya, berfokus pada eksoplanet yang ditemukan melalui **metode transit**. Karena itu, HITE orisinal menggunakan beberapa variabel observasi yang hanya bisa didapat melalui metode tersebut (misal: penggunaan *transit depth* untuk mendapatkan radius planet). Modifikasi dilakukan sehingga nilai dari parameter-parameter ini tidak dihitung, tapi langsung diambil dari basis data [exoplanets.org](https://www.exoplanets.org). Hal ini memungkinkan M-HITE untuk mengevaluasi probabilitas kelayakhunian dari planet-planet yang ditemukan melalui metode lain;
