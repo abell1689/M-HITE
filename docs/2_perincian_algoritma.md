@@ -135,7 +135,7 @@ Sementara itu, batas maksimum $F_{max}$ **berbeda** untuk setiap planet. Persama
 $$\begin{align}
   F_{max}=
 	B \sigma
-	(\frac{l}{2R \space \text{ln} (P_{*} \sqrt{\\kappa} P_{0} g)})
+	(\frac{l}{2R \space \text{ln} (P_{*} \sqrt{\kappa} P_{0} g)})
 \end{align}
 $$
 
