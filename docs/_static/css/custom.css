@@ -42,10 +42,14 @@
 	--sbt-prevnext-font-size: 1rem; */
 }
 
-#site-navigation h1.site-logo {
+navbar-brand.logo {
  font-size:1.5rem;
 }
-/* #site-navigation div.navbar_extra_footer {
+
+/* #site-navigation h1.site-logo {
+ font-size:1.5rem;
+}
+#site-navigation div.navbar_extra_footer {
  font-size:1.2rem;
 }
 
