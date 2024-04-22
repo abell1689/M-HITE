@@ -26,20 +26,20 @@
 	--pst-font-family-base: spectral;
   --pst-font-family-heading: sans-serif;
 
-	--pst-sidebar-font-size: 1.2rem;
-	--pst-sidebar-font-size-mobile: 1.2rem;
-	--pst-sidebar-header-font-size: 1.2rem;
+	--pst-sidebar-font-size: 1rem;
+	--pst-sidebar-font-size-mobile: 1rem;
+	--pst-sidebar-header-font-size: 1rem;
 	--pst-sidebar-header-font-weight: 600;
 
-	--pst-font-size-h1:2.9rem ;
-	--pst-font-size-h2:2.6rem ;
-	--pst-font-size-h3:2.3rem ;
-	--pst-font-size-h4:2.0rem ;
-	--pst-font-size-h5:1.7rem ;
-	--pst-font-size-h6:1.4rem ;
+	--pst-font-size-h1:2.7rem ;
+	--pst-font-size-h2:2.4rem ;
+	--pst-font-size-h3:2.1rem ;
+	--pst-font-size-h4:1.8rem ;
+	--pst-font-size-h5:1.5rem ;
+	--pst-font-size-h6:1.2rem ;
 
-	--sbt-header-article-font-size: 1.2rem;   
-	--sbt-prevnext-font-size: 1.2rem; 
+	--sbt-header-article-font-size: 1rem;   
+	--sbt-prevnext-font-size: 1rem;
 }
 
 #site-navigation h1.site-logo {
@@ -54,7 +54,7 @@ body {
 }
 
 p {
-	font-size: 1.6rem;
+	font-size: 1.2rem;
 }
 
 div.toctree-wrapper>ul>li>a {
