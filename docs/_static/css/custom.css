@@ -26,7 +26,7 @@
   --pst-font-family-base: spectral;
   --pst-font-family-heading: spectral;
 
-	--pst-sidebar-font-size: 1rem;
+/* 	--pst-sidebar-font-size: 1rem;
 	--pst-sidebar-font-size-mobile: 1rem;
 	--pst-sidebar-header-font-size: 1rem;
 	--pst-sidebar-header-font-weight: 600;
@@ -39,10 +39,10 @@
 	--pst-font-size-h6:1.2rem ;
 
 	--sbt-header-article-font-size: 1rem;   
-	--sbt-prevnext-font-size: 1rem;
+	--sbt-prevnext-font-size: 1rem; */
 }
 
-#site-navigation h1.site-logo {
+/* #site-navigation h1.site-logo {
  font-size:1.5rem;
 }
 #site-navigation div.navbar_extra_footer {
@@ -92,3 +92,4 @@ nav.bd-links p.caption:first-child {
 .toc-h6 {
   font-size: 0.5rem;
 }
+ */
