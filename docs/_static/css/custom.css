@@ -42,8 +42,8 @@
 	--sbt-prevnext-font-size: 1rem; */
 }
 
-navbar-brand.logo {
- font-size:1.5rem;
+.navbar-brand .logo__image {
+  max-height: 10rem;
 }
 
 /* #site-navigation h1.site-logo {
